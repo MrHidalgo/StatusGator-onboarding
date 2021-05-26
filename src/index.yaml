@@ -1,30 +1,51 @@
 ProjectTitle: StatusGator - Onboarding
 
 PageList:
-- file: index.html
-  titleName: Home
+- file: screen-1.html
+  titleName: Screen - 1
   ready: 1
-- file: index.html
-  titleName:
+- file: screen-1.html
+  titleName: Screen - 2
   ready: 0
-- file: index.html
-  titleName:
+- file: screen-1.html
+  titleName: Screen - 3
   ready: 0
-- file: index.html
-  titleName:
+- file: screen-1.html
+  titleName: Screen - 4
   ready: 0
-- file: index.html
-  titleName:
+- file: screen-1.html
+  titleName: Screen - 5
   ready: 0
-- file: index.html
-  titleName:
+- file: screen-1.html
+  titleName: Screen - 6
   ready: 0
-- file: index.html
-  titleName:
+- file: screen-1.html
+  titleName: Screen - 7
   ready: 0
-- file: index.html
-  titleName:
+- file: screen-1.html
+  titleName: Screen - 8
   ready: 0
-- file: index.html
-  titleName:
+- file: screen-1.html
+  titleName: Screen - 9
+  ready: 0
+- file: screen-1.html
+  titleName: Screen - 10
+  ready: 0
+- file: screen-11.html
+  titleName: Screen - 11
+  ready: 0
+- file: screen-12.html
+  titleName: Screen - 12
+  ready: 0
+- file: screen-13.html
+  titleName: Screen - 13
+  ready: 0
+- file: screen-14.html
+  titleName: Screen - 14
+  ready: 0
+- file: success-page.html
+  titleName: Success page
+  ready: 0
+- file: status-dashboard.html
+  titleName: Status dashboard
   ready: 0
