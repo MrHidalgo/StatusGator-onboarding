@@ -1,0 +1,52 @@
+// SECTION :: START
+
+section#step.step.step--2
+
+  .step__wrapper
+
+    p.step__title.c-title!= "Great! What goal would you like to achive?"
+    p.step__desc.c-desc What can StatusGator help you attain for your company? Select all that apply.
+
+    form.step__form.step__form--2(action='' method='' autocomplete='off')
+      .step__form-field
+        label.checkbox
+          input(type='checkbox' name='')
+          i
+          p I don’t have a goal, I’m just peeking
+      .step__form-field
+        label.checkbox
+          input(type='checkbox' name='')
+          i
+          p Get  notified when one of the services goes down
+      .step__form-field
+        label.checkbox
+          input(type='checkbox' name='')
+          i
+          p Create a public status dashboard for my team or employess
+      .step__form-field
+        label.checkbox
+          input(type='checkbox' name='')
+          i
+          p Create a public status dashboard for my customers or students
+      .step__form-field
+        label.checkbox
+          input(type='checkbox' name='')
+          i
+          p Get historical data about outages
+      .step__form-field
+        label.checkbox
+          input(type='checkbox' name='')
+          i
+          p Something else
+      .step__form-field
+        label
+          input(type='text' name='' placeholder='Tell us more')
+
+    .step__btn.c-btn__wrapper
+      a.c-btn.c-btn--secondary(href="/screen-1.html")
+        span Previous
+      a.c-btn.c-btn--primary(href="/screen-3.html")
+        span Next
+        i.icon-font.icon-arrow-right
+
+// SECTION :: END

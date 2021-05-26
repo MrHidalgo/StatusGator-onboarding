@@ -1,0 +1,21 @@
+// HEADER :: START
+
+header#header.header
+
+  .header__wrapper
+    .header__wrapper-left
+      
+      .logo.logo--header
+        a.logo__btn(href="/")
+          img(src="img/logo.svg" alt="")
+      
+    .header__wrapper-right
+
+      .header__step-wrapper
+        div
+          p.header__step-title Step
+        div
+          .header__step
+            p.header__step-num!= "<span>" + stepNum + "</span> / 7"
+
+// HEADER :: END

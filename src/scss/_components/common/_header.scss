@@ -1,0 +1,55 @@
+// HEADER :: START
+
+.header {
+	z-index: 999;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding-left: 50px;
+	padding-right: 50px;
+	box-shadow: 0 4px 60px 0 rgba(24, 33, 53, 0.07);
+	background-color: #FFFFFF;
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 100px;
+	}
+
+	&__step {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 112px;
+		height: 57px;
+		border: 1px solid #B0EACD;
+		border-radius: 6px;
+
+		&-wrapper {
+			display: flex;
+			align-items: center;
+		}
+
+		&-title {
+			padding-right: 20px;
+			font-weight: 500;
+			font-size: 18px;
+			color: #163A5F;
+		}
+
+		&-num {
+			font-size: 18px;
+			color: #576472;
+
+			span {
+				font-weight: 600;
+				font-size: 24px;
+				color: #21BF73;
+			}
+		}
+	}
+}
+
+// HEADER :: END

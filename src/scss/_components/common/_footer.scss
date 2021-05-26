@@ -1,0 +1,27 @@
+// FOOTER :: START
+
+.footer {
+	padding-left: 10px;
+	padding-right: 10px;
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		max-width: 1140px;
+		height: 75px;
+		margin-left: auto;
+		margin-right: auto;
+		border-top: 1px solid rgba(#576472, 0.2);
+
+		p {
+			font-size: 12px;
+			line-height: 15px;
+			text-align: center;
+			color: #576472;
+		}
+	}
+}
+
+// FOOTER :: END

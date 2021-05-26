@@ -1,57 +1,65 @@
 // BUTTON :: START
 
-// ==================================================
-// ==================================================
-// ==================================================
-
-$bth-width: 250px;
-$bth-height: 45px;
-$btn-border-width: 1px;
-$btn-border-color: rgba(#000, 1);
-$bth-border-radius: 5px;
-$bth-box-shadow: none;
-$bth-background-color: rgba(#000, 1);
-$bth-color: rgba(#fff, 1);
-$bth-font-size: rgba(#000, 1);
-$bth-font-weight: bold;
-
-$btn-color--border: rgba(#000, 1);
-
-// ==================================================
-// ==================================================
-// ==================================================
-
 .c-btn {
   outline: none;
   cursor: pointer;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  max-width: $bth-width;
-  height: $bth-height;
-  border: $btn-border-width solid $btn-border-color;
-  box-shadow: $bth-box-shadow;
-  border-radius: $bth-border-radius;
-  color: $bth-color;
-  font-size: $bth-font-size;
-  font-weight: $bth-font-weight;
+  width: auto;
+  min-width: 200px;
+  height: 70px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 6px;
 
-  &--border {
-    background-color: transparent;
-    color: $btn-color--border;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &.c-btn__wrapper--center {
+      justify-content: center;
+    }
   }
 
-  &--bg {
-    background-color: $bth-background-color;
+  &.c-btn--primary {
+    box-shadow: 0 6px 20px 0 rgba(40, 223, 153, 0.2), 0 20px 30px 0 rgba(40, 223, 153, 0.2);
+    background-color: #21BF73;
+
+    .icon-font,
+    span {
+      color: #ffffff;
+    }
+  }
+  
+  &.c-btn--secondary {
+    border: 1px solid #576472;
+    background-color: #FFFFFF;
+
+    span {
+      color: #576472;
+    }
   }
 
-  &__text {
-    &-wrap {}
+  .icon-font {
+    font-size: 16px;
+
+    & + span {
+      padding-left: 10px;
+    }
   }
 
-  &__icon {
-    &-wrap {}
+  span {
+    z-index: 2;
+    position: relative;
+    font-weight: bold;
+    font-size: 17px;
+
+    & + .icon-font {
+      margin-left: 10px;
+    }
   }
 }
 

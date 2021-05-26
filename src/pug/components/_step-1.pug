@@ -1,0 +1,35 @@
+// SECTION :: START
+
+section#step.step.step--1
+
+  .step__wrapper
+
+    p.step__title.c-title!= "<span>Max</span>, tell us about your business"
+    p.step__desc.c-desc So we can better craft your experience throughout StatusGator
+
+    form.step__form(action='' method='' autocomplete='off')
+      .step__form-field
+        label
+          p What industry is your business in?
+          select()
+            option Action 1
+            option Action 2
+            option Action 3
+            option Action 4
+            option Action 5
+      .step__form-field
+        label
+          p What is your role?
+          select()
+            option Action 1
+            option Action 2
+            option Action 3
+            option Action 4
+            option Action 5
+
+    .step__btn.c-btn__wrapper.c-btn__wrapper--center
+      a.c-btn.c-btn--primary(href="/screen-2.html")
+        span Next
+        i.icon-font.icon-arrow-right
+
+// SECTION :: END
