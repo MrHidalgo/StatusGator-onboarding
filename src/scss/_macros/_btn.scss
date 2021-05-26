@@ -22,6 +22,14 @@
     &.c-btn__wrapper--center {
       justify-content: center;
     }
+    &.c-btn__wrapper--end {
+      justify-content: flex-end;
+    }
+  }
+
+  &.c-btn--medium {
+    min-width: 170px;
+    height: 57px;
   }
 
   &.c-btn--primary {
@@ -39,6 +47,7 @@
     background-color: #FFFFFF;
 
     span {
+      font-weight: 500;
       color: #576472;
     }
   }
