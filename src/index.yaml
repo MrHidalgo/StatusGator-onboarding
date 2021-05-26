@@ -3,13 +3,13 @@ ProjectTitle: StatusGator - Onboarding
 PageList:
 - file: screen-1.html
   titleName: Screen - 1
-  ready: 1
-- file: screen-1.html
+  ready: 55
+- file: screen-2.html
   titleName: Screen - 2
-  ready: 0
-- file: screen-1.html
+  ready: 55
+- file: screen-3.html
   titleName: Screen - 3
-  ready: 0
+  ready: 1
 - file: screen-1.html
   titleName: Screen - 4
   ready: 0

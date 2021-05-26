@@ -539,7 +539,7 @@ picture {
 
 /* line 3, src/scss/_components/_step.scss */
 .step {
-  padding: 100px 10px 50px;
+  padding: 100px 10px 70px;
 }
 
 /* line 7, src/scss/_components/_step.scss */
@@ -547,7 +547,104 @@ picture {
   max-width: 650px;
 }
 
-/* line 12, src/scss/_components/_step.scss */
+/* line 11, src/scss/_components/_step.scss */
+.step.step--3 {
+  padding-top: 0;
+}
+
+/* line 14, src/scss/_components/_step.scss */
+.step.step--3 .step__desc {
+  padding-bottom: 0;
+}
+
+/* line 19, src/scss/_components/_step.scss */
+.step__container {
+  position: relative;
+  left: -10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: -webkit-calc(100% + 20px);
+  width: calc(100% + 20px);
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: rgba(33, 191, 115, 0.1);
+}
+
+/* line 30, src/scss/_components/_step.scss */
+.step__container-bg {
+  z-index: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 39, src/scss/_components/_step.scss */
+.step__container-bg span {
+  position: absolute;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+
+/* line 43, src/scss/_components/_step.scss */
+.step__container-bg span:nth-of-type(1) {
+  top: 40%;
+  left: 10%;
+  width: 40px;
+  height: 40px;
+  background-color: #99F3BD;
+}
+
+/* line 50, src/scss/_components/_step.scss */
+.step__container-bg span:nth-of-type(2) {
+  top: -10px;
+  right: 10%;
+  width: 40px;
+  height: 40px;
+  background-color: #F5DEA3;
+}
+
+/* line 57, src/scss/_components/_step.scss */
+.step__container-bg span:nth-of-type(3) {
+  right: 20%;
+  bottom: 20px;
+  width: 30px;
+  height: 30px;
+  background-color: #99F3BD;
+}
+
+/* line 64, src/scss/_components/_step.scss */
+.step__container-bg span:nth-of-type(4) {
+  left: 15%;
+  bottom: 40px;
+  width: 10px;
+  height: 10px;
+  background-color: #F5DEA3;
+}
+
+/* line 74, src/scss/_components/_step.scss */
+.step__container-content {
+  z-index: 2;
+  position: relative;
+  width: 100%;
+  max-width: 675px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 84, src/scss/_components/_step.scss */
 .step__wrapper {
   width: 100%;
   max-width: 1140px;
@@ -555,7 +652,26 @@ picture {
   margin-right: auto;
 }
 
-/* line 19, src/scss/_components/_step.scss */
+/* line 91, src/scss/_components/_step.scss */
+.step__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 50px;
+}
+
+/* line 100, src/scss/_components/_step.scss */
+.step__col-2 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+}
+
+/* line 107, src/scss/_components/_step.scss */
 .step__form {
   width: 100%;
   max-width: 600px;
@@ -563,12 +679,12 @@ picture {
   margin-right: auto;
 }
 
-/* line 27, src/scss/_components/_step.scss */
+/* line 115, src/scss/_components/_step.scss */
 .step__form.step__form--2 .step__form-field:not(:last-of-type) {
   padding-bottom: 10px;
 }
 
-/* line 33, src/scss/_components/_step.scss */
+/* line 121, src/scss/_components/_step.scss */
 .step__form-field {
   display: -webkit-box;
   display: -webkit-flex;
@@ -576,12 +692,12 @@ picture {
   display: flex;
 }
 
-/* line 36, src/scss/_components/_step.scss */
+/* line 124, src/scss/_components/_step.scss */
 .step__form-field:not(:last-of-type) {
   padding-bottom: 25px;
 }
 
-/* line 40, src/scss/_components/_step.scss */
+/* line 128, src/scss/_components/_step.scss */
 .step__form-field label {
   position: relative;
   display: -webkit-box;
@@ -596,7 +712,7 @@ picture {
   width: 100%;
 }
 
-/* line 46, src/scss/_components/_step.scss */
+/* line 134, src/scss/_components/_step.scss */
 .step__form-field label.checkbox {
   cursor: pointer;
   -webkit-box-orient: horizontal;
@@ -618,7 +734,7 @@ picture {
   background-color: #FFFFFF;
 }
 
-/* line 57, src/scss/_components/_step.scss */
+/* line 145, src/scss/_components/_step.scss */
 .step__form-field label.checkbox input {
   opacity: 0;
   position: absolute;
@@ -628,7 +744,7 @@ picture {
   height: 0;
 }
 
-/* line 66, src/scss/_components/_step.scss */
+/* line 154, src/scss/_components/_step.scss */
 .step__form-field label.checkbox input:checked + i {
   border-color: #21BF73;
   -webkit-transition: border-color 0.3s ease-in-out;
@@ -636,7 +752,7 @@ picture {
   transition: border-color 0.3s ease-in-out;
 }
 
-/* line 70, src/scss/_components/_step.scss */
+/* line 158, src/scss/_components/_step.scss */
 .step__form-field label.checkbox input:checked + i:after {
   opacity: 1;
   -webkit-transition: opacity 0.3s ease-in-out;
@@ -644,7 +760,7 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 78, src/scss/_components/_step.scss */
+/* line 166, src/scss/_components/_step.scss */
 .step__form-field label.checkbox i {
   display: -webkit-box;
   display: -webkit-flex;
@@ -667,7 +783,7 @@ picture {
   transition: border-color 0.3s ease-in-out;
 }
 
-/* line 88, src/scss/_components/_step.scss */
+/* line 176, src/scss/_components/_step.scss */
 .step__form-field label.checkbox i:after {
   content: '';
   opacity: 0;
@@ -680,7 +796,7 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 99, src/scss/_components/_step.scss */
+/* line 187, src/scss/_components/_step.scss */
 .step__form-field label.checkbox p {
   padding-bottom: 0;
   font-weight: bold;
@@ -688,14 +804,14 @@ picture {
   color: #163A5F;
 }
 
-/* line 107, src/scss/_components/_step.scss */
+/* line 195, src/scss/_components/_step.scss */
 .step__form-field label p {
   padding-bottom: 10px;
   font-size: 18px;
   color: #163A5F;
 }
 
-/* line 113, src/scss/_components/_step.scss */
+/* line 201, src/scss/_components/_step.scss */
 .step__form-field label input,
 .step__form-field label select {
   outline: none;
@@ -759,7 +875,208 @@ picture {
   color: #576472;
 }
 
-/* line 139, src/scss/_components/_step.scss */
+/* line 227, src/scss/_components/_step.scss */
+.step__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 48px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #CBDBE3;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  -webkit-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+/* line 240, src/scss/_components/_step.scss */
+.step__list:hover {
+  border-color: #21BF73;
+  background-color: #21bf73;
+  -webkit-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+/* line 245, src/scss/_components/_step.scss */
+.step__list:hover img,
+.step__list:hover span {
+  color: #ffffff;
+}
+
+/* line 251, src/scss/_components/_step.scss */
+.step__list > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 256, src/scss/_components/_step.scss */
+.step__list > img + span {
+  padding-left: 10px;
+}
+
+/* line 261, src/scss/_components/_step.scss */
+.step__list > span {
+  font-weight: 500;
+  font-size: 16px;
+  color: #163A5F;
+}
+
+/* line 267, src/scss/_components/_step.scss */
+.step__list-wrapper {
+  padding-bottom: 40px;
+}
+
+/* line 271, src/scss/_components/_step.scss */
+.step__list-title {
+  padding-bottom: 20px;
+  font-weight: bold;
+  font-size: 24px;
+  color: #163A5F;
+}
+
+/* line 278, src/scss/_components/_step.scss */
+.step__list-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+/* line 284, src/scss/_components/_step.scss */
+.step__search {
+  padding: 10px;
+  border: 1px solid rgba(203, 219, 227, 0.8);
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* line 290, src/scss/_components/_step.scss */
+.step__search-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 295, src/scss/_components/_step.scss */
+.step__search-title {
+  padding-bottom: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #163A5F;
+}
+
+/* line 302, src/scss/_components/_step.scss */
+.step__search-cover {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  -webkit-box-shadow: 0 10px 60px 0 rgba(203, 219, 227, 0.5);
+          box-shadow: 0 10px 60px 0 rgba(203, 219, 227, 0.5);
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  background-color: #FFFFFF;
+}
+
+/* line 310, src/scss/_components/_step.scss */
+.step__search-cover input {
+  outline: none;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+  height: 57px;
+  padding: 0 20px;
+  border: none;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: rgba(241, 244, 248, 0.5);
+  color: #163A5F;
+}
+
+/* line 88, src/scss/_utilities/_mixin.scss */
+.step__search-cover input.placeholder {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* line 89, src/scss/_utilities/_mixin.scss */
+.step__search-cover input:-moz-placeholder {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* line 90, src/scss/_utilities/_mixin.scss */
+.step__search-cover input::-moz-placeholder {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* line 91, src/scss/_utilities/_mixin.scss */
+.step__search-cover input:-ms-input-placeholder {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* line 92, src/scss/_utilities/_mixin.scss */
+.step__search-cover input::-webkit-input-placeholder {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* line 330, src/scss/_components/_step.scss */
+.step__search-cover .c-btn {
+  min-width: 150px;
+  height: 57px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/* line 335, src/scss/_components/_step.scss */
+.step__search-cover .c-btn__wrapper {
+  padding-left: 10px;
+}
+
+/* line 342, src/scss/_components/_step.scss */
 .step__btn {
   padding-top: 100px;
 }
