@@ -319,6 +319,11 @@ picture {
   color: #576472;
 }
 
+/* line 9, src/scss/_macros/_desc.scss */
+.c-desc a {
+  color: #21BF73;
+}
+
 /* line 3, src/scss/_macros/_btn.scss */
 .c-btn {
   outline: none;
@@ -590,73 +595,79 @@ picture {
 }
 
 /* line 11, src/scss/_components/_step.scss */
-.step.step--3, .step.step--5, .step.step--6 {
+.step.step--3, .step.step--5, .step.step--6, .step.step--7 {
   padding-top: 0;
 }
 
-/* line 16, src/scss/_components/_step.scss */
-.step.step--3 .step__desc, .step.step--5 .step__desc, .step.step--6 .step__desc {
+/* line 17, src/scss/_components/_step.scss */
+.step.step--3 .step__desc, .step.step--5 .step__desc, .step.step--6 .step__desc, .step.step--7 .step__desc {
   padding-bottom: 0;
 }
 
-/* line 20, src/scss/_components/_step.scss */
+/* line 21, src/scss/_components/_step.scss */
 .step.step--4 {
   padding-top: 0;
 }
 
-/* line 23, src/scss/_components/_step.scss */
+/* line 24, src/scss/_components/_step.scss */
 .step.step--4 .step__title {
   padding-bottom: 40px;
 }
 
-/* line 26, src/scss/_components/_step.scss */
+/* line 27, src/scss/_components/_step.scss */
 .step.step--4 .step__container {
   padding-bottom: 0;
   background-color: transparent;
 }
 
-/* line 30, src/scss/_components/_step.scss */
+/* line 31, src/scss/_components/_step.scss */
 .step.step--4 .step__container-bg {
   height: 365px;
   background-color: rgba(33, 191, 115, 0.1);
 }
 
-/* line 38, src/scss/_components/_step.scss */
-.step.step--5 .step__container, .step.step--6 .step__container {
+/* line 40, src/scss/_components/_step.scss */
+.step.step--5 .step__container, .step.step--6 .step__container, .step.step--7 .step__container {
   padding-bottom: 0;
   background-color: transparent;
 }
 
-/* line 42, src/scss/_components/_step.scss */
-.step.step--5 .step__container-bg, .step.step--6 .step__container-bg {
+/* line 44, src/scss/_components/_step.scss */
+.step.step--5 .step__container-bg, .step.step--6 .step__container-bg, .step.step--7 .step__container-bg {
   height: 365px;
   background-color: rgba(33, 191, 115, 0.1);
 }
 
-/* line 48, src/scss/_components/_step.scss */
-.step.step--5 .step__form, .step.step--6 .step__form {
+/* line 50, src/scss/_components/_step.scss */
+.step.step--5 .step__form, .step.step--6 .step__form, .step.step--7 .step__form {
   max-width: 800px;
 }
 
-/* line 53, src/scss/_components/_step.scss */
-.step.step--5 .step__form-field label p, .step.step--6 .step__form-field label p {
+/* line 55, src/scss/_components/_step.scss */
+.step.step--5 .step__form-field label p, .step.step--6 .step__form-field label p, .step.step--7 .step__form-field label p {
   font-size: 14px;
   font-weight: normal;
 }
 
-/* line 58, src/scss/_components/_step.scss */
+/* line 60, src/scss/_components/_step.scss */
 .step.step--5 .step__form-field label input,
 .step.step--5 .step__form-field label select, .step.step--6 .step__form-field label input,
-.step.step--6 .step__form-field label select {
+.step.step--6 .step__form-field label select, .step.step--7 .step__form-field label input,
+.step.step--7 .step__form-field label select {
   height: 48px;
 }
 
-/* line 67, src/scss/_components/_step.scss */
+/* line 69, src/scss/_components/_step.scss */
+.step.step--7 .step__desc {
+  padding-bottom: 40px;
+}
+
+/* line 74, src/scss/_components/_step.scss */
 .step.step--8 .step__btn {
   padding-top: 25px;
 }
 
-/* line 72, src/scss/_components/_step.scss */
+/* line 79, src/scss/_components/_step.scss */
 .step__container {
   position: relative;
   left: -10px;
@@ -679,7 +690,7 @@ picture {
   background-color: rgba(33, 191, 115, 0.1);
 }
 
-/* line 83, src/scss/_components/_step.scss */
+/* line 90, src/scss/_components/_step.scss */
 .step__container-bg {
   z-index: 0;
   overflow: hidden;
@@ -690,14 +701,14 @@ picture {
   height: 100%;
 }
 
-/* line 92, src/scss/_components/_step.scss */
+/* line 99, src/scss/_components/_step.scss */
 .step__container-bg span {
   position: absolute;
   -webkit-border-radius: 50%;
           border-radius: 50%;
 }
 
-/* line 96, src/scss/_components/_step.scss */
+/* line 103, src/scss/_components/_step.scss */
 .step__container-bg span:nth-of-type(1) {
   top: 40%;
   left: 10%;
@@ -706,7 +717,7 @@ picture {
   background-color: #99F3BD;
 }
 
-/* line 103, src/scss/_components/_step.scss */
+/* line 110, src/scss/_components/_step.scss */
 .step__container-bg span:nth-of-type(2) {
   top: -10px;
   right: 10%;
@@ -715,7 +726,7 @@ picture {
   background-color: #F5DEA3;
 }
 
-/* line 110, src/scss/_components/_step.scss */
+/* line 117, src/scss/_components/_step.scss */
 .step__container-bg span:nth-of-type(3) {
   right: 20%;
   bottom: 20px;
@@ -724,7 +735,7 @@ picture {
   background-color: #99F3BD;
 }
 
-/* line 117, src/scss/_components/_step.scss */
+/* line 124, src/scss/_components/_step.scss */
 .step__container-bg span:nth-of-type(4) {
   left: 15%;
   bottom: 40px;
@@ -733,7 +744,7 @@ picture {
   background-color: #F5DEA3;
 }
 
-/* line 127, src/scss/_components/_step.scss */
+/* line 134, src/scss/_components/_step.scss */
 .step__container-content {
   z-index: 2;
   position: relative;
@@ -743,7 +754,7 @@ picture {
   margin-right: auto;
 }
 
-/* line 137, src/scss/_components/_step.scss */
+/* line 144, src/scss/_components/_step.scss */
 .step__wrapper {
   width: 100%;
   max-width: 1140px;
@@ -751,7 +762,7 @@ picture {
   margin-right: auto;
 }
 
-/* line 144, src/scss/_components/_step.scss */
+/* line 151, src/scss/_components/_step.scss */
 .step__row {
   display: -webkit-box;
   display: -webkit-flex;
@@ -760,7 +771,7 @@ picture {
   padding-top: 50px;
 }
 
-/* line 153, src/scss/_components/_step.scss */
+/* line 160, src/scss/_components/_step.scss */
 .step__col-2 {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -770,7 +781,7 @@ picture {
   max-width: 100%;
 }
 
-/* line 160, src/scss/_components/_step.scss */
+/* line 167, src/scss/_components/_step.scss */
 .step__form {
   width: 100%;
   max-width: 600px;
@@ -778,12 +789,12 @@ picture {
   margin-right: auto;
 }
 
-/* line 168, src/scss/_components/_step.scss */
+/* line 175, src/scss/_components/_step.scss */
 .step__form.step__form--2 .step__form-field:not(:last-of-type) {
   padding-bottom: 10px;
 }
 
-/* line 174, src/scss/_components/_step.scss */
+/* line 181, src/scss/_components/_step.scss */
 .step__form-field {
   display: -webkit-box;
   display: -webkit-flex;
@@ -791,12 +802,12 @@ picture {
   display: flex;
 }
 
-/* line 177, src/scss/_components/_step.scss */
+/* line 184, src/scss/_components/_step.scss */
 .step__form-field:not(:last-of-type) {
   padding-bottom: 25px;
 }
 
-/* line 181, src/scss/_components/_step.scss */
+/* line 188, src/scss/_components/_step.scss */
 .step__form-field label {
   position: relative;
   display: -webkit-box;
@@ -811,7 +822,7 @@ picture {
   width: 100%;
 }
 
-/* line 187, src/scss/_components/_step.scss */
+/* line 194, src/scss/_components/_step.scss */
 .step__form-field label.checkbox {
   cursor: pointer;
   -webkit-box-orient: horizontal;
@@ -833,7 +844,7 @@ picture {
   background-color: #FFFFFF;
 }
 
-/* line 198, src/scss/_components/_step.scss */
+/* line 205, src/scss/_components/_step.scss */
 .step__form-field label.checkbox input {
   opacity: 0;
   position: absolute;
@@ -843,7 +854,7 @@ picture {
   height: 0;
 }
 
-/* line 207, src/scss/_components/_step.scss */
+/* line 214, src/scss/_components/_step.scss */
 .step__form-field label.checkbox input:checked + i {
   border-color: #21BF73;
   -webkit-transition: border-color 0.3s ease-in-out;
@@ -851,7 +862,7 @@ picture {
   transition: border-color 0.3s ease-in-out;
 }
 
-/* line 211, src/scss/_components/_step.scss */
+/* line 218, src/scss/_components/_step.scss */
 .step__form-field label.checkbox input:checked + i:after {
   opacity: 1;
   -webkit-transition: opacity 0.3s ease-in-out;
@@ -859,7 +870,7 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 219, src/scss/_components/_step.scss */
+/* line 226, src/scss/_components/_step.scss */
 .step__form-field label.checkbox i {
   display: -webkit-box;
   display: -webkit-flex;
@@ -882,7 +893,7 @@ picture {
   transition: border-color 0.3s ease-in-out;
 }
 
-/* line 229, src/scss/_components/_step.scss */
+/* line 236, src/scss/_components/_step.scss */
 .step__form-field label.checkbox i:after {
   content: '';
   opacity: 0;
@@ -895,7 +906,7 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 240, src/scss/_components/_step.scss */
+/* line 247, src/scss/_components/_step.scss */
 .step__form-field label.checkbox p {
   padding-bottom: 0;
   font-weight: bold;
@@ -903,12 +914,12 @@ picture {
   color: #163A5F;
 }
 
-/* line 248, src/scss/_components/_step.scss */
+/* line 255, src/scss/_components/_step.scss */
 .step__form-field label.toggle {
   cursor: pointer;
 }
 
-/* line 251, src/scss/_components/_step.scss */
+/* line 258, src/scss/_components/_step.scss */
 .step__form-field label.toggle input {
   opacity: 0;
   position: absolute;
@@ -918,7 +929,7 @@ picture {
   height: 0;
 }
 
-/* line 260, src/scss/_components/_step.scss */
+/* line 267, src/scss/_components/_step.scss */
 .step__form-field label.toggle input:checked + span {
   background-color: #21bf73;
   -webkit-transition: background-color 0.3s ease-in-out;
@@ -926,7 +937,7 @@ picture {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 264, src/scss/_components/_step.scss */
+/* line 271, src/scss/_components/_step.scss */
 .step__form-field label.toggle input:checked + span i {
   -webkit-transform: translateX(30px);
       -ms-transform: translateX(30px);
@@ -938,7 +949,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 272, src/scss/_components/_step.scss */
+/* line 279, src/scss/_components/_step.scss */
 .step__form-field label.toggle span {
   position: relative;
   display: -webkit-box;
@@ -957,7 +968,7 @@ picture {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 282, src/scss/_components/_step.scss */
+/* line 289, src/scss/_components/_step.scss */
 .step__form-field label.toggle span i {
   position: absolute;
   top: 2px;
@@ -979,7 +990,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 298, src/scss/_components/_step.scss */
+/* line 305, src/scss/_components/_step.scss */
 .step__form-field label.file > div {
   display: -webkit-box;
   display: -webkit-flex;
@@ -987,7 +998,7 @@ picture {
   display: flex;
 }
 
-/* line 301, src/scss/_components/_step.scss */
+/* line 308, src/scss/_components/_step.scss */
 .step__form-field label.file > div label {
   position: relative;
   display: -webkit-box;
@@ -1007,7 +1018,7 @@ picture {
   height: auto;
 }
 
-/* line 309, src/scss/_components/_step.scss */
+/* line 316, src/scss/_components/_step.scss */
 .step__form-field label.file > div label p {
   cursor: pointer;
   display: -webkit-box;
@@ -1033,13 +1044,13 @@ picture {
   background-color: #F1F4F8;
 }
 
-/* line 324, src/scss/_components/_step.scss */
+/* line 331, src/scss/_components/_step.scss */
 .step__form-field label.file > div label span {
   font-size: 14px;
   color: #576472;
 }
 
-/* line 331, src/scss/_components/_step.scss */
+/* line 338, src/scss/_components/_step.scss */
 .step__form-field label.file input {
   opacity: 0;
   position: absolute;
@@ -1048,7 +1059,7 @@ picture {
   max-width: 200px;
 }
 
-/* line 340, src/scss/_components/_step.scss */
+/* line 347, src/scss/_components/_step.scss */
 .step__form-field label h6 {
   padding-bottom: 5px;
   font-weight: 600;
@@ -1056,14 +1067,14 @@ picture {
   color: #163A5F;
 }
 
-/* line 347, src/scss/_components/_step.scss */
+/* line 354, src/scss/_components/_step.scss */
 .step__form-field label p {
   padding-bottom: 10px;
   font-size: 18px;
   color: #163A5F;
 }
 
-/* line 353, src/scss/_components/_step.scss */
+/* line 360, src/scss/_components/_step.scss */
 .step__form-field label input,
 .step__form-field label select {
   outline: none;
@@ -1127,7 +1138,7 @@ picture {
   color: #576472;
 }
 
-/* line 379, src/scss/_components/_step.scss */
+/* line 386, src/scss/_components/_step.scss */
 .step__list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1154,7 +1165,7 @@ picture {
   transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-/* line 392, src/scss/_components/_step.scss */
+/* line 399, src/scss/_components/_step.scss */
 .step__list:hover {
   border-color: #21BF73;
   background-color: #21bf73;
@@ -1163,37 +1174,37 @@ picture {
   transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-/* line 397, src/scss/_components/_step.scss */
+/* line 404, src/scss/_components/_step.scss */
 .step__list:hover img,
 .step__list:hover span {
   color: #ffffff;
 }
 
-/* line 403, src/scss/_components/_step.scss */
+/* line 410, src/scss/_components/_step.scss */
 .step__list > img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* line 408, src/scss/_components/_step.scss */
+/* line 415, src/scss/_components/_step.scss */
 .step__list > img + span {
   padding-left: 10px;
 }
 
-/* line 413, src/scss/_components/_step.scss */
+/* line 420, src/scss/_components/_step.scss */
 .step__list > span {
   font-weight: 500;
   font-size: 16px;
   color: #163A5F;
 }
 
-/* line 419, src/scss/_components/_step.scss */
+/* line 426, src/scss/_components/_step.scss */
 .step__list-wrapper {
   padding-bottom: 40px;
 }
 
-/* line 423, src/scss/_components/_step.scss */
+/* line 430, src/scss/_components/_step.scss */
 .step__list-title {
   padding-bottom: 20px;
   font-weight: bold;
@@ -1201,7 +1212,7 @@ picture {
   color: #163A5F;
 }
 
-/* line 430, src/scss/_components/_step.scss */
+/* line 437, src/scss/_components/_step.scss */
 .step__list-block {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1212,7 +1223,7 @@ picture {
           flex-wrap: wrap;
 }
 
-/* line 436, src/scss/_components/_step.scss */
+/* line 443, src/scss/_components/_step.scss */
 .step__search {
   padding: 10px;
   border: 1px solid rgba(203, 219, 227, 0.8);
@@ -1221,7 +1232,7 @@ picture {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-/* line 442, src/scss/_components/_step.scss */
+/* line 449, src/scss/_components/_step.scss */
 .step__search-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1234,7 +1245,7 @@ picture {
           flex-direction: column;
 }
 
-/* line 447, src/scss/_components/_step.scss */
+/* line 454, src/scss/_components/_step.scss */
 .step__search-title {
   padding-bottom: 10px;
   font-weight: bold;
@@ -1242,7 +1253,7 @@ picture {
   color: #163A5F;
 }
 
-/* line 454, src/scss/_components/_step.scss */
+/* line 461, src/scss/_components/_step.scss */
 .step__search-cover {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1260,7 +1271,7 @@ picture {
   background-color: #FFFFFF;
 }
 
-/* line 462, src/scss/_components/_step.scss */
+/* line 469, src/scss/_components/_step.scss */
 .step__search-cover input {
   outline: none;
   position: relative;
@@ -1315,7 +1326,7 @@ picture {
   font-size: 16px;
 }
 
-/* line 482, src/scss/_components/_step.scss */
+/* line 489, src/scss/_components/_step.scss */
 .step__search-cover .c-btn {
   min-width: 150px;
   height: 57px;
@@ -1323,12 +1334,12 @@ picture {
           box-shadow: none;
 }
 
-/* line 487, src/scss/_components/_step.scss */
+/* line 494, src/scss/_components/_step.scss */
 .step__search-cover .c-btn__wrapper {
   padding-left: 10px;
 }
 
-/* line 494, src/scss/_components/_step.scss */
+/* line 501, src/scss/_components/_step.scss */
 .step__notification {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1345,7 +1356,7 @@ picture {
   width: 100%;
 }
 
-/* line 500, src/scss/_components/_step.scss */
+/* line 507, src/scss/_components/_step.scss */
 .step__notification-wrapper {
   z-index: 2;
   position: relative;
@@ -1364,29 +1375,29 @@ picture {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-/* line 513, src/scss/_components/_step.scss */
+/* line 520, src/scss/_components/_step.scss */
 .step__notification-wrapper .step__form {
   max-width: 100%;
   padding-bottom: 20px;
 }
 
-/* line 519, src/scss/_components/_step.scss */
+/* line 526, src/scss/_components/_step.scss */
 .step__notification-wrapper .step__form-field label p {
   font-size: 14px;
 }
 
-/* line 523, src/scss/_components/_step.scss */
+/* line 530, src/scss/_components/_step.scss */
 .step__notification-wrapper .step__form-field label input {
   height: 48px;
 }
 
-/* line 530, src/scss/_components/_step.scss */
+/* line 537, src/scss/_components/_step.scss */
 .step__notification-wrapper .c-btn {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-/* line 535, src/scss/_components/_step.scss */
+/* line 542, src/scss/_components/_step.scss */
 .step__notification-block {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1398,7 +1409,7 @@ picture {
           align-items: center;
 }
 
-/* line 540, src/scss/_components/_step.scss */
+/* line 547, src/scss/_components/_step.scss */
 .step__notification-block > div:nth-of-type(1) {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1421,21 +1432,21 @@ picture {
   background-color: #F1F4F8;
 }
 
-/* line 551, src/scss/_components/_step.scss */
+/* line 558, src/scss/_components/_step.scss */
 .step__notification-block > div:nth-of-type(1) img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* line 558, src/scss/_components/_step.scss */
+/* line 565, src/scss/_components/_step.scss */
 .step__notification-block > div p {
   font-weight: 500;
   font-size: 18px;
   color: #163A5F;
 }
 
-/* line 566, src/scss/_components/_step.scss */
+/* line 573, src/scss/_components/_step.scss */
 .step__notification-cover {
   width: 100%;
   padding: 40px 50px;
@@ -1446,7 +1457,7 @@ picture {
   background-color: #FFFFFF;
 }
 
-/* line 574, src/scss/_components/_step.scss */
+/* line 581, src/scss/_components/_step.scss */
 .step__notification-title {
   padding-bottom: 5px;
   font-weight: bold;
@@ -1454,14 +1465,14 @@ picture {
   color: #163A5F;
 }
 
-/* line 582, src/scss/_components/_step.scss */
+/* line 589, src/scss/_components/_step.scss */
 .step__notification-desc {
   padding-bottom: 10px;
   font-size: 16px;
   color: #576472;
 }
 
-/* line 588, src/scss/_components/_step.scss */
+/* line 595, src/scss/_components/_step.scss */
 .step__notification-line {
   width: 100%;
   height: 1px;
@@ -1470,7 +1481,7 @@ picture {
   background-color: rgba(87, 100, 114, 0.2);
 }
 
-/* line 597, src/scss/_components/_step.scss */
+/* line 604, src/scss/_components/_step.scss */
 .step__status {
   z-index: 2;
   position: relative;
@@ -1489,7 +1500,7 @@ picture {
   margin-bottom: 50px;
 }
 
-/* line 605, src/scss/_components/_step.scss */
+/* line 612, src/scss/_components/_step.scss */
 .step__status img,
 .step__status svg {
   display: block;
@@ -1501,12 +1512,12 @@ picture {
           filter: drop-shadow(0px 40px 80px rgba(22, 58, 95, 0.05));
 }
 
-/* line 616, src/scss/_components/_step.scss */
+/* line 623, src/scss/_components/_step.scss */
 .step__congratulations {
   position: relative;
 }
 
-/* line 619, src/scss/_components/_step.scss */
+/* line 626, src/scss/_components/_step.scss */
 .step__congratulations-visual {
   display: block;
   max-width: 100%;
@@ -1515,7 +1526,7 @@ picture {
   margin-right: auto;
 }
 
-/* line 627, src/scss/_components/_step.scss */
+/* line 634, src/scss/_components/_step.scss */
 .step__congratulations-box {
   position: relative;
   -webkit-transform: translateY(-50%);
@@ -1532,7 +1543,7 @@ picture {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-/* line 639, src/scss/_components/_step.scss */
+/* line 646, src/scss/_components/_step.scss */
 .step__congratulations-box-cover {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1550,7 +1561,7 @@ picture {
           border-radius: 8px;
 }
 
-/* line 648, src/scss/_components/_step.scss */
+/* line 655, src/scss/_components/_step.scss */
 .step__congratulations-box-cover > div:nth-of-type(1) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -1561,20 +1572,20 @@ picture {
   padding-right: 50px;
 }
 
-/* line 656, src/scss/_components/_step.scss */
+/* line 663, src/scss/_components/_step.scss */
 .step__congratulations-box-cover p {
   padding-bottom: 10px;
   font-size: 20px;
   color: #FFFFFF;
 }
 
-/* line 662, src/scss/_components/_step.scss */
+/* line 669, src/scss/_components/_step.scss */
 .step__congratulations-box-cover span {
   font-size: 16px;
   color: #FFFFFF;
 }
 
-/* line 670, src/scss/_components/_step.scss */
+/* line 677, src/scss/_components/_step.scss */
 .step__push {
   z-index: 2;
   position: relative;
@@ -1589,7 +1600,7 @@ picture {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-/* line 682, src/scss/_components/_step.scss */
+/* line 689, src/scss/_components/_step.scss */
 .step__push-cover {
   padding: 50px;
   -webkit-box-shadow: 0 0 80px 0 rgba(28, 202, 135, 0.2);
@@ -1599,7 +1610,7 @@ picture {
   background-color: #FFFFFF;
 }
 
-/* line 688, src/scss/_components/_step.scss */
+/* line 695, src/scss/_components/_step.scss */
 .step__push-cover p {
   padding-bottom: 40px;
   text-align: center;
@@ -1607,12 +1618,221 @@ picture {
   color: #163A5F;
 }
 
-/* line 694, src/scss/_components/_step.scss */
+/* line 701, src/scss/_components/_step.scss */
 .step__push-cover p span {
   color: #21bf73;
 }
 
-/* line 701, src/scss/_components/_step.scss */
+/* line 708, src/scss/_components/_step.scss */
+.step__invite {
+  z-index: 2;
+  position: relative;
+  width: 100%;
+  max-width: 1040px;
+  padding: 20px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  border: 2px solid #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* line 718, src/scss/_components/_step.scss */
+.step__invite-cover {
+  padding: 40px 50px;
+  -webkit-box-shadow: 0 40px 80px 0 rgba(22, 58, 95, 0.05);
+          box-shadow: 0 40px 80px 0 rgba(22, 58, 95, 0.05);
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  background-color: #FFFFFF;
+}
+
+/* line 725, src/scss/_components/_step.scss */
+.step__invite-form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 729, src/scss/_components/_step.scss */
+.step__invite-form-title {
+  padding-bottom: 15px;
+  font-size: 20px;
+  color: #163A5F;
+}
+
+/* line 736, src/scss/_components/_step.scss */
+.step__invite-form-desc {
+  padding-bottom: 10px;
+  font-size: 14px;
+  color: #576472;
+}
+
+/* line 742, src/scss/_components/_step.scss */
+.step__invite-form-line {
+  width: 100%;
+  height: 1px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background-color: rgba(87, 100, 114, 0.2);
+}
+
+/* line 750, src/scss/_components/_step.scss */
+.step__invite-form-group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 755, src/scss/_components/_step.scss */
+.step__invite-form-group--1 > div:nth-of-type(1) {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+  padding-right: 10px;
+}
+
+/* line 765, src/scss/_components/_step.scss */
+.step__invite-form-group--2 > div:nth-of-type(1) {
+  width: 25%;
+  padding-right: 5px;
+}
+
+/* line 769, src/scss/_components/_step.scss */
+.step__invite-form-group--2 > div:nth-of-type(2) {
+  width: 25%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* line 774, src/scss/_components/_step.scss */
+.step__invite-form-group--2 > div:nth-of-type(3) {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+  padding-left: 5px;
+}
+
+/* line 780, src/scss/_components/_step.scss */
+.step__invite-form-group--2 > div:nth-of-type(4) {
+  padding-left: 10px;
+}
+
+/* line 787, src/scss/_components/_step.scss */
+.step__invite-form-field {
+  position: relative;
+  padding-bottom: 15px;
+}
+
+/* line 791, src/scss/_components/_step.scss */
+.step__invite-form-field label {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 799, src/scss/_components/_step.scss */
+.step__invite-form-field label span {
+  padding-top: 2px;
+  padding-left: 10px;
+  font-size: 14px;
+  color: #163A5F;
+}
+
+/* line 807, src/scss/_components/_step.scss */
+.step__invite-form-field input[type='text'],
+.step__invite-form-field input[type='email'],
+.step__invite-form-field input[type='number'],
+.step__invite-form-field input[type='password'] {
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 57px;
+  padding: 0 30px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #CBDBE3;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  background-color: #FFFFFF;
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+}
+
+/* line 88, src/scss/_utilities/_mixin.scss */
+.step__invite-form-field input[type='text'].placeholder,
+.step__invite-form-field input[type='email'].placeholder,
+.step__invite-form-field input[type='number'].placeholder,
+.step__invite-form-field input[type='password'].placeholder {
+  font-size: 14px;
+  line-height: 17px;
+  color: #576472;
+}
+
+/* line 89, src/scss/_utilities/_mixin.scss */
+.step__invite-form-field input[type='text']:-moz-placeholder,
+.step__invite-form-field input[type='email']:-moz-placeholder,
+.step__invite-form-field input[type='number']:-moz-placeholder,
+.step__invite-form-field input[type='password']:-moz-placeholder {
+  font-size: 14px;
+  line-height: 17px;
+  color: #576472;
+}
+
+/* line 90, src/scss/_utilities/_mixin.scss */
+.step__invite-form-field input[type='text']::-moz-placeholder,
+.step__invite-form-field input[type='email']::-moz-placeholder,
+.step__invite-form-field input[type='number']::-moz-placeholder,
+.step__invite-form-field input[type='password']::-moz-placeholder {
+  font-size: 14px;
+  line-height: 17px;
+  color: #576472;
+}
+
+/* line 91, src/scss/_utilities/_mixin.scss */
+.step__invite-form-field input[type='text']:-ms-input-placeholder,
+.step__invite-form-field input[type='email']:-ms-input-placeholder,
+.step__invite-form-field input[type='number']:-ms-input-placeholder,
+.step__invite-form-field input[type='password']:-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 17px;
+  color: #576472;
+}
+
+/* line 92, src/scss/_utilities/_mixin.scss */
+.step__invite-form-field input[type='text']::-webkit-input-placeholder,
+.step__invite-form-field input[type='email']::-webkit-input-placeholder,
+.step__invite-form-field input[type='number']::-webkit-input-placeholder,
+.step__invite-form-field input[type='password']::-webkit-input-placeholder {
+  font-size: 14px;
+  line-height: 17px;
+  color: #576472;
+}
+
+/* line 835, src/scss/_components/_step.scss */
 .step__btn {
   padding-top: 100px;
 }
