@@ -52,6 +52,15 @@
     }
   }
 
+  &.c-btn--white {
+    background-color: #FFFFFF;
+
+    span {
+      font-weight: 500;
+      color: #21BF73;
+    }
+  }
+
   .icon-font {
     font-size: 16px;
 

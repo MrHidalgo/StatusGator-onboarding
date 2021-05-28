@@ -409,16 +409,27 @@ picture {
 }
 
 /* line 55, src/scss/_macros/_btn.scss */
+.c-btn.c-btn--white {
+  background-color: #FFFFFF;
+}
+
+/* line 58, src/scss/_macros/_btn.scss */
+.c-btn.c-btn--white span {
+  font-weight: 500;
+  color: #21BF73;
+}
+
+/* line 64, src/scss/_macros/_btn.scss */
 .c-btn .icon-font {
   font-size: 16px;
 }
 
-/* line 58, src/scss/_macros/_btn.scss */
+/* line 67, src/scss/_macros/_btn.scss */
 .c-btn .icon-font + span {
   padding-left: 10px;
 }
 
-/* line 63, src/scss/_macros/_btn.scss */
+/* line 72, src/scss/_macros/_btn.scss */
 .c-btn span {
   z-index: 2;
   position: relative;
@@ -426,7 +437,7 @@ picture {
   font-size: 17px;
 }
 
-/* line 69, src/scss/_macros/_btn.scss */
+/* line 78, src/scss/_macros/_btn.scss */
 .c-btn span + .icon-font {
   margin-left: 10px;
 }
@@ -495,7 +506,7 @@ picture {
           align-items: center;
 }
 
-/* line 35, src/scss/_components/common/_header.scss */
+/* line 37, src/scss/_components/common/_header.scss */
 .header__step-title {
   padding-right: 20px;
   font-weight: 500;
@@ -503,13 +514,13 @@ picture {
   color: #163A5F;
 }
 
-/* line 42, src/scss/_components/common/_header.scss */
+/* line 44, src/scss/_components/common/_header.scss */
 .header__step-num {
   font-size: 18px;
   color: #576472;
 }
 
-/* line 46, src/scss/_components/common/_header.scss */
+/* line 48, src/scss/_components/common/_header.scss */
 .header__step-num span {
   font-weight: 600;
   font-size: 24px;
@@ -624,6 +635,11 @@ picture {
 }
 
 /* line 65, src/scss/_components/_step.scss */
+.step.step--8 .step__btn {
+  padding-top: 25px;
+}
+
+/* line 70, src/scss/_components/_step.scss */
 .step__container {
   position: relative;
   left: -10px;
@@ -646,7 +662,7 @@ picture {
   background-color: rgba(33, 191, 115, 0.1);
 }
 
-/* line 76, src/scss/_components/_step.scss */
+/* line 81, src/scss/_components/_step.scss */
 .step__container-bg {
   z-index: 0;
   overflow: hidden;
@@ -657,14 +673,14 @@ picture {
   height: 100%;
 }
 
-/* line 85, src/scss/_components/_step.scss */
+/* line 90, src/scss/_components/_step.scss */
 .step__container-bg span {
   position: absolute;
   -webkit-border-radius: 50%;
           border-radius: 50%;
 }
 
-/* line 89, src/scss/_components/_step.scss */
+/* line 94, src/scss/_components/_step.scss */
 .step__container-bg span:nth-of-type(1) {
   top: 40%;
   left: 10%;
@@ -673,7 +689,7 @@ picture {
   background-color: #99F3BD;
 }
 
-/* line 96, src/scss/_components/_step.scss */
+/* line 101, src/scss/_components/_step.scss */
 .step__container-bg span:nth-of-type(2) {
   top: -10px;
   right: 10%;
@@ -682,7 +698,7 @@ picture {
   background-color: #F5DEA3;
 }
 
-/* line 103, src/scss/_components/_step.scss */
+/* line 108, src/scss/_components/_step.scss */
 .step__container-bg span:nth-of-type(3) {
   right: 20%;
   bottom: 20px;
@@ -691,7 +707,7 @@ picture {
   background-color: #99F3BD;
 }
 
-/* line 110, src/scss/_components/_step.scss */
+/* line 115, src/scss/_components/_step.scss */
 .step__container-bg span:nth-of-type(4) {
   left: 15%;
   bottom: 40px;
@@ -700,7 +716,7 @@ picture {
   background-color: #F5DEA3;
 }
 
-/* line 120, src/scss/_components/_step.scss */
+/* line 125, src/scss/_components/_step.scss */
 .step__container-content {
   z-index: 2;
   position: relative;
@@ -710,7 +726,7 @@ picture {
   margin-right: auto;
 }
 
-/* line 130, src/scss/_components/_step.scss */
+/* line 135, src/scss/_components/_step.scss */
 .step__wrapper {
   width: 100%;
   max-width: 1140px;
@@ -718,7 +734,7 @@ picture {
   margin-right: auto;
 }
 
-/* line 137, src/scss/_components/_step.scss */
+/* line 142, src/scss/_components/_step.scss */
 .step__row {
   display: -webkit-box;
   display: -webkit-flex;
@@ -727,7 +743,7 @@ picture {
   padding-top: 50px;
 }
 
-/* line 146, src/scss/_components/_step.scss */
+/* line 151, src/scss/_components/_step.scss */
 .step__col-2 {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -737,7 +753,7 @@ picture {
   max-width: 100%;
 }
 
-/* line 153, src/scss/_components/_step.scss */
+/* line 158, src/scss/_components/_step.scss */
 .step__form {
   width: 100%;
   max-width: 600px;
@@ -745,12 +761,12 @@ picture {
   margin-right: auto;
 }
 
-/* line 161, src/scss/_components/_step.scss */
+/* line 166, src/scss/_components/_step.scss */
 .step__form.step__form--2 .step__form-field:not(:last-of-type) {
   padding-bottom: 10px;
 }
 
-/* line 167, src/scss/_components/_step.scss */
+/* line 172, src/scss/_components/_step.scss */
 .step__form-field {
   display: -webkit-box;
   display: -webkit-flex;
@@ -758,12 +774,12 @@ picture {
   display: flex;
 }
 
-/* line 170, src/scss/_components/_step.scss */
+/* line 175, src/scss/_components/_step.scss */
 .step__form-field:not(:last-of-type) {
   padding-bottom: 25px;
 }
 
-/* line 174, src/scss/_components/_step.scss */
+/* line 179, src/scss/_components/_step.scss */
 .step__form-field label {
   position: relative;
   display: -webkit-box;
@@ -778,7 +794,7 @@ picture {
   width: 100%;
 }
 
-/* line 180, src/scss/_components/_step.scss */
+/* line 185, src/scss/_components/_step.scss */
 .step__form-field label.checkbox {
   cursor: pointer;
   -webkit-box-orient: horizontal;
@@ -800,7 +816,7 @@ picture {
   background-color: #FFFFFF;
 }
 
-/* line 191, src/scss/_components/_step.scss */
+/* line 196, src/scss/_components/_step.scss */
 .step__form-field label.checkbox input {
   opacity: 0;
   position: absolute;
@@ -810,7 +826,7 @@ picture {
   height: 0;
 }
 
-/* line 200, src/scss/_components/_step.scss */
+/* line 205, src/scss/_components/_step.scss */
 .step__form-field label.checkbox input:checked + i {
   border-color: #21BF73;
   -webkit-transition: border-color 0.3s ease-in-out;
@@ -818,7 +834,7 @@ picture {
   transition: border-color 0.3s ease-in-out;
 }
 
-/* line 204, src/scss/_components/_step.scss */
+/* line 209, src/scss/_components/_step.scss */
 .step__form-field label.checkbox input:checked + i:after {
   opacity: 1;
   -webkit-transition: opacity 0.3s ease-in-out;
@@ -826,7 +842,7 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 212, src/scss/_components/_step.scss */
+/* line 217, src/scss/_components/_step.scss */
 .step__form-field label.checkbox i {
   display: -webkit-box;
   display: -webkit-flex;
@@ -849,7 +865,7 @@ picture {
   transition: border-color 0.3s ease-in-out;
 }
 
-/* line 222, src/scss/_components/_step.scss */
+/* line 227, src/scss/_components/_step.scss */
 .step__form-field label.checkbox i:after {
   content: '';
   opacity: 0;
@@ -862,7 +878,7 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 233, src/scss/_components/_step.scss */
+/* line 238, src/scss/_components/_step.scss */
 .step__form-field label.checkbox p {
   padding-bottom: 0;
   font-weight: bold;
@@ -870,12 +886,12 @@ picture {
   color: #163A5F;
 }
 
-/* line 241, src/scss/_components/_step.scss */
+/* line 246, src/scss/_components/_step.scss */
 .step__form-field label.toggle {
   cursor: pointer;
 }
 
-/* line 244, src/scss/_components/_step.scss */
+/* line 249, src/scss/_components/_step.scss */
 .step__form-field label.toggle input {
   opacity: 0;
   position: absolute;
@@ -885,7 +901,7 @@ picture {
   height: 0;
 }
 
-/* line 253, src/scss/_components/_step.scss */
+/* line 258, src/scss/_components/_step.scss */
 .step__form-field label.toggle input:checked + span {
   background-color: #21bf73;
   -webkit-transition: background-color 0.3s ease-in-out;
@@ -893,7 +909,7 @@ picture {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 257, src/scss/_components/_step.scss */
+/* line 262, src/scss/_components/_step.scss */
 .step__form-field label.toggle input:checked + span i {
   -webkit-transform: translateX(30px);
       -ms-transform: translateX(30px);
@@ -905,7 +921,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 265, src/scss/_components/_step.scss */
+/* line 270, src/scss/_components/_step.scss */
 .step__form-field label.toggle span {
   position: relative;
   display: -webkit-box;
@@ -924,7 +940,7 @@ picture {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 275, src/scss/_components/_step.scss */
+/* line 280, src/scss/_components/_step.scss */
 .step__form-field label.toggle span i {
   position: absolute;
   top: 2px;
@@ -946,7 +962,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 291, src/scss/_components/_step.scss */
+/* line 296, src/scss/_components/_step.scss */
 .step__form-field label.file > div {
   display: -webkit-box;
   display: -webkit-flex;
@@ -954,7 +970,7 @@ picture {
   display: flex;
 }
 
-/* line 294, src/scss/_components/_step.scss */
+/* line 299, src/scss/_components/_step.scss */
 .step__form-field label.file > div label {
   position: relative;
   display: -webkit-box;
@@ -974,7 +990,7 @@ picture {
   height: auto;
 }
 
-/* line 302, src/scss/_components/_step.scss */
+/* line 307, src/scss/_components/_step.scss */
 .step__form-field label.file > div label p {
   cursor: pointer;
   display: -webkit-box;
@@ -1000,13 +1016,13 @@ picture {
   background-color: #F1F4F8;
 }
 
-/* line 317, src/scss/_components/_step.scss */
+/* line 322, src/scss/_components/_step.scss */
 .step__form-field label.file > div label span {
   font-size: 14px;
   color: #576472;
 }
 
-/* line 324, src/scss/_components/_step.scss */
+/* line 329, src/scss/_components/_step.scss */
 .step__form-field label.file input {
   opacity: 0;
   position: absolute;
@@ -1015,7 +1031,7 @@ picture {
   max-width: 200px;
 }
 
-/* line 333, src/scss/_components/_step.scss */
+/* line 338, src/scss/_components/_step.scss */
 .step__form-field label h6 {
   padding-bottom: 5px;
   font-weight: 600;
@@ -1023,14 +1039,14 @@ picture {
   color: #163A5F;
 }
 
-/* line 340, src/scss/_components/_step.scss */
+/* line 345, src/scss/_components/_step.scss */
 .step__form-field label p {
   padding-bottom: 10px;
   font-size: 18px;
   color: #163A5F;
 }
 
-/* line 346, src/scss/_components/_step.scss */
+/* line 351, src/scss/_components/_step.scss */
 .step__form-field label input,
 .step__form-field label select {
   outline: none;
@@ -1094,7 +1110,7 @@ picture {
   color: #576472;
 }
 
-/* line 372, src/scss/_components/_step.scss */
+/* line 377, src/scss/_components/_step.scss */
 .step__list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1121,7 +1137,7 @@ picture {
   transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-/* line 385, src/scss/_components/_step.scss */
+/* line 390, src/scss/_components/_step.scss */
 .step__list:hover {
   border-color: #21BF73;
   background-color: #21bf73;
@@ -1130,37 +1146,37 @@ picture {
   transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-/* line 390, src/scss/_components/_step.scss */
+/* line 395, src/scss/_components/_step.scss */
 .step__list:hover img,
 .step__list:hover span {
   color: #ffffff;
 }
 
-/* line 396, src/scss/_components/_step.scss */
+/* line 401, src/scss/_components/_step.scss */
 .step__list > img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* line 401, src/scss/_components/_step.scss */
+/* line 406, src/scss/_components/_step.scss */
 .step__list > img + span {
   padding-left: 10px;
 }
 
-/* line 406, src/scss/_components/_step.scss */
+/* line 411, src/scss/_components/_step.scss */
 .step__list > span {
   font-weight: 500;
   font-size: 16px;
   color: #163A5F;
 }
 
-/* line 412, src/scss/_components/_step.scss */
+/* line 417, src/scss/_components/_step.scss */
 .step__list-wrapper {
   padding-bottom: 40px;
 }
 
-/* line 416, src/scss/_components/_step.scss */
+/* line 421, src/scss/_components/_step.scss */
 .step__list-title {
   padding-bottom: 20px;
   font-weight: bold;
@@ -1168,7 +1184,7 @@ picture {
   color: #163A5F;
 }
 
-/* line 423, src/scss/_components/_step.scss */
+/* line 428, src/scss/_components/_step.scss */
 .step__list-block {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1179,7 +1195,7 @@ picture {
           flex-wrap: wrap;
 }
 
-/* line 429, src/scss/_components/_step.scss */
+/* line 434, src/scss/_components/_step.scss */
 .step__search {
   padding: 10px;
   border: 1px solid rgba(203, 219, 227, 0.8);
@@ -1188,7 +1204,7 @@ picture {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-/* line 435, src/scss/_components/_step.scss */
+/* line 440, src/scss/_components/_step.scss */
 .step__search-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1201,7 +1217,7 @@ picture {
           flex-direction: column;
 }
 
-/* line 440, src/scss/_components/_step.scss */
+/* line 445, src/scss/_components/_step.scss */
 .step__search-title {
   padding-bottom: 10px;
   font-weight: bold;
@@ -1209,7 +1225,7 @@ picture {
   color: #163A5F;
 }
 
-/* line 447, src/scss/_components/_step.scss */
+/* line 452, src/scss/_components/_step.scss */
 .step__search-cover {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1227,7 +1243,7 @@ picture {
   background-color: #FFFFFF;
 }
 
-/* line 455, src/scss/_components/_step.scss */
+/* line 460, src/scss/_components/_step.scss */
 .step__search-cover input {
   outline: none;
   position: relative;
@@ -1282,7 +1298,7 @@ picture {
   font-size: 16px;
 }
 
-/* line 475, src/scss/_components/_step.scss */
+/* line 480, src/scss/_components/_step.scss */
 .step__search-cover .c-btn {
   min-width: 150px;
   height: 57px;
@@ -1290,12 +1306,12 @@ picture {
           box-shadow: none;
 }
 
-/* line 480, src/scss/_components/_step.scss */
+/* line 485, src/scss/_components/_step.scss */
 .step__search-cover .c-btn__wrapper {
   padding-left: 10px;
 }
 
-/* line 487, src/scss/_components/_step.scss */
+/* line 492, src/scss/_components/_step.scss */
 .step__notification {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1312,7 +1328,7 @@ picture {
   width: 100%;
 }
 
-/* line 493, src/scss/_components/_step.scss */
+/* line 498, src/scss/_components/_step.scss */
 .step__notification-wrapper {
   z-index: 2;
   position: relative;
@@ -1331,29 +1347,29 @@ picture {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-/* line 506, src/scss/_components/_step.scss */
+/* line 511, src/scss/_components/_step.scss */
 .step__notification-wrapper .step__form {
   max-width: 100%;
   padding-bottom: 20px;
 }
 
-/* line 512, src/scss/_components/_step.scss */
+/* line 517, src/scss/_components/_step.scss */
 .step__notification-wrapper .step__form-field label p {
   font-size: 14px;
 }
 
-/* line 516, src/scss/_components/_step.scss */
+/* line 521, src/scss/_components/_step.scss */
 .step__notification-wrapper .step__form-field label input {
   height: 48px;
 }
 
-/* line 523, src/scss/_components/_step.scss */
+/* line 528, src/scss/_components/_step.scss */
 .step__notification-wrapper .c-btn {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-/* line 528, src/scss/_components/_step.scss */
+/* line 533, src/scss/_components/_step.scss */
 .step__notification-block {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1365,7 +1381,7 @@ picture {
           align-items: center;
 }
 
-/* line 533, src/scss/_components/_step.scss */
+/* line 538, src/scss/_components/_step.scss */
 .step__notification-block > div:nth-of-type(1) {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1388,21 +1404,21 @@ picture {
   background-color: #F1F4F8;
 }
 
-/* line 544, src/scss/_components/_step.scss */
+/* line 549, src/scss/_components/_step.scss */
 .step__notification-block > div:nth-of-type(1) img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* line 551, src/scss/_components/_step.scss */
+/* line 556, src/scss/_components/_step.scss */
 .step__notification-block > div p {
   font-weight: 500;
   font-size: 18px;
   color: #163A5F;
 }
 
-/* line 559, src/scss/_components/_step.scss */
+/* line 564, src/scss/_components/_step.scss */
 .step__notification-cover {
   width: 100%;
   padding: 40px 50px;
@@ -1413,7 +1429,7 @@ picture {
   background-color: #FFFFFF;
 }
 
-/* line 567, src/scss/_components/_step.scss */
+/* line 572, src/scss/_components/_step.scss */
 .step__notification-title {
   padding-bottom: 5px;
   font-weight: bold;
@@ -1421,14 +1437,14 @@ picture {
   color: #163A5F;
 }
 
-/* line 575, src/scss/_components/_step.scss */
+/* line 580, src/scss/_components/_step.scss */
 .step__notification-desc {
   padding-bottom: 10px;
   font-size: 16px;
   color: #576472;
 }
 
-/* line 581, src/scss/_components/_step.scss */
+/* line 586, src/scss/_components/_step.scss */
 .step__notification-line {
   width: 100%;
   height: 1px;
@@ -1437,7 +1453,7 @@ picture {
   background-color: rgba(87, 100, 114, 0.2);
 }
 
-/* line 590, src/scss/_components/_step.scss */
+/* line 595, src/scss/_components/_step.scss */
 .step__status {
   z-index: 2;
   position: relative;
@@ -1456,7 +1472,7 @@ picture {
   margin-bottom: 50px;
 }
 
-/* line 598, src/scss/_components/_step.scss */
+/* line 603, src/scss/_components/_step.scss */
 .step__status img,
 .step__status svg {
   display: block;
@@ -1468,7 +1484,80 @@ picture {
           filter: drop-shadow(0px 40px 80px rgba(22, 58, 95, 0.05));
 }
 
-/* line 609, src/scss/_components/_step.scss */
+/* line 614, src/scss/_components/_step.scss */
+.step__congratulations {
+  position: relative;
+}
+
+/* line 617, src/scss/_components/_step.scss */
+.step__congratulations-visual {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 625, src/scss/_components/_step.scss */
+.step__congratulations-box {
+  position: relative;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+  max-width: 1040px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #FFFFFF;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* line 637, src/scss/_components/_step.scss */
+.step__congratulations-box-cover {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 50px;
+  background-color: #21BF73;
+  -webkit-box-shadow: 0 40px 80px 0 rgba(33, 191, 115, 0.1);
+          box-shadow: 0 40px 80px 0 rgba(33, 191, 115, 0.1);
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+}
+
+/* line 646, src/scss/_components/_step.scss */
+.step__congratulations-box-cover > div:nth-of-type(1) {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+  padding-right: 50px;
+}
+
+/* line 654, src/scss/_components/_step.scss */
+.step__congratulations-box-cover p {
+  padding-bottom: 10px;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+/* line 660, src/scss/_components/_step.scss */
+.step__congratulations-box-cover span {
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+/* line 668, src/scss/_components/_step.scss */
 .step__btn {
   padding-top: 100px;
 }

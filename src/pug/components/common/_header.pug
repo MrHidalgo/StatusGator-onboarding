@@ -11,11 +11,12 @@ header#header.header
       
     .header__wrapper-right
 
-      .header__step-wrapper
-        div
-          p.header__step-title Step
-        div
-          .header__step
-            p.header__step-num!= "<span>" + stepNum + "</span> / 7"
+      if(!stepBool)
+        .header__step-wrapper
+          div
+            p.header__step-title Step
+          div
+            .header__step
+              p.header__step-num!= "<span>" + stepNum + "</span> / 7"
 
 // HEADER :: END
