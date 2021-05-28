@@ -15,22 +15,22 @@ PageList:
   ready: 55
 - file: screen-5.html
   titleName: Screen - 5
-  ready: 1
-- file: screen-1.html
+  ready: 55
+- file: screen-6.html
   titleName: Screen - 6
-  ready: 0
-- file: screen-1.html
+  ready: 1
+- file: screen-7.html
   titleName: Screen - 7
-  ready: 0
-- file: screen-1.html
+  ready: 1
+- file: screen-8.html
   titleName: Screen - 8
-  ready: 0
-- file: screen-1.html
+  ready: 1
+- file: screen-9.html
   titleName: Screen - 9
-  ready: 0
-- file: screen-1.html
+  ready: 1
+- file: screen-10.html
   titleName: Screen - 10
-  ready: 0
+  ready: 1
 - file: screen-11.html
   titleName: Screen - 11
   ready: 0

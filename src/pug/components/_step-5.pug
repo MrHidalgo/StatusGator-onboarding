@@ -1,0 +1,63 @@
+// SECTION :: START
+
+section#step.step.step--5
+
+  .step__container
+    .step__container-bg
+      span
+      span
+      span
+      span
+    .step__container-content
+      p.step__title.c-title Confire Branded Dashboard
+      p.step__title.c-desc Configure your Branded Dashboard below
+
+  .step__wrapper
+
+    .step__status
+      img(src="img/img-status.svg" alt="")
+
+
+    form.step__form(action='' method='' autocomplete='off')
+      .step__form-field
+        label
+          h6 Template
+          p Full page listing of your service statuses
+          select()
+            option Standard
+            option Action 2
+            option Action 3
+            option Action 4
+            option Action 5
+      .step__form-field
+        label
+          h6 Page Title
+          input(type='text' name='' placeholder='')
+      .step__form-field
+        label
+          h6 Page subtitle
+          input(type='text' name='' placeholder='')
+      .step__form-field
+        label.file
+          h6 Logo
+          p Optionally upload a logo
+          div
+            input(type='file' id='file' name='' placeholder='' inputfile-js)
+            label(for='file')
+              p Choose file
+              span Not file choosen
+
+      .step__form-field
+        label
+          h6 Custome Domain
+          p Host on our domain or your own
+          input(type='text' name='' placeholder='test-dashboard.statusgator.com')
+
+    .step__btn.c-btn__wrapper
+      a.c-btn.c-btn--secondary(href="/screen-4.html")
+        span Previous
+      a.c-btn.c-btn--primary(href="/screen-6.html")
+        span Next
+        i.icon-font.icon-arrow-right
+
+// SECTION :: END
