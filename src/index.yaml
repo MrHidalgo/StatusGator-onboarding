@@ -18,7 +18,7 @@ PageList:
   ready: 55
 - file: screen-6.html
   titleName: Screen - 6
-  ready: 1
+  ready: 55
 - file: screen-7.html
   titleName: Screen - 7
   ready: 1
