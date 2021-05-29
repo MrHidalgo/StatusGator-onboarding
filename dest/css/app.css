@@ -1833,6 +1833,33 @@ picture {
 }
 
 /* line 835, src/scss/_components/_step.scss */
+.step__almostsReady {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* line 842, src/scss/_components/_step.scss */
+.step__almostsReady img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 851, src/scss/_components/_step.scss */
 .step__btn {
   padding-top: 100px;
 }
