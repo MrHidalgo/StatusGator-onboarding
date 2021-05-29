@@ -55,6 +55,28 @@ var initPreventBehavior = function initPreventBehavior() {
 			});
 		});
 	};
+
+	var changeViewBox = function changeViewBox() {
+		$('[change-view-js]').change(function (ev) {
+			var boxNode = $('.statusDash__box-wrapper');
+
+			boxNode.removeClass('is-2 is-4');
+
+			switch ($(ev.currentTarget).val()) {
+				case 'standard':
+					boxNode.removeClass('is-2 is-4');
+					break;
+				case '2':
+					boxNode.removeClass('is-2 is-4').addClass('is-2');
+					break;
+				case '4':
+					boxNode.removeClass('is-2 is-4').addClass('is-4');
+					break;
+				default:
+					break;
+			}
+		});
+	};
 	/*
  * CALLBACK :: end
  * ============================================= */
@@ -74,6 +96,7 @@ var initPreventBehavior = function initPreventBehavior() {
 
 		// callback
 		inputFile();
+		changeViewBox();
 		// ==========================================
 	};
 	initNative();

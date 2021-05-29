@@ -36,6 +36,14 @@ body {
   min-height: 100vh;
   padding-top: 100px;
 
+  &.page-status-dashboard {
+    padding-top: 0;
+
+    &.is-dark {
+      background-color: #28292c;
+    }
+  }
+
   > .body {
     display: flex;
     flex-direction: column;

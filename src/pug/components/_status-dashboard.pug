@@ -1,0 +1,79 @@
+// SECTION :: START
+
+mixin box(title, slogan, statusClass, statusVal)
+  .statusDash__box(class!= statusClass)
+    .statusDash__box-head
+      img(src="img/img-slack.svg" alt="")
+    .statusDash__box-body
+      p.statusDash__box-title!= title
+      if(slogan)
+        p.statusDash__box-slogan!= slogan
+    .statusDash__box-footer
+      p.statusDash__box-status
+        != statusVal
+
+section#statusDash.statusDash
+  .c-grid
+    .statusDash__wrapper
+      .statusDash__wrapper-header
+        div
+
+          .statusDash__logo
+            a(href="#")
+              img(src="img/img-sublogo.png" alt="")
+
+        div
+
+          p.statusDash__title Jeffco Public Schools
+          p.statusDash__slogan Service Dashboard
+
+        div
+
+          .statusDash__view
+            label
+              select(change-view-js)
+                option(value='standard') Standard
+                option(value='2') 2 column
+                option(value='4') 4 column
+
+      .statusDash__wrapper-body
+
+        .statusDash__box-wrapper
+          div.is-info
+            +box('Google Workspace', 'Some user are unable to sign', 'is-down', 'DOWN')
+          div.is-info
+            +box('Heroku', '', 'is-warn', 'WARN')
+          div.is-info
+            +box('Clemson Computing & Information Technology', '', 'is-maint', 'MAINT')
+          div.is-info
+           +box('GitHub', '', 'is-unknown', 'UNKNOWN')
+          div.is-info
+            +box('Google Workspace', 'Some user are unable to sign', 'is-down', 'DOWN')
+          div.is-info
+            +box('Heroku', '', 'is-warn', 'WARN')
+          div.is-info
+            +box('Clemson Computing & Information Technology', '', 'is-maint', 'MAINT')
+          div.is-info
+           +box('GitHub', '', 'is-unknown', 'UNKNOWN')
+          div.is-default
+           +box('Azure', '', '', 'up')
+          div.is-default
+           +box('Google Cloud', '', '', 'up')
+          div.is-default
+           +box('Cloudflare', '', '', 'up')
+          div.is-default
+           +box('Adobe', '', '', 'up')
+          div.is-default
+           +box('Google Cloud', '', '', 'up')
+          div.is-default
+           +box('Cloudflare', '', '', 'up')
+          div.is-default
+           +box('CC Learning Portal', '', '', 'up')
+          div.is-default
+           +box('Google Cloud', '', '', 'up')
+
+
+      .statusDash__wrapper-footer
+        a(href="#") Powered by StatusGator
+
+// SECTION :: END
