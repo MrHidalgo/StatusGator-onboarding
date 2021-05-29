@@ -33,10 +33,10 @@ PageList:
   ready: 55
 - file: screen-11.html
   titleName: Screen - 11
-  ready: 1
+  ready: 55
 - file: screen-12.html
   titleName: Screen - 12
-  ready: 1
+  ready: 55
 - file: success-page.html
   titleName: Success page
   ready: 55
