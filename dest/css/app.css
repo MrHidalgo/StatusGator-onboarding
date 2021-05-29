@@ -1859,7 +1859,29 @@ picture {
   margin-right: auto;
 }
 
-/* line 851, src/scss/_components/_step.scss */
+/* line 852, src/scss/_components/_step.scss */
+.step__success-title {
+  width: 100%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 80px;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  color: #21BF73;
+}
+
+/* line 864, src/scss/_components/_step.scss */
+.step__success-media {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 873, src/scss/_components/_step.scss */
 .step__btn {
   padding-top: 100px;
 }

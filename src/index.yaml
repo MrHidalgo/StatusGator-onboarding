@@ -45,7 +45,7 @@ PageList:
   ready: 0
 - file: success-page.html
   titleName: Success page
-  ready: 0
+  ready: 55
 - file: status-dashboard.html
   titleName: Status dashboard
   ready: 0

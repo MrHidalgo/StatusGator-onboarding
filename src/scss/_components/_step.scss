@@ -848,6 +848,28 @@
 		}
 	}
 
+	&__success {
+		&-title {
+			width: 100%;
+			max-width: 600px;
+			margin-left: auto;
+			margin-right: auto;
+			padding-bottom: 80px;
+			font-weight: bold;
+			font-size: 30px;
+			text-align: center;
+			color: #21BF73;
+		}
+
+		&-media {
+			display: block;
+			max-width: 100%;
+			height: auto;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
 	&__btn {
 		padding-top: 100px;
 	}
