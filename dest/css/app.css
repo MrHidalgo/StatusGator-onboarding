@@ -11,7 +11,7 @@
 }
 
 /* line 23, src/scss/_generated/_spriteFont.scss */
-.icon-arrow-right:before {
+.icon-arrow-right:before, .icon-checked:before {
   font-family: "iconFont", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -22,9 +22,14 @@
   text-transform: none;
 }
 
-/* line 38, src/scss/_generated/_spriteFont.scss */
+/* line 41, src/scss/_generated/_spriteFont.scss */
 .icon-arrow-right:before {
   content: "";
+}
+
+/* line 41, src/scss/_generated/_spriteFont.scss */
+.icon-checked:before {
+  content: "";
 }
 
 @font-face {
@@ -1859,7 +1864,205 @@ picture {
   margin-right: auto;
 }
 
-/* line 852, src/scss/_components/_step.scss */
+/* line 851, src/scss/_components/_step.scss */
+.step__down {
+  z-index: 2;
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  border: 2px solid #FFFFFF;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* line 863, src/scss/_components/_step.scss */
+.step__down-cover {
+  padding: 50px;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  -webkit-box-shadow: 0 40px 80px 0 rgba(22, 58, 95, 0.05);
+          box-shadow: 0 40px 80px 0 rgba(22, 58, 95, 0.05);
+  background-color: #FFFFFF;
+}
+
+/* line 870, src/scss/_components/_step.scss */
+.step__down-title {
+  padding-bottom: 5px;
+  font-size: 24px;
+  text-align: center;
+  color: #FD5E53;
+}
+
+/* line 876, src/scss/_components/_step.scss */
+.step__down-title span {
+  font-weight: 600;
+}
+
+/* line 881, src/scss/_components/_step.scss */
+.step__down-subtitle {
+  padding-bottom: 30px;
+  font-size: 18px;
+  text-align: center;
+  color: #576472;
+}
+
+/* line 888, src/scss/_components/_step.scss */
+.step__down-row {
+  padding: 40px;
+  border: 1px solid rgba(87, 100, 114, 0.2);
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+}
+
+/* line 894, src/scss/_components/_step.scss */
+.step__down-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 901, src/scss/_components/_step.scss */
+.step__down-box.is-disabled .step__down-box-image img {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+/* line 905, src/scss/_components/_step.scss */
+.step__down-box.is-disabled .step__down-box-title {
+  color: #576472;
+}
+
+/* line 908, src/scss/_components/_step.scss */
+.step__down-box.is-disabled .step__down-box-info {
+  color: rgba(87, 100, 114, 0.5);
+}
+
+/* line 916, src/scss/_components/_step.scss */
+.step__down-box.is-send .step__down-box-info {
+  color: #21BF73;
+}
+
+/* line 919, src/scss/_components/_step.scss */
+.step__down-box.is-send .step__down-box-status {
+  border-color: #21BF73;
+  background-color: #21bf73;
+}
+
+/* line 923, src/scss/_components/_step.scss */
+.step__down-box.is-send .step__down-box-status .icon-font {
+  opacity: 1;
+}
+
+/* line 930, src/scss/_components/_step.scss */
+.step__down-box:not(:last-of-type) {
+  margin-bottom: 25px;
+}
+
+/* line 935, src/scss/_components/_step.scss */
+.step__down-box > div:nth-of-type(1) {
+  width: 50px;
+}
+
+/* line 938, src/scss/_components/_step.scss */
+.step__down-box > div:nth-of-type(2), .step__down-box > div:nth-of-type(3) {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+  padding-left: 20px;
+}
+
+/* line 945, src/scss/_components/_step.scss */
+.step__down-box > div:nth-of-type(4) {
+  width: 30px;
+}
+
+/* line 950, src/scss/_components/_step.scss */
+.step__down-box-image {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  background-color: #F1F4F8;
+}
+
+/* line 961, src/scss/_components/_step.scss */
+.step__down-box-image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 970, src/scss/_components/_step.scss */
+.step__down-box-title {
+  font-weight: 500;
+  font-size: 18px;
+  color: #163A5F;
+}
+
+/* line 976, src/scss/_components/_step.scss */
+.step__down-box-info {
+  font-size: 14px;
+  color: #E7AA31;
+}
+
+/* line 981, src/scss/_components/_step.scss */
+.step__down-box-status {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  border: 4px solid #163A5F;
+  background-color: transparent;
+}
+
+/* line 992, src/scss/_components/_step.scss */
+.step__down-box-status .icon-font {
+  opacity: 0;
+  color: #ffffff;
+}
+
+/* line 1001, src/scss/_components/_step.scss */
 .step__success-title {
   width: 100%;
   max-width: 600px;
@@ -1872,7 +2075,7 @@ picture {
   color: #21BF73;
 }
 
-/* line 864, src/scss/_components/_step.scss */
+/* line 1013, src/scss/_components/_step.scss */
 .step__success-media {
   display: block;
   max-width: 100%;
@@ -1881,7 +2084,7 @@ picture {
   margin-right: auto;
 }
 
-/* line 873, src/scss/_components/_step.scss */
+/* line 1022, src/scss/_components/_step.scss */
 .step__btn {
   padding-top: 100px;
 }

@@ -848,6 +848,155 @@
 		}
 	}
 
+	&__down {
+		z-index: 2;
+		position: relative;
+		width: 100%;
+		max-width: 900px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 100px;
+		border: 2px solid #FFFFFF;
+		border-radius: 10px;
+		background-color: rgba(255, 255, 255, 0.5);
+
+		&-cover {
+			padding: 50px;
+			border-radius: 8px;
+			box-shadow: 0 40px 80px 0 rgba(22, 58, 95, 0.05);
+			background-color: #FFFFFF;
+		}
+
+		&-title {
+			padding-bottom: 5px;
+			font-size: 24px;
+			text-align: center;
+			color: #FD5E53;
+
+			span {
+				font-weight: 600;
+			}
+		}
+
+		&-subtitle {
+			padding-bottom: 30px;
+			font-size: 18px;
+			text-align: center;
+			color: #576472;
+		}
+
+		&-row {
+			padding: 40px;
+			border: 1px solid rgba(#576472, 0.2);
+			border-radius: 8px;
+		}
+
+		&-box {
+			display: flex;
+			align-items: center;
+
+			&.is-disabled {
+				.step__down-box {
+					&-image {
+						img {
+							filter: grayscale(1);
+						}
+					}
+					&-title {
+						color: #576472;
+					}
+					&-info {
+						color: rgba(#576472, 0.5);
+					}
+				}
+			}
+
+			&.is-send {
+				.step__down-box {
+					&-info {
+						color: #21BF73;
+					}
+					&-status {
+						border-color: #21BF73;
+						background-color: #21bf73;
+
+						.icon-font {
+							opacity: 1;
+						}
+					}
+				}
+			}
+
+			&:not(:last-of-type) {
+				margin-bottom: 25px;
+			}
+
+			> div {
+				&:nth-of-type(1) {
+					width: 50px;
+				}
+				&:nth-of-type(2),
+				&:nth-of-type(3) {
+					flex: 1;
+					min-width: 1px;
+					max-width: 100%;
+					padding-left: 20px;
+				}
+				&:nth-of-type(4) {
+					width: 30px;
+				}
+			}
+
+			&-image {
+				position: relative;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 50px;
+				height: 50px;
+				padding: 5px;
+				border-radius: 8px;
+				background-color: #F1F4F8;
+
+				img {
+					display: block;
+					max-width: 100%;
+					height: auto;
+					margin-left: auto;
+					margin-right: auto;
+				}
+			}
+
+			&-title {
+				font-weight: 500;
+				font-size: 18px;
+				color: #163A5F;
+			}
+
+			&-info {
+				font-size: 14px;
+				color: #E7AA31;
+			}
+
+			&-status {
+				position: relative;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 30px;
+				height: 30px;
+				border-radius: 50%;
+				border: 4px solid #163A5F;
+				background-color: transparent;
+
+				.icon-font {
+					opacity: 0;
+					color: #ffffff;
+				}
+			}
+		}
+	}
+
 	&__success {
 		&-title {
 			width: 100%;

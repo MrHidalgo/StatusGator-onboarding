@@ -30,6 +30,9 @@
 	@if $filename == arrow-right {
 		$char: "\E001";
 	}
+	@if $filename == checked {
+		$char: "\E002";
+	}
 
 	@return $char;
 }
@@ -47,5 +50,9 @@
 
 .icon-arrow-right {
 	@include icon(arrow-right);
+
+}
+.icon-checked {
+	@include icon(checked);
 
 }
