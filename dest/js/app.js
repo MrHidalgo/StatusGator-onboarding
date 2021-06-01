@@ -154,6 +154,62 @@ var initValidation = function initValidation() {
 			/* ACTION */
 		}
 	});
+
+	$('[step-3-js]').on('click', function (ev) {
+		if ($('.step__list.is-active').length > 0) {
+			window.location = '/screen-4.html';
+		} else {
+			$('.c-btn__error').fadeToggle(500);
+		}
+	});
+
+	/* FORM 5
+ * =============== */
+	var stepForm5 = $(document.formStep5);
+
+	stepForm5.validate({
+		errorPlacement: validationErrorPlacement,
+		highlight: validationHighlight,
+		unhighlight: validationUnhighlight,
+		onkeyup: function onkeyup(element) {
+			$(element).valid();
+		},
+		rules: {
+			step_5_service: 'required',
+			step_5_pageTitle: 'required',
+			step_5_pageSubtitle: 'required',
+			step_5_file: 'required',
+			step_5_domain: 'required'
+		},
+		messages: {
+			step_5_service: {
+				required: "Please specify the Service Statuses"
+			},
+			step_5_pageTitle: {
+				required: "Please specify the Page Title"
+			},
+			step_5_pageSubtitle: {
+				required: "Please specify the Page subtitle"
+			},
+			step_5_file: {
+				required: "Please specify the Logo"
+			},
+			step_5_domain: {
+				required: "Please specify the Custom Domain"
+			}
+		}
+	});
+
+	$('#formStep5 select, #formStep5 input[type="file"]').change(function (ev) {
+		$(ev.currentTarget).val().length > 0 ? $(ev.currentTarget).blur() : '';
+	});
+
+	$('[form-step-5-js]').on('click', function (ev) {
+		if (stepForm5.valid()) {
+			/* ACTION */
+			window.location = '/screen-6.html';
+		}
+	});
 };
 
 /**
@@ -209,6 +265,10 @@ var initValidation = function initValidation() {
 
 		$('.step__list').on('click', function (ev) {
 			$(ev.currentTarget).toggleClass('is-active');
+
+			if ($('.step__list.is-active').length > 0) {
+				$('.c-btn__error').fadeOut(500);
+			}
 		});
 	};
 	/*

@@ -57,6 +57,10 @@
 		
 		$('.step__list').on('click', (ev) => {
 			$(ev.currentTarget).toggleClass('is-active');
+			
+			if($('.step__list.is-active').length > 0) {
+				$('.c-btn__error').fadeOut(500);
+			}
 		});
 	};
 	/*

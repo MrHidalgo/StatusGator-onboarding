@@ -369,6 +369,7 @@ picture {
 
 /* line 18, src/scss/_macros/_btn.scss */
 .c-btn__wrapper {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -383,7 +384,7 @@ picture {
           justify-content: space-between;
 }
 
-/* line 23, src/scss/_macros/_btn.scss */
+/* line 24, src/scss/_macros/_btn.scss */
 .c-btn__wrapper.c-btn__wrapper--center {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -391,7 +392,7 @@ picture {
           justify-content: center;
 }
 
-/* line 26, src/scss/_macros/_btn.scss */
+/* line 27, src/scss/_macros/_btn.scss */
 .c-btn__wrapper.c-btn__wrapper--end {
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
@@ -399,13 +400,43 @@ picture {
           justify-content: flex-end;
 }
 
-/* line 31, src/scss/_macros/_btn.scss */
+/* line 32, src/scss/_macros/_btn.scss */
+.c-btn__error {
+  display: none;
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  width: 100%;
+}
+
+/* line 39, src/scss/_macros/_btn.scss */
+.c-btn__error span {
+  height: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 9px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: red;
+}
+
+/* line 51, src/scss/_macros/_btn.scss */
 .c-btn.c-btn--medium {
   min-width: 170px;
   height: 57px;
 }
 
-/* line 36, src/scss/_macros/_btn.scss */
+/* line 56, src/scss/_macros/_btn.scss */
 .c-btn.c-btn--primary {
   -webkit-box-shadow: 0 6px 20px 0 rgba(40, 223, 153, 0.2), 0 20px 30px 0 rgba(40, 223, 153, 0.2);
           box-shadow: 0 6px 20px 0 rgba(40, 223, 153, 0.2), 0 20px 30px 0 rgba(40, 223, 153, 0.2);
@@ -417,7 +448,7 @@ picture {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 41, src/scss/_macros/_btn.scss */
+/* line 61, src/scss/_macros/_btn.scss */
 .c-btn.c-btn--primary:after {
   content: '';
   position: absolute;
@@ -442,7 +473,7 @@ picture {
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
-/* line 55, src/scss/_macros/_btn.scss */
+/* line 75, src/scss/_macros/_btn.scss */
 .c-btn.c-btn--primary:hover {
   -webkit-transform: translateY(-3px);
       -ms-transform: translateY(-3px);
@@ -456,7 +487,7 @@ picture {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 60, src/scss/_macros/_btn.scss */
+/* line 80, src/scss/_macros/_btn.scss */
 .c-btn.c-btn--primary:hover:after {
   -webkit-transform: skewX(-20deg) translateX(300%);
       -ms-transform: skewX(-20deg) translateX(300%);
@@ -468,7 +499,7 @@ picture {
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
-/* line 65, src/scss/_macros/_btn.scss */
+/* line 85, src/scss/_macros/_btn.scss */
 .c-btn.c-btn--primary:hover .icon-font {
   -webkit-transform: translateX(50%);
       -ms-transform: translateX(50%);
@@ -480,13 +511,13 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 71, src/scss/_macros/_btn.scss */
+/* line 91, src/scss/_macros/_btn.scss */
 .c-btn.c-btn--primary .icon-font,
 .c-btn.c-btn--primary span {
   color: #ffffff;
 }
 
-/* line 76, src/scss/_macros/_btn.scss */
+/* line 96, src/scss/_macros/_btn.scss */
 .c-btn.c-btn--primary .icon-font {
   -webkit-transform-origin: center;
       -ms-transform-origin: center;
@@ -498,7 +529,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 82, src/scss/_macros/_btn.scss */
+/* line 102, src/scss/_macros/_btn.scss */
 .c-btn.c-btn--secondary {
   border: 1px solid #576472;
   background-color: #FFFFFF;
@@ -509,7 +540,7 @@ picture {
   transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 87, src/scss/_macros/_btn.scss */
+/* line 107, src/scss/_macros/_btn.scss */
 .c-btn.c-btn--secondary:after {
   content: '';
   position: absolute;
@@ -534,7 +565,7 @@ picture {
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
-/* line 101, src/scss/_macros/_btn.scss */
+/* line 121, src/scss/_macros/_btn.scss */
 .c-btn.c-btn--secondary:hover {
   background-color: #576472;
   -webkit-transform: translateY(-3px);
@@ -547,7 +578,7 @@ picture {
   transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 106, src/scss/_macros/_btn.scss */
+/* line 126, src/scss/_macros/_btn.scss */
 .c-btn.c-btn--secondary:hover:after {
   -webkit-transform: skewX(-20deg) translateX(300%);
       -ms-transform: skewX(-20deg) translateX(300%);
@@ -562,7 +593,7 @@ picture {
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
-/* line 112, src/scss/_macros/_btn.scss */
+/* line 132, src/scss/_macros/_btn.scss */
 .c-btn.c-btn--secondary:hover span {
   color: #ffffff;
   -webkit-transition: color 0.3s ease-in-out;
@@ -570,7 +601,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 118, src/scss/_macros/_btn.scss */
+/* line 138, src/scss/_macros/_btn.scss */
 .c-btn.c-btn--secondary span {
   font-weight: 500;
   color: #576472;
@@ -579,39 +610,39 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 125, src/scss/_macros/_btn.scss */
+/* line 145, src/scss/_macros/_btn.scss */
 .c-btn.c-btn--white {
   background-color: #FFFFFF;
 }
 
-/* line 128, src/scss/_macros/_btn.scss */
+/* line 148, src/scss/_macros/_btn.scss */
 .c-btn.c-btn--white span {
   font-weight: 500;
   color: #21BF73;
 }
 
-/* line 134, src/scss/_macros/_btn.scss */
+/* line 154, src/scss/_macros/_btn.scss */
 .c-btn.c-btn--red {
   background-color: #FD5E53;
 }
 
-/* line 137, src/scss/_macros/_btn.scss */
+/* line 157, src/scss/_macros/_btn.scss */
 .c-btn.c-btn--red span {
   font-weight: 500;
   color: #fff;
 }
 
-/* line 143, src/scss/_macros/_btn.scss */
+/* line 163, src/scss/_macros/_btn.scss */
 .c-btn .icon-font {
   font-size: 16px;
 }
 
-/* line 146, src/scss/_macros/_btn.scss */
+/* line 166, src/scss/_macros/_btn.scss */
 .c-btn .icon-font + span {
   padding-left: 10px;
 }
 
-/* line 151, src/scss/_macros/_btn.scss */
+/* line 171, src/scss/_macros/_btn.scss */
 .c-btn span {
   z-index: 2;
   position: relative;
@@ -619,12 +650,12 @@ picture {
   font-size: 17px;
 }
 
-/* line 157, src/scss/_macros/_btn.scss */
+/* line 177, src/scss/_macros/_btn.scss */
 .c-btn span + .icon-font {
   margin-left: 10px;
 }
 
-/* line 161, src/scss/_macros/_btn.scss */
+/* line 181, src/scss/_macros/_btn.scss */
 .c-btn span strong {
   font-weight: 700;
 }
@@ -763,11 +794,6 @@ picture {
 /* line 11, src/scss/_components/_step.scss */
 .step.step--3, .step.step--5, .step.step--6, .step.step--7 {
   padding-top: 0;
-}
-
-/* line 17, src/scss/_components/_step.scss */
-.step.step--3 .step__desc, .step.step--5 .step__desc, .step.step--6 .step__desc, .step.step--7 .step__desc {
-  padding-bottom: 0;
 }
 
 /* line 21, src/scss/_components/_step.scss */
@@ -2548,7 +2574,7 @@ picture {
 
 /* line 1222, src/scss/_components/_step.scss */
 .step__btn {
-  padding-top: 50px;
+  padding-top: 75px;
 }
 
 /* line 3, src/scss/_components/_status-dashboard.scss */

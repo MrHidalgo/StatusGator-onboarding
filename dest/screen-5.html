@@ -44,35 +44,36 @@
           <div class="step__container-bg"><span></span><span></span><span></span><span></span></div>
           <div class="step__container-content">
             <p class="step__title c-title">Confire Branded Dashboard</p>
-            <p class="step__title c-desc">Configure your Branded Dashboard below</p>
+            <p class="step__desc c-desc">Configure your Branded Dashboard below</p>
           </div>
         </div>
         <div class="step__wrapper">
           <div class="step__status"><img src="img/img-status.svg" alt=""></div>
-          <form class="step__form" action="" method="" autocomplete="off">
+          <form class="step__form" id="formStep5" name="formStep5" action="" method="" autocomplete="off">
             <div class="step__form-field">
               <label>
                 <h6>Template</h6>
                 <p>Full page listing of your service statuses</p>
-                <select>
-                  <option>Standard</option>
-                  <option>Action 2</option>
-                  <option>Action 3</option>
-                  <option>Action 4</option>
-                  <option>Action 5</option>
+                <select id="step_5_service" name="step_5_service">
+                  <option selected disabled>Select Industry</option>
+                  <option value="Standard">Standard</option>
+                  <option value="Action 2">Action 2</option>
+                  <option value="Action 3">Action 3</option>
+                  <option value="Action 4">Action 4</option>
+                  <option value="Action 5">Action 5</option>
                 </select>
               </label>
             </div>
             <div class="step__form-field">
               <label>
                 <h6>Page Title</h6>
-                <input type="text" name="" placeholder="">
+                <input type="text" id="step_5_pageTitle" name="step_5_pageTitle" placeholder="">
               </label>
             </div>
             <div class="step__form-field">
               <label>
                 <h6>Page subtitle</h6>
-                <input type="text" name="" placeholder="">
+                <input type="text" id="step_5_pageSubtitle" name="step_5_pageSubtitle" placeholder="">
               </label>
             </div>
             <div class="step__form-field">
@@ -80,8 +81,8 @@
                 <h6>Logo</h6>
                 <p>Optionally upload a logo</p>
                 <div>
-                  <input type="file" id="file" name="" placeholder="" inputfile-js>
-                  <label for="file">
+                  <input type="file" id="step_5_file" name="step_5_file" inputfile-js>
+                  <label for="step_5_file">
                     <p>Choose file</p><span>Not file choosen</span>
                   </label>
                 </div>
@@ -89,13 +90,13 @@
             </div>
             <div class="step__form-field">
               <label>
-                <h6>Custome Domain</h6>
+                <h6>Custom Domain</h6>
                 <p>Host on our domain or your own</p>
-                <input type="text" name="" placeholder="test-dashboard.statusgator.com">
+                <input type="text" id="step_5_domain" name="step_5_domain" placeholder="test-dashboard.statusgator.com">
               </label>
             </div>
           </form>
-          <div class="step__btn c-btn__wrapper"><a class="c-btn c-btn--secondary" href="/screen-4.html"><span>Previous</span></a><a class="c-btn c-btn--primary" href="/screen-6.html"><span>Next</span><i class="icon-font icon-arrow-right"></i></a></div>
+          <div class="step__btn c-btn__wrapper"><a class="c-btn c-btn--secondary" href="/screen-4.html"><span>Previous</span></a><a class="c-btn c-btn--primary" href="#" form-step-5-js><span>Next</span><i class="icon-font icon-arrow-right"></i></a></div>
         </div>
       </section>
       <!-- SECTION :: END-->
