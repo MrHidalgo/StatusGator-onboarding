@@ -130,11 +130,12 @@ section#step.step.step--3
         .step__search-wrapper
           p.step__search-title Search for Others
           .step__search
-            .step__search-cover
-              input(type='text' name='' placeholder='')
-              .c-btn__wrapper
-                a.c-btn.c-btn--primary(href="#")
-                  span Search
+            form#formSearchOthers.step__search-cover(name="formSearchOthers" action="" method="" autocomplete="")
+              label
+                input(type='text' id='search_others' name='search_others' placeholder='')
+                .c-btn__wrapper
+                  a.c-btn.c-btn--primary(href="#" form-search-others-js)
+                    span Search
 
 
     .step__btn.c-btn__wrapper

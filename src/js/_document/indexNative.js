@@ -48,6 +48,17 @@
 			
 		});
 	};
+	
+	
+	const formCB = () => {
+		$('[something-else-js]').change((ev) => {
+			$('.step__form-field--hidden').slideToggle(500);
+		});
+		
+		$('.step__list').on('click', (ev) => {
+			$(ev.currentTarget).toggleClass('is-active');
+		});
+	};
 	/*
 	* CALLBACK :: end
 	* ============================================= */
@@ -64,11 +75,13 @@
 		// ==========================================
 
 		// lib
+		initValidation();
 		// ==========================================
 
 		// callback
 		inputFile();
 		changeViewBox();
+		formCB();
 		// ==========================================
 	};
 	initNative();

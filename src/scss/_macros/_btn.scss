@@ -3,6 +3,7 @@
 .c-btn {
   outline: none;
   cursor: pointer;
+  overflow: hidden;
   position: relative;
   display: flex;
   align-items: center;
@@ -35,20 +36,89 @@
   &.c-btn--primary {
     box-shadow: 0 6px 20px 0 rgba(40, 223, 153, 0.2), 0 20px 30px 0 rgba(40, 223, 153, 0.2);
     background-color: #21BF73;
+    @include transition(transform, box-shadow);
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: 0;
+      width: 100px;
+      height: calc(100% + 20px);
+      transform: skewX(-20deg) translateX(-150%);
+      filter: blur(2px);
+      background-color: rgba(#fff, 0.075);
+      transform-origin: center;
+      @include transition(transform 0.5s);
+    }
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px 0 rgba(40, 223, 153, 0.05), 0 20px 30px 0 rgba(40, 223, 153, 0.05);
+      @include transition(transform, box-shadow);
+
+      &:after {
+        transform: skewX(-20deg) translateX(300%);
+        @include transition(transform 0.5s);
+      }
+
+      .icon-font {
+        transform: translateX(50%);
+        @include transition(transform);
+      }
+    }
 
     .icon-font,
     span {
       color: #ffffff;
+    }
+
+    .icon-font {
+      transform-origin: center;
+      @include transition(transform);
     }
   }
   
   &.c-btn--secondary {
     border: 1px solid #576472;
     background-color: #FFFFFF;
+    @include transition(background-color, transform);
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: 0;
+      width: 100px;
+      height: calc(100% + 20px);
+      transform: skewX(-20deg) translateX(-150%);
+      filter: blur(2px);
+      background-color: rgba(#fff, 0.075);
+      transform-origin: center;
+      @include transition(transform 0.5s);
+    }
+
+    &:hover {
+      background-color: #576472;
+      transform: translateY(-3px);
+      @include transition(background-color, transform);
+
+      &:after {
+        transform: skewX(-20deg) translateX(300%);
+        transition-delay: 0.3s;
+        @include transition(transform 0.5s);
+      }
+
+      span {
+        color: #ffffff;
+        @include transition(color);
+      }
+    }
 
     span {
       font-weight: 500;
       color: #576472;
+      @include transition(color);
     }
   }
 
