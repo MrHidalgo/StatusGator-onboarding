@@ -44,48 +44,61 @@
           <div class="step__container-bg"><span></span><span></span><span></span><span></span></div>
           <div class="step__container-content">
             <p class="step__title c-title">Invite Your Team</p>
-            <p class="step__desc c-desc">Managing downtime is easier when you’re not alone. Invite your team to <a href='#'>StatusGator</a> and they can create their own dashboards, configure their own notification, setup component filters, and more.</p>
+            <p class="step__desc c-desc">Managing downtime is easier when you’re not alone. <br>Invite your team to <a href='#'>StatusGator</a> and they can create their own dashboards, configure their own notification, setup component filters, and more.</p>
           </div>
         </div>
         <div class="step__wrapper">
           <div class="step__invite">
             <div class="step__invite-cover">
-              <form class="step__invite-form" action="" method="" autocomplete="off">
+              <form class="step__invite-form" id="formStep6" name="formStep6" action="" method="" autocomplete="off">
                 <p class="step__invite-form-title">Organization Name</p>
                 <div class="step__invite-form-group step__invite-form-group--1">
                   <div>
                     <div class="step__invite-form-field">
-                      <input type="text" name="" placeholder="">
+                      <label>
+                        <input type="text" name="step_6_organization_name" placeholder="" required input-organization-js>
+                      </label>
                     </div>
                   </div>
                   <div>
                     <div class="step__invite-form-field">
-                      <div class="c-btn__wrapper"><a class="c-btn c-btn--medium c-btn--primary" href="#"><span>Create</span></a></div>
+                      <div class="c-btn__wrapper"><a class="c-btn c-btn--medium c-btn--primary" href="#" form-step-6-js><span>Create</span></a></div>
                     </div>
                   </div>
                 </div>
+                <div class="step__invite-form-field">
+                  <div class="c-btn__wrapper"><a class="c-btn c-btn--small c-btn--gray" href="#" skip-organization-js><span>Skip, I work alone</span></a></div>
+                </div>
                 <div class="step__invite-form-line"></div>
+              </form>
+              <form class="step__invite-form" id="formStep7" name="formStep7" action="" method="" autocomplete="off">
                 <p class="step__invite-form-title">Add a New user</p>
                 <p class="step__invite-form-desc">Invite a new user to test555444333 team below. Organization admins can manage other users.</p>
                 <div class="step__invite-form-group step__invite-form-group--2">
                   <div>
                     <div class="step__invite-form-field">
-                      <input type="text" name="" placeholder="">
+                      <label>
+                        <input type="text" name="" placeholder="First name">
+                      </label>
                     </div>
                   </div>
                   <div>
                     <div class="step__invite-form-field">
-                      <input type="text" name="" placeholder="">
+                      <label>
+                        <input type="text" name="" placeholder="Last name">
+                      </label>
                     </div>
                   </div>
                   <div>
                     <div class="step__invite-form-field">
-                      <input type="text" name="" placeholder="">
+                      <label>
+                        <input type="email" name="step_7_email" placeholder="Email *" required>
+                      </label>
                     </div>
                   </div>
                   <div>
                     <div class="step__invite-form-field">
-                      <div class="c-btn__wrapper"><a class="c-btn c-btn--medium c-btn--primary" href="#"><span>Invite</span></a></div>
+                      <div class="c-btn__wrapper"><a class="c-btn c-btn--medium c-btn--primary" href="#" form-step-7-js><span>Invite</span></a></div>
                     </div>
                   </div>
                 </div>

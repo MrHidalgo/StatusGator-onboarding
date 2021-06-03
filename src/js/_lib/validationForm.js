@@ -181,4 +181,60 @@ const initValidation = () => {
 			window.location = '/screen-6.html';
 		}
 	});
+	
+	
+	/* FORM 6 & 7
+	* =============== */
+	const stepForm6 = $(document.formStep6),
+		stepForm7 = $(document.formStep7);
+	
+	stepForm6.validate({
+		errorPlacement: validationErrorPlacement,
+		highlight: validationHighlight,
+		unhighlight: validationUnhighlight,
+		onkeyup: function(element) {
+			$(element).valid();
+		},
+		rules: {
+			step_6_organization_name: 'required',
+		},
+		messages: {
+			step_6_organization_name: {
+				required: "Please specify the Organization Name"
+			}
+		}
+	});
+	
+	stepForm7.validate({
+		errorPlacement: validationErrorPlacement,
+		highlight: validationHighlight,
+		unhighlight: validationUnhighlight,
+		onkeyup: function(element) {
+			$(element).valid();
+		},
+		rules: {
+			step_7_email: {
+				required: true,
+				email: true
+			}
+		},
+		messages: {
+			step_7_email: {
+				required: "Please specify the Email",
+				email: "Must format - name@domain.com"
+			}
+		}
+	});
+	
+	$('[form-step-6-js]').on('click', (ev) => {
+		if(stepForm6.valid()) {
+			/* ACTION */
+		}
+	});
+	
+	$('[form-step-7-js]').on('click', (ev) => {
+		if(stepForm7.valid()) {
+			/* ACTION */
+		}
+	});
 };

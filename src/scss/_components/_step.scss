@@ -148,7 +148,7 @@
 			z-index: 2;
 			position: relative;
 			width: 100%;
-			max-width: 675px;
+			max-width: 750px;
 			margin-left: auto;
 			margin-right: auto;
 		}
@@ -864,6 +864,12 @@
 			box-shadow: 0 40px 80px 0 rgba(22, 58, 95, 0.05);
 			border-radius: 8px;
 			background-color: #FFFFFF;
+			@include adaptive(1279) {
+				padding: 30px;
+			}
+			@include adaptive(767) {
+				padding: 20px 10px;
+			}
 		}
 
 		&-form {
@@ -893,19 +899,43 @@
 
 			&-group {
 				display: flex;
+				@include adaptive(767) {
+				  flex-wrap: wrap;
+				}
 
 				&--1 {
 					> div {
+						@include adaptive(767) {
+							flex: unset;
+							width: 100%;
+
+							.c-btn {
+								width: 100%;
+							}
+						}
+
 						&:nth-of-type(1) {
 							flex: 1;
 							min-width: 1px;
 							max-width: 100%;
 							padding-right: 10px;
+							@include adaptive(767) {
+								padding-right: 0;
+							}
 						}
 					}
 				}
 				&--2 {
 					> div {
+						@include adaptive(767) {
+							flex: unset;
+							width: 100% !important;
+
+							.c-btn {
+								width: 100%;
+							}
+						}
+
 						&:nth-of-type(1) {
 							width: 25%;
 							padding-right: 5px;
@@ -914,15 +944,24 @@
 							width: 25%;
 							padding-left: 5px;
 							padding-right: 5px;
+							@include adaptive(767) {
+								padding: 0;
+							}
 						}
 						&:nth-of-type(3) {
 							flex: 1;
 							min-width: 1px;
 							max-width: 100%;
 							padding-left: 5px;
+							@include adaptive(767) {
+								padding: 0;
+							}
 						}
 						&:nth-of-type(4) {
 							padding-left: 10px;
+							@include adaptive(767) {
+								padding-left: 0;
+							}
 						}
 					}
 				}
@@ -933,8 +972,30 @@
 				padding-bottom: 15px;
 
 				label {
+					position: relative;
 					display: flex;
 					align-items: center;
+
+					label.error {
+						position: absolute;
+						bottom: -15px;
+						left: 0;
+						display: flex;
+						align-items: flex-start;
+						justify-content: center;
+						height: 15px;
+						font-size: 9px;
+						font-weight: 500;
+						text-transform: uppercase;
+						color: red;
+					}
+
+					&.is-error {
+						input {
+							border-color: red;
+							@include transition(border-color);
+						}
+					}
 
 					input {
 

@@ -367,7 +367,7 @@ picture {
   padding-bottom: 60px;
   font-size: 20px;
   text-align: center;
-  color: #576472;
+  color: #163A5F;
 }
 
 @media screen and (max-width: 1535px) {
@@ -382,10 +382,15 @@ picture {
   .c-desc {
     font-size: 16px;
   }
+  /* line 14, src/scss/_macros/_desc.scss */
+  .c-desc br {
+    display: none;
+  }
 }
 
-/* line 15, src/scss/_macros/_desc.scss */
+/* line 19, src/scss/_macros/_desc.scss */
 .c-desc a {
+  font-weight: 600;
   color: #21BF73;
 }
 
@@ -502,12 +507,9 @@ picture {
   height: 57px;
 }
 
-@media screen and (max-width: 1535px) {
-  /* line 60, src/scss/_macros/_btn.scss */
-  .c-btn.c-btn--medium {
-    min-width: 155px;
-    height: 50px;
-  }
+/* line 65, src/scss/_macros/_btn.scss */
+.c-btn.c-btn--small {
+  height: 48px;
 }
 
 /* line 69, src/scss/_macros/_btn.scss */
@@ -707,23 +709,113 @@ picture {
 }
 
 /* line 176, src/scss/_macros/_btn.scss */
+.c-btn.c-btn--gray {
+  border: 1px solid rgba(87, 100, 114, 0.1);
+  background-color: #F1F4F8;
+  -webkit-transition: background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 181, src/scss/_macros/_btn.scss */
+.c-btn.c-btn--gray:after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 100px;
+  height: -webkit-calc(100% + 20px);
+  height: calc(100% + 20px);
+  -webkit-transform: skewX(-20deg) translateX(-150%);
+      -ms-transform: skewX(-20deg) translateX(-150%);
+          transform: skewX(-20deg) translateX(-150%);
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+  background-color: rgba(255, 255, 255, 0.075);
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  -o-transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+/* line 195, src/scss/_macros/_btn.scss */
+.c-btn.c-btn--gray:hover {
+  background-color: rgba(87, 100, 114, 0.2);
+  -webkit-transform: translateY(-3px);
+      -ms-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-transition: background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 200, src/scss/_macros/_btn.scss */
+.c-btn.c-btn--gray:hover:after {
+  -webkit-transform: skewX(-20deg) translateX(300%);
+      -ms-transform: skewX(-20deg) translateX(300%);
+          transform: skewX(-20deg) translateX(300%);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  -o-transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+/* line 206, src/scss/_macros/_btn.scss */
+.c-btn.c-btn--gray.is-active {
+  background-color: rgba(87, 100, 114, 0.2);
+  -webkit-transition: background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 210, src/scss/_macros/_btn.scss */
+.c-btn.c-btn--gray.is-active:after {
+  -webkit-transform: skewX(-20deg) translateX(300%);
+      -ms-transform: skewX(-20deg) translateX(300%);
+          transform: skewX(-20deg) translateX(300%);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  -o-transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+/* line 216, src/scss/_macros/_btn.scss */
+.c-btn.c-btn--gray span {
+  font-weight: 500;
+  font-size: 14px;
+  color: #576472;
+}
+
+/* line 223, src/scss/_macros/_btn.scss */
 .c-btn .icon-font {
   font-size: 16px;
 }
 
 @media screen and (max-width: 1535px) {
-  /* line 176, src/scss/_macros/_btn.scss */
+  /* line 223, src/scss/_macros/_btn.scss */
   .c-btn .icon-font {
     font-size: 15px;
   }
 }
 
-/* line 182, src/scss/_macros/_btn.scss */
+/* line 229, src/scss/_macros/_btn.scss */
 .c-btn .icon-font + span {
   padding-left: 10px;
 }
 
-/* line 187, src/scss/_macros/_btn.scss */
+/* line 234, src/scss/_macros/_btn.scss */
 .c-btn span {
   z-index: 2;
   position: relative;
@@ -732,18 +824,18 @@ picture {
 }
 
 @media screen and (max-width: 1535px) {
-  /* line 187, src/scss/_macros/_btn.scss */
+  /* line 234, src/scss/_macros/_btn.scss */
   .c-btn span {
     font-size: 16px;
   }
 }
 
-/* line 196, src/scss/_macros/_btn.scss */
+/* line 243, src/scss/_macros/_btn.scss */
 .c-btn span + .icon-font {
   margin-left: 10px;
 }
 
-/* line 200, src/scss/_macros/_btn.scss */
+/* line 247, src/scss/_macros/_btn.scss */
 .c-btn span strong {
   font-weight: 700;
 }
@@ -1144,7 +1236,7 @@ picture {
   z-index: 2;
   position: relative;
   width: 100%;
-  max-width: 675px;
+  max-width: 750px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -2287,7 +2379,21 @@ picture {
   background-color: #FFFFFF;
 }
 
-/* line 869, src/scss/_components/_step.scss */
+@media screen and (max-width: 1279px) {
+  /* line 862, src/scss/_components/_step.scss */
+  .step__invite-cover {
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 862, src/scss/_components/_step.scss */
+  .step__invite-cover {
+    padding: 20px 10px;
+  }
+}
+
+/* line 875, src/scss/_components/_step.scss */
 .step__invite-form {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2300,21 +2406,21 @@ picture {
           flex-direction: column;
 }
 
-/* line 873, src/scss/_components/_step.scss */
+/* line 879, src/scss/_components/_step.scss */
 .step__invite-form-title {
   padding-bottom: 15px;
   font-size: 20px;
   color: #163A5F;
 }
 
-/* line 880, src/scss/_components/_step.scss */
+/* line 886, src/scss/_components/_step.scss */
 .step__invite-form-desc {
   padding-bottom: 10px;
   font-size: 14px;
   color: #576472;
 }
 
-/* line 886, src/scss/_components/_step.scss */
+/* line 892, src/scss/_components/_step.scss */
 .step__invite-form-line {
   width: 100%;
   height: 1px;
@@ -2323,7 +2429,7 @@ picture {
   background-color: rgba(87, 100, 114, 0.2);
 }
 
-/* line 894, src/scss/_components/_step.scss */
+/* line 900, src/scss/_components/_step.scss */
 .step__invite-form-group {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2331,7 +2437,31 @@ picture {
   display: flex;
 }
 
-/* line 899, src/scss/_components/_step.scss */
+@media screen and (max-width: 767px) {
+  /* line 900, src/scss/_components/_step.scss */
+  .step__invite-form-group {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 907, src/scss/_components/_step.scss */
+  .step__invite-form-group--1 > div {
+    -webkit-box-flex: unset;
+    -webkit-flex: unset;
+        -ms-flex: unset;
+            flex: unset;
+    width: 100%;
+  }
+  /* line 912, src/scss/_components/_step.scss */
+  .step__invite-form-group--1 > div .c-btn {
+    width: 100%;
+  }
+}
+
+/* line 917, src/scss/_components/_step.scss */
 .step__invite-form-group--1 > div:nth-of-type(1) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -2342,20 +2472,49 @@ picture {
   padding-right: 10px;
 }
 
-/* line 909, src/scss/_components/_step.scss */
+@media screen and (max-width: 767px) {
+  /* line 917, src/scss/_components/_step.scss */
+  .step__invite-form-group--1 > div:nth-of-type(1) {
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 929, src/scss/_components/_step.scss */
+  .step__invite-form-group--2 > div {
+    -webkit-box-flex: unset;
+    -webkit-flex: unset;
+        -ms-flex: unset;
+            flex: unset;
+    width: 100% !important;
+  }
+  /* line 934, src/scss/_components/_step.scss */
+  .step__invite-form-group--2 > div .c-btn {
+    width: 100%;
+  }
+}
+
+/* line 939, src/scss/_components/_step.scss */
 .step__invite-form-group--2 > div:nth-of-type(1) {
   width: 25%;
   padding-right: 5px;
 }
 
-/* line 913, src/scss/_components/_step.scss */
+/* line 943, src/scss/_components/_step.scss */
 .step__invite-form-group--2 > div:nth-of-type(2) {
   width: 25%;
   padding-left: 5px;
   padding-right: 5px;
 }
 
-/* line 918, src/scss/_components/_step.scss */
+@media screen and (max-width: 767px) {
+  /* line 943, src/scss/_components/_step.scss */
+  .step__invite-form-group--2 > div:nth-of-type(2) {
+    padding: 0;
+  }
+}
+
+/* line 951, src/scss/_components/_step.scss */
 .step__invite-form-group--2 > div:nth-of-type(3) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -2366,19 +2525,34 @@ picture {
   padding-left: 5px;
 }
 
-/* line 924, src/scss/_components/_step.scss */
+@media screen and (max-width: 767px) {
+  /* line 951, src/scss/_components/_step.scss */
+  .step__invite-form-group--2 > div:nth-of-type(3) {
+    padding: 0;
+  }
+}
+
+/* line 960, src/scss/_components/_step.scss */
 .step__invite-form-group--2 > div:nth-of-type(4) {
   padding-left: 10px;
 }
 
-/* line 931, src/scss/_components/_step.scss */
+@media screen and (max-width: 767px) {
+  /* line 960, src/scss/_components/_step.scss */
+  .step__invite-form-group--2 > div:nth-of-type(4) {
+    padding-left: 0;
+  }
+}
+
+/* line 970, src/scss/_components/_step.scss */
 .step__invite-form-field {
   position: relative;
   padding-bottom: 15px;
 }
 
-/* line 935, src/scss/_components/_step.scss */
+/* line 974, src/scss/_components/_step.scss */
 .step__invite-form-field label {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2389,7 +2563,39 @@ picture {
           align-items: center;
 }
 
-/* line 943, src/scss/_components/_step.scss */
+/* line 979, src/scss/_components/_step.scss */
+.step__invite-form-field label label.error {
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 15px;
+  font-size: 9px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: red;
+}
+
+/* line 994, src/scss/_components/_step.scss */
+.step__invite-form-field label.is-error input {
+  border-color: red;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* line 1004, src/scss/_components/_step.scss */
 .step__invite-form-field label span {
   padding-top: 2px;
   padding-left: 10px;
@@ -2397,7 +2603,7 @@ picture {
   color: #163A5F;
 }
 
-/* line 951, src/scss/_components/_step.scss */
+/* line 1012, src/scss/_components/_step.scss */
 .step__invite-form-field input[type='text'],
 .step__invite-form-field input[type='email'],
 .step__invite-form-field input[type='number'],
@@ -2473,7 +2679,7 @@ picture {
   color: #576472;
 }
 
-/* line 979, src/scss/_components/_step.scss */
+/* line 1040, src/scss/_components/_step.scss */
 .step__almostsReady {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2491,7 +2697,7 @@ picture {
   padding-bottom: 100px;
 }
 
-/* line 986, src/scss/_components/_step.scss */
+/* line 1047, src/scss/_components/_step.scss */
 .step__almostsReady img {
   display: block;
   max-width: 100%;
@@ -2500,7 +2706,7 @@ picture {
   margin-right: auto;
 }
 
-/* line 995, src/scss/_components/_step.scss */
+/* line 1056, src/scss/_components/_step.scss */
 .step__down {
   z-index: 2;
   position: relative;
@@ -2515,7 +2721,7 @@ picture {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-/* line 1007, src/scss/_components/_step.scss */
+/* line 1068, src/scss/_components/_step.scss */
 .step__down-cover {
   padding: 50px;
   -webkit-border-radius: 8px;
@@ -2525,7 +2731,7 @@ picture {
   background-color: #FFFFFF;
 }
 
-/* line 1014, src/scss/_components/_step.scss */
+/* line 1075, src/scss/_components/_step.scss */
 .step__down-title {
   padding-bottom: 5px;
   font-size: 24px;
@@ -2533,12 +2739,12 @@ picture {
   color: #FD5E53;
 }
 
-/* line 1020, src/scss/_components/_step.scss */
+/* line 1081, src/scss/_components/_step.scss */
 .step__down-title span {
   font-weight: 600;
 }
 
-/* line 1025, src/scss/_components/_step.scss */
+/* line 1086, src/scss/_components/_step.scss */
 .step__down-subtitle {
   padding-bottom: 30px;
   font-size: 18px;
@@ -2546,7 +2752,7 @@ picture {
   color: #576472;
 }
 
-/* line 1032, src/scss/_components/_step.scss */
+/* line 1093, src/scss/_components/_step.scss */
 .step__down-row {
   padding: 40px;
   border: 1px solid rgba(87, 100, 114, 0.2);
@@ -2554,7 +2760,7 @@ picture {
           border-radius: 8px;
 }
 
-/* line 1038, src/scss/_components/_step.scss */
+/* line 1099, src/scss/_components/_step.scss */
 .step__down-box {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2566,49 +2772,49 @@ picture {
           align-items: center;
 }
 
-/* line 1045, src/scss/_components/_step.scss */
+/* line 1106, src/scss/_components/_step.scss */
 .step__down-box.is-disabled .step__down-box-image img {
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
 }
 
-/* line 1049, src/scss/_components/_step.scss */
+/* line 1110, src/scss/_components/_step.scss */
 .step__down-box.is-disabled .step__down-box-title {
   color: #576472;
 }
 
-/* line 1052, src/scss/_components/_step.scss */
+/* line 1113, src/scss/_components/_step.scss */
 .step__down-box.is-disabled .step__down-box-info {
   color: rgba(87, 100, 114, 0.5);
 }
 
-/* line 1060, src/scss/_components/_step.scss */
+/* line 1121, src/scss/_components/_step.scss */
 .step__down-box.is-send .step__down-box-info {
   color: #21BF73;
 }
 
-/* line 1063, src/scss/_components/_step.scss */
+/* line 1124, src/scss/_components/_step.scss */
 .step__down-box.is-send .step__down-box-status {
   border-color: #21BF73;
   background-color: #21bf73;
 }
 
-/* line 1067, src/scss/_components/_step.scss */
+/* line 1128, src/scss/_components/_step.scss */
 .step__down-box.is-send .step__down-box-status .icon-font {
   opacity: 1;
 }
 
-/* line 1074, src/scss/_components/_step.scss */
+/* line 1135, src/scss/_components/_step.scss */
 .step__down-box:not(:last-of-type) {
   margin-bottom: 25px;
 }
 
-/* line 1079, src/scss/_components/_step.scss */
+/* line 1140, src/scss/_components/_step.scss */
 .step__down-box > div:nth-of-type(1) {
   width: 50px;
 }
 
-/* line 1082, src/scss/_components/_step.scss */
+/* line 1143, src/scss/_components/_step.scss */
 .step__down-box > div:nth-of-type(2), .step__down-box > div:nth-of-type(3) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -2619,12 +2825,12 @@ picture {
   padding-left: 20px;
 }
 
-/* line 1089, src/scss/_components/_step.scss */
+/* line 1150, src/scss/_components/_step.scss */
 .step__down-box > div:nth-of-type(4) {
   width: 30px;
 }
 
-/* line 1094, src/scss/_components/_step.scss */
+/* line 1155, src/scss/_components/_step.scss */
 .step__down-box-image {
   position: relative;
   display: -webkit-box;
@@ -2647,7 +2853,7 @@ picture {
   background-color: #F1F4F8;
 }
 
-/* line 1105, src/scss/_components/_step.scss */
+/* line 1166, src/scss/_components/_step.scss */
 .step__down-box-image img {
   display: block;
   max-width: 100%;
@@ -2656,20 +2862,20 @@ picture {
   margin-right: auto;
 }
 
-/* line 1114, src/scss/_components/_step.scss */
+/* line 1175, src/scss/_components/_step.scss */
 .step__down-box-title {
   font-weight: 500;
   font-size: 18px;
   color: #163A5F;
 }
 
-/* line 1120, src/scss/_components/_step.scss */
+/* line 1181, src/scss/_components/_step.scss */
 .step__down-box-info {
   font-size: 14px;
   color: #E7AA31;
 }
 
-/* line 1125, src/scss/_components/_step.scss */
+/* line 1186, src/scss/_components/_step.scss */
 .step__down-box-status {
   position: relative;
   display: -webkit-box;
@@ -2692,13 +2898,13 @@ picture {
   background-color: transparent;
 }
 
-/* line 1136, src/scss/_components/_step.scss */
+/* line 1197, src/scss/_components/_step.scss */
 .step__down-box-status .icon-font {
   opacity: 0;
   color: #ffffff;
 }
 
-/* line 1144, src/scss/_components/_step.scss */
+/* line 1205, src/scss/_components/_step.scss */
 .step__updating {
   z-index: 2;
   position: relative;
@@ -2713,7 +2919,7 @@ picture {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-/* line 1156, src/scss/_components/_step.scss */
+/* line 1217, src/scss/_components/_step.scss */
 .step__updating-cover {
   padding: 50px;
   -webkit-border-radius: 8px;
@@ -2723,7 +2929,7 @@ picture {
   background-color: #FFFFFF;
 }
 
-/* line 1163, src/scss/_components/_step.scss */
+/* line 1224, src/scss/_components/_step.scss */
 .step__updating-header {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2740,19 +2946,19 @@ picture {
   padding-bottom: 10px;
 }
 
-/* line 1170, src/scss/_components/_step.scss */
+/* line 1231, src/scss/_components/_step.scss */
 .step__updating-title {
   font-weight: 600;
   font-size: 24px;
   color: #163A5F;
 }
 
-/* line 1175, src/scss/_components/_step.scss */
+/* line 1236, src/scss/_components/_step.scss */
 .step__updating-title span {
   color: #FD5E53;
 }
 
-/* line 1180, src/scss/_components/_step.scss */
+/* line 1241, src/scss/_components/_step.scss */
 .step__updating-num {
   font-weight: 600;
   font-size: 36px;
@@ -2760,19 +2966,19 @@ picture {
   color: #FD5E53;
 }
 
-/* line 1187, src/scss/_components/_step.scss */
+/* line 1248, src/scss/_components/_step.scss */
 .step__updating-desc {
   padding-bottom: 30px;
   font-size: 14px;
   color: #576472;
 }
 
-/* line 1192, src/scss/_components/_step.scss */
+/* line 1253, src/scss/_components/_step.scss */
 .step__updating-desc strong {
   font-weight: 600;
 }
 
-/* line 1197, src/scss/_components/_step.scss */
+/* line 1258, src/scss/_components/_step.scss */
 .step__updating-row {
   padding: 40px;
   border: 1px solid rgba(87, 100, 114, 0.2);
@@ -2780,7 +2986,7 @@ picture {
           border-radius: 8px;
 }
 
-/* line 1203, src/scss/_components/_step.scss */
+/* line 1264, src/scss/_components/_step.scss */
 .step__updating-list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2792,14 +2998,14 @@ picture {
           align-items: center;
 }
 
-/* line 1207, src/scss/_components/_step.scss */
+/* line 1268, src/scss/_components/_step.scss */
 .step__updating-list:not(:last-of-type) {
   padding-bottom: 20px;
   margin-bottom: 20px;
   border-bottom: 1px solid rgba(87, 100, 114, 0.2);
 }
 
-/* line 1213, src/scss/_components/_step.scss */
+/* line 1274, src/scss/_components/_step.scss */
 .step__updating-list-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2812,12 +3018,12 @@ picture {
           flex-direction: column;
 }
 
-/* line 1219, src/scss/_components/_step.scss */
+/* line 1280, src/scss/_components/_step.scss */
 .step__updating-list > div:nth-of-type(1) {
   width: 20px;
 }
 
-/* line 1222, src/scss/_components/_step.scss */
+/* line 1283, src/scss/_components/_step.scss */
 .step__updating-list > div:nth-of-type(2) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -2829,12 +3035,12 @@ picture {
   padding-right: 10px;
 }
 
-/* line 1229, src/scss/_components/_step.scss */
+/* line 1290, src/scss/_components/_step.scss */
 .step__updating-list > div:nth-of-type(3) {
   width: 70px;
 }
 
-/* line 1234, src/scss/_components/_step.scss */
+/* line 1295, src/scss/_components/_step.scss */
 .step__updating-list-logo {
   display: block;
   max-width: 100%;
@@ -2842,14 +3048,14 @@ picture {
   max-height: 100%;
 }
 
-/* line 1241, src/scss/_components/_step.scss */
+/* line 1302, src/scss/_components/_step.scss */
 .step__updating-list-name {
   font-weight: 500;
   font-size: 16px;
   color: #576472;
 }
 
-/* line 1247, src/scss/_components/_step.scss */
+/* line 1308, src/scss/_components/_step.scss */
 .step__updating-list-status {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2874,12 +3080,12 @@ picture {
   color: #fff;
 }
 
-/* line 1260, src/scss/_components/_step.scss */
+/* line 1321, src/scss/_components/_step.scss */
 .step__updating-list-status.is-down {
   background-color: #fd5e53;
 }
 
-/* line 1268, src/scss/_components/_step.scss */
+/* line 1329, src/scss/_components/_step.scss */
 .step__success-title {
   width: 100%;
   max-width: 600px;
@@ -2893,14 +3099,14 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1268, src/scss/_components/_step.scss */
+  /* line 1329, src/scss/_components/_step.scss */
   .step__success-title {
     padding-bottom: 50px;
     font-size: 27px;
   }
 }
 
-/* line 1284, src/scss/_components/_step.scss */
+/* line 1345, src/scss/_components/_step.scss */
 .step__success-media {
   display: block;
   max-width: 100%;
@@ -2909,13 +3115,13 @@ picture {
   margin-right: auto;
 }
 
-/* line 1293, src/scss/_components/_step.scss */
+/* line 1354, src/scss/_components/_step.scss */
 .step__btn {
   padding-top: 75px;
 }
 
 @media screen and (max-width: 1535px) {
-  /* line 1293, src/scss/_components/_step.scss */
+  /* line 1354, src/scss/_components/_step.scss */
   .step__btn {
     padding-top: 55px;
   }

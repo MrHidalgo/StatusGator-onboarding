@@ -210,6 +210,61 @@ var initValidation = function initValidation() {
 			window.location = '/screen-6.html';
 		}
 	});
+
+	/* FORM 6 & 7
+ * =============== */
+	var stepForm6 = $(document.formStep6),
+	    stepForm7 = $(document.formStep7);
+
+	stepForm6.validate({
+		errorPlacement: validationErrorPlacement,
+		highlight: validationHighlight,
+		unhighlight: validationUnhighlight,
+		onkeyup: function onkeyup(element) {
+			$(element).valid();
+		},
+		rules: {
+			step_6_organization_name: 'required'
+		},
+		messages: {
+			step_6_organization_name: {
+				required: "Please specify the Organization Name"
+			}
+		}
+	});
+
+	stepForm7.validate({
+		errorPlacement: validationErrorPlacement,
+		highlight: validationHighlight,
+		unhighlight: validationUnhighlight,
+		onkeyup: function onkeyup(element) {
+			$(element).valid();
+		},
+		rules: {
+			step_7_email: {
+				required: true,
+				email: true
+			}
+		},
+		messages: {
+			step_7_email: {
+				required: "Please specify the Email",
+				email: "Must format - name@domain.com"
+			}
+		}
+	});
+
+	$('[form-step-6-js]').on('click', function (ev) {
+		if (stepForm6.valid()) {
+			/* ACTION */
+		}
+	});
+
+	$('[form-step-7-js]').on('click', function (ev) {
+		if (stepForm7.valid()) {
+			/* ACTION */
+		}
+	});
 };
 
 /**
@@ -268,6 +323,18 @@ var initValidation = function initValidation() {
 
 			if ($('.step__list.is-active').length > 0) {
 				$('.c-btn__error').fadeOut(500);
+			}
+		});
+
+		$('[skip-organization-js]').on('click', function (ev) {
+			if ($(ev.currentTarget).hasClass('is-active')) {
+				$(ev.currentTarget).removeClass('is-active');
+				$('[form-step-6-js]').attr('style', '');
+				$('[input-organization-js]').attr('required', true);
+			} else {
+				$(ev.currentTarget).addClass('is-active');
+				$('[form-step-6-js]').css({ 'pointerEvents': 'none' });
+				$('[input-organization-js]').removeAttr('required');
 			}
 		});
 	};

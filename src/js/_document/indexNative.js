@@ -62,6 +62,18 @@
 				$('.c-btn__error').fadeOut(500);
 			}
 		});
+		
+		$('[skip-organization-js]').on('click', (ev) => {
+			if($(ev.currentTarget).hasClass('is-active')) {
+				$(ev.currentTarget).removeClass('is-active');
+				$('[form-step-6-js]').attr('style', '');
+				$('[input-organization-js]').attr('required', true);
+			} else {
+				$(ev.currentTarget).addClass('is-active');
+				$('[form-step-6-js]').css({'pointerEvents': 'none'});
+				$('[input-organization-js]').removeAttr('required');
+			}
+		});
 	};
 	/*
 	* CALLBACK :: end
