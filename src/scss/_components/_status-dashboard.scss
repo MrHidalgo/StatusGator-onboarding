@@ -3,6 +3,9 @@
 .statusDash {
 	position: relative;
 	padding-top: 50px;
+	@include adaptive(1024) {
+		padding-top: 20px;
+	}
 
 	.is-dark & {
 		.statusDash {
@@ -25,9 +28,9 @@
 
 	.c-grid {
 		width: 100%;
-		max-width: 1170px;
-		padding-left: 15px;
-		padding-right: 15px;
+		max-width: 1160px;
+		padding-left: 10px;
+		padding-right: 10px;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -49,6 +52,12 @@
 				&:nth-of-type(3) {
 					width: 100%;
 					max-width: 210px;
+					@include adaptive(1024) {
+						max-width: 175px;
+					}
+					@include adaptive(767) {
+						max-width: 125px;
+					}
 				}
 
 				&:nth-of-type(2) {
@@ -57,11 +66,22 @@
 					max-width: 100%;
 					padding-left: 50px;
 					padding-right: 50px;
+					@include adaptive(1024) {
+						padding-left: 20px;
+						padding-right: 20px;
+					}
+					@include adaptive(767) {
+						padding-left: 10px;
+						padding-right: 0;
+					}
 				}
 
 				&:nth-of-type(3) {
 					display: flex;
 					justify-content: flex-end;
+					@include adaptive(767) {
+						display: none;
+					}
 				}
 			}
 		}
@@ -90,6 +110,9 @@
 
 	&__logo {
 		display: flex;
+		@include adaptive(1024) {
+			max-width: 155px;
+		}
 
 		a {
 			display: flex;
@@ -111,12 +134,26 @@
 		font-size: 36px;
 		line-height: 1;
 		color: #163A5F;
+		@include adaptive(1024) {
+			font-size: 33px;
+		}
+		@include adaptive(767) {
+			font-size: 30px;
+			text-align: right;
+		}
 	}
 
 	&__slogan {
 		font-size: 18px;
 		line-height: 1;
 		color: #576472;
+		@include adaptive(1024) {
+			font-size: 16px;
+		}
+		@include adaptive(767) {
+			font-size: 14px;
+			text-align: right;
+		}
 	}
 
 	&__view {
@@ -147,7 +184,7 @@
 		align-items: center;
 		justify-content: space-between;
 		width: 100%;
-		min-height: 90px;
+		min-height: 100%;
 		padding: 20px;
 		border: 1px solid #B0B6BF;
 
@@ -193,70 +230,74 @@
 			margin-right: auto;
 
 			&.is-2 {
-				max-width: 100%;
-				padding-bottom: 20px;
+				@include respondCustom('(min-width: 768px)') {
+					max-width: 100%;
+					padding-bottom: 20px;
 
-				> div {
-					max-width: 50%;
+					> div {
+						max-width: 50%;
 
-					&:nth-last-of-type(1),
-					&:nth-last-of-type(2) {
-						padding-bottom: 0;
-					}
-
-					&.is-info {
-						& + .is-default {
-							padding-top: 0;
-							border-top: none;
+						&:nth-last-of-type(1),
+						&:nth-last-of-type(2) {
+							padding-bottom: 0;
 						}
-					}
 
-					&:nth-of-type(odd) {
-						padding-right: 40px;
-						border-right: 1px solid rgba(#576472, 0.2);
-					}
-					&:nth-of-type(even) {
-						padding-left: 40px;
+						&.is-info {
+							& + .is-default {
+								padding-top: 0;
+								border-top: none;
+							}
+						}
+
+						&:nth-of-type(odd) {
+							padding-right: 40px;
+							border-right: 1px solid rgba(#576472, 0.2);
+						}
+						&:nth-of-type(even) {
+							padding-left: 40px;
+						}
 					}
 				}
 			}
 			&.is-4 {
-				position: relative;
-				left: -20px;
-				width: calc(100% + 20px);
-				max-width: unset;
+				@include respondCustom('(min-width: 768px)') {
+					position: relative;
+					left: -20px;
+					width: calc(100% + 20px);
+					max-width: unset;
 
-				> div {
-					max-width: calc(100% / 4);
-					padding-left: 20px;
+					> div {
+						max-width: calc(100% / 4);
+						padding-left: 20px;
 
-					&.is-info {
-						& + .is-default {
-							padding: 0;
-							padding-left: 20px;
-							border-top: none;
+						&.is-info {
+							& + .is-default {
+								padding: 0;
+								padding-left: 20px;
+								border-top: none;
+							}
 						}
 					}
-				}
 
-				.statusDash__box {
-					align-items: flex-start;
-					flex-direction: column;
-					min-height: 270px;
-					padding: 30px;
+					.statusDash__box {
+						align-items: flex-start;
+						flex-direction: column;
+						min-height: 270px;
+						padding: 30px;
 
-					&-body {
-						padding: 20px 0;
-					}
+						&-body {
+							padding: 20px 0;
+						}
 
-					&-footer {
-						width: 100%;
-					}
+						&-footer {
+							width: 100%;
+						}
 
-					&-title {
-						overflow: hidden;
-						white-space: nowrap;
-						text-overflow: ellipsis;
+						&-title {
+							overflow: hidden;
+							white-space: nowrap;
+							text-overflow: ellipsis;
+						}
 					}
 				}
 			}
@@ -297,6 +338,9 @@
 
 		&-footer {
 			width: 100px;
+			@include adaptive(1024) {
+				width: 85px;
+			}
 		}
 
 		&-title {
@@ -304,6 +348,9 @@
 			font-weight: bold;
 			font-size: 20px;
 			color: #163A5F;
+			@include adaptive(1024) {
+				font-size: 16px;
+			}
 		}
 
 		&-slogan {
@@ -324,6 +371,13 @@
 			text-align: center;
 			text-transform: uppercase;
 			color: #FFFFFF;
+			@include adaptive(1024) {
+				height: 40px;
+				font-size: 15px;
+			}
+			@include adaptive(767) {
+				font-size: 13px;
+			}
 		}
 	}
 }

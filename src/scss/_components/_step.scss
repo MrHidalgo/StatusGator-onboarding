@@ -1275,6 +1275,10 @@
 			font-size: 30px;
 			text-align: center;
 			color: #21BF73;
+			@include adaptive(767) {
+				padding-bottom: 50px;
+				font-size: 27px;
+			}
 		}
 
 		&-media {

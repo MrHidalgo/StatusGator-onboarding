@@ -933,12 +933,26 @@ picture {
   border-top: 1px solid rgba(87, 100, 114, 0.2);
 }
 
-/* line 18, src/scss/_components/common/_footer.scss */
+@media screen and (max-width: 767px) {
+  /* line 7, src/scss/_components/common/_footer.scss */
+  .footer__wrapper {
+    height: 55px;
+  }
+}
+
+/* line 21, src/scss/_components/common/_footer.scss */
 .footer__wrapper p {
   font-size: 12px;
   line-height: 15px;
   text-align: center;
   color: #576472;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 21, src/scss/_components/common/_footer.scss */
+  .footer__wrapper p {
+    font-size: 11px;
+  }
 }
 
 /* line 3, src/scss/_components/_step.scss */
@@ -2878,7 +2892,15 @@ picture {
   color: #21BF73;
 }
 
-/* line 1280, src/scss/_components/_step.scss */
+@media screen and (max-width: 767px) {
+  /* line 1268, src/scss/_components/_step.scss */
+  .step__success-title {
+    padding-bottom: 50px;
+    font-size: 27px;
+  }
+}
+
+/* line 1284, src/scss/_components/_step.scss */
 .step__success-media {
   display: block;
   max-width: 100%;
@@ -2887,13 +2909,13 @@ picture {
   margin-right: auto;
 }
 
-/* line 1289, src/scss/_components/_step.scss */
+/* line 1293, src/scss/_components/_step.scss */
 .step__btn {
   padding-top: 75px;
 }
 
 @media screen and (max-width: 1535px) {
-  /* line 1289, src/scss/_components/_step.scss */
+  /* line 1293, src/scss/_components/_step.scss */
   .step__btn {
     padding-top: 55px;
   }
@@ -2905,27 +2927,34 @@ picture {
   padding-top: 50px;
 }
 
-/* line 9, src/scss/_components/_status-dashboard.scss */
+@media screen and (max-width: 1024px) {
+  /* line 3, src/scss/_components/_status-dashboard.scss */
+  .statusDash {
+    padding-top: 20px;
+  }
+}
+
+/* line 12, src/scss/_components/_status-dashboard.scss */
 .is-dark .statusDash .statusDash__title, .is-dark .statusDash .statusDash__slogan, .is-dark .statusDash .statusDash__box-title, .is-dark .statusDash .statusDash__box-slogan {
   color: #ffffff;
 }
 
-/* line 18, src/scss/_components/_status-dashboard.scss */
+/* line 21, src/scss/_components/_status-dashboard.scss */
 .is-dark .statusDash .statusDash__view label select {
   color: #ffffff;
 }
 
-/* line 26, src/scss/_components/_status-dashboard.scss */
+/* line 29, src/scss/_components/_status-dashboard.scss */
 .statusDash .c-grid {
   width: 100%;
-  max-width: 1170px;
-  padding-left: 15px;
-  padding-right: 15px;
+  max-width: 1160px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 35, src/scss/_components/_status-dashboard.scss */
+/* line 38, src/scss/_components/_status-dashboard.scss */
 .statusDash__wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2938,7 +2967,7 @@ picture {
           flex-direction: column;
 }
 
-/* line 39, src/scss/_components/_status-dashboard.scss */
+/* line 42, src/scss/_components/_status-dashboard.scss */
 .statusDash__wrapper-header {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2957,13 +2986,27 @@ picture {
   border-bottom: 1px solid rgba(87, 100, 114, 0.2);
 }
 
-/* line 48, src/scss/_components/_status-dashboard.scss */
+/* line 51, src/scss/_components/_status-dashboard.scss */
 .statusDash__wrapper-header > div:nth-of-type(1), .statusDash__wrapper-header > div:nth-of-type(3) {
   width: 100%;
   max-width: 210px;
 }
 
-/* line 54, src/scss/_components/_status-dashboard.scss */
+@media screen and (max-width: 1024px) {
+  /* line 51, src/scss/_components/_status-dashboard.scss */
+  .statusDash__wrapper-header > div:nth-of-type(1), .statusDash__wrapper-header > div:nth-of-type(3) {
+    max-width: 175px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 51, src/scss/_components/_status-dashboard.scss */
+  .statusDash__wrapper-header > div:nth-of-type(1), .statusDash__wrapper-header > div:nth-of-type(3) {
+    max-width: 125px;
+  }
+}
+
+/* line 63, src/scss/_components/_status-dashboard.scss */
 .statusDash__wrapper-header > div:nth-of-type(2) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -2975,7 +3018,23 @@ picture {
   padding-right: 50px;
 }
 
-/* line 62, src/scss/_components/_status-dashboard.scss */
+@media screen and (max-width: 1024px) {
+  /* line 63, src/scss/_components/_status-dashboard.scss */
+  .statusDash__wrapper-header > div:nth-of-type(2) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 63, src/scss/_components/_status-dashboard.scss */
+  .statusDash__wrapper-header > div:nth-of-type(2) {
+    padding-left: 10px;
+    padding-right: 0;
+  }
+}
+
+/* line 79, src/scss/_components/_status-dashboard.scss */
 .statusDash__wrapper-header > div:nth-of-type(3) {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2987,13 +3046,20 @@ picture {
           justify-content: flex-end;
 }
 
-/* line 69, src/scss/_components/_status-dashboard.scss */
+@media screen and (max-width: 767px) {
+  /* line 79, src/scss/_components/_status-dashboard.scss */
+  .statusDash__wrapper-header > div:nth-of-type(3) {
+    display: none;
+  }
+}
+
+/* line 89, src/scss/_components/_status-dashboard.scss */
 .statusDash__wrapper-body {
   padding-top: 15px;
   padding-bottom: 35px;
 }
 
-/* line 74, src/scss/_components/_status-dashboard.scss */
+/* line 94, src/scss/_components/_status-dashboard.scss */
 .statusDash__wrapper-footer {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3011,7 +3077,7 @@ picture {
   border-top: 1px solid rgba(87, 100, 114, 0.2);
 }
 
-/* line 81, src/scss/_components/_status-dashboard.scss */
+/* line 101, src/scss/_components/_status-dashboard.scss */
 .statusDash__wrapper-footer a {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3023,7 +3089,7 @@ picture {
   color: #21BF73;
 }
 
-/* line 91, src/scss/_components/_status-dashboard.scss */
+/* line 111, src/scss/_components/_status-dashboard.scss */
 .statusDash__logo {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3031,7 +3097,14 @@ picture {
   display: flex;
 }
 
-/* line 94, src/scss/_components/_status-dashboard.scss */
+@media screen and (max-width: 1024px) {
+  /* line 111, src/scss/_components/_status-dashboard.scss */
+  .statusDash__logo {
+    max-width: 155px;
+  }
+}
+
+/* line 117, src/scss/_components/_status-dashboard.scss */
 .statusDash__logo a {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3044,14 +3117,14 @@ picture {
   max-width: 210px;
 }
 
-/* line 99, src/scss/_components/_status-dashboard.scss */
+/* line 122, src/scss/_components/_status-dashboard.scss */
 .statusDash__logo a img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* line 107, src/scss/_components/_status-dashboard.scss */
+/* line 130, src/scss/_components/_status-dashboard.scss */
 .statusDash__title {
   padding-bottom: 5px;
   font-weight: bold;
@@ -3060,14 +3133,44 @@ picture {
   color: #163A5F;
 }
 
-/* line 116, src/scss/_components/_status-dashboard.scss */
+@media screen and (max-width: 1024px) {
+  /* line 130, src/scss/_components/_status-dashboard.scss */
+  .statusDash__title {
+    font-size: 33px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 130, src/scss/_components/_status-dashboard.scss */
+  .statusDash__title {
+    font-size: 30px;
+    text-align: right;
+  }
+}
+
+/* line 146, src/scss/_components/_status-dashboard.scss */
 .statusDash__slogan {
   font-size: 18px;
   line-height: 1;
   color: #576472;
 }
 
-/* line 122, src/scss/_components/_status-dashboard.scss */
+@media screen and (max-width: 1024px) {
+  /* line 146, src/scss/_components/_status-dashboard.scss */
+  .statusDash__slogan {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 146, src/scss/_components/_status-dashboard.scss */
+  .statusDash__slogan {
+    font-size: 14px;
+    text-align: right;
+  }
+}
+
+/* line 159, src/scss/_components/_status-dashboard.scss */
 .statusDash__view {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3075,7 +3178,7 @@ picture {
   display: flex;
 }
 
-/* line 125, src/scss/_components/_status-dashboard.scss */
+/* line 162, src/scss/_components/_status-dashboard.scss */
 .statusDash__view label {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3083,7 +3186,7 @@ picture {
   display: flex;
 }
 
-/* line 128, src/scss/_components/_status-dashboard.scss */
+/* line 165, src/scss/_components/_status-dashboard.scss */
 .statusDash__view label select {
   outline: none;
   position: relative;
@@ -3101,7 +3204,7 @@ picture {
   color: #163A5F;
 }
 
-/* line 145, src/scss/_components/_status-dashboard.scss */
+/* line 182, src/scss/_components/_status-dashboard.scss */
 .statusDash__box {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3116,56 +3219,56 @@ picture {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  min-height: 90px;
+  min-height: 100%;
   padding: 20px;
   border: 1px solid #B0B6BF;
 }
 
-/* line 154, src/scss/_components/_status-dashboard.scss */
+/* line 191, src/scss/_components/_status-dashboard.scss */
 .statusDash__box.is-down {
   border-color: transparent;
   background-color: rgba(253, 94, 83, 0.1);
 }
 
-/* line 158, src/scss/_components/_status-dashboard.scss */
+/* line 195, src/scss/_components/_status-dashboard.scss */
 .statusDash__box.is-down .statusDash__box-status {
   background-color: #fd5e53;
 }
 
-/* line 162, src/scss/_components/_status-dashboard.scss */
+/* line 199, src/scss/_components/_status-dashboard.scss */
 .statusDash__box.is-warn {
   border-color: transparent;
   background-color: rgba(245, 190, 79, 0.1);
 }
 
-/* line 166, src/scss/_components/_status-dashboard.scss */
+/* line 203, src/scss/_components/_status-dashboard.scss */
 .statusDash__box.is-warn .statusDash__box-status {
   background-color: #f5be4f;
 }
 
-/* line 170, src/scss/_components/_status-dashboard.scss */
+/* line 207, src/scss/_components/_status-dashboard.scss */
 .statusDash__box.is-maint {
   border-color: transparent;
   background-color: rgba(21, 151, 168, 0.1);
 }
 
-/* line 174, src/scss/_components/_status-dashboard.scss */
+/* line 211, src/scss/_components/_status-dashboard.scss */
 .statusDash__box.is-maint .statusDash__box-status {
   background-color: #1597a8;
 }
 
-/* line 178, src/scss/_components/_status-dashboard.scss */
+/* line 215, src/scss/_components/_status-dashboard.scss */
 .statusDash__box.is-unknown {
   border-color: transparent;
   background-color: rgba(176, 182, 191, 0.1);
 }
 
-/* line 182, src/scss/_components/_status-dashboard.scss */
+/* line 219, src/scss/_components/_status-dashboard.scss */
 .statusDash__box.is-unknown .statusDash__box-status {
   background-color: #b0b6bf;
 }
 
-/* line 187, src/scss/_components/_status-dashboard.scss */
+/* line 224, src/scss/_components/_status-dashboard.scss */
 .statusDash__box-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3180,114 +3283,107 @@ picture {
   margin-right: auto;
 }
 
-/* line 195, src/scss/_components/_status-dashboard.scss */
-.statusDash__box-wrapper.is-2 {
-  max-width: 100%;
-  padding-bottom: 20px;
+@media screen and (min-width: 768px) {
+  /* line 232, src/scss/_components/_status-dashboard.scss */
+  .statusDash__box-wrapper.is-2 {
+    max-width: 100%;
+    padding-bottom: 20px;
+  }
+  /* line 237, src/scss/_components/_status-dashboard.scss */
+  .statusDash__box-wrapper.is-2 > div {
+    max-width: 50%;
+  }
+  /* line 240, src/scss/_components/_status-dashboard.scss */
+  .statusDash__box-wrapper.is-2 > div:nth-last-of-type(1), .statusDash__box-wrapper.is-2 > div:nth-last-of-type(2) {
+    padding-bottom: 0;
+  }
+  /* line 246, src/scss/_components/_status-dashboard.scss */
+  .statusDash__box-wrapper.is-2 > div.is-info + .is-default {
+    padding-top: 0;
+    border-top: none;
+  }
+  /* line 252, src/scss/_components/_status-dashboard.scss */
+  .statusDash__box-wrapper.is-2 > div:nth-of-type(odd) {
+    padding-right: 40px;
+    border-right: 1px solid rgba(87, 100, 114, 0.2);
+  }
+  /* line 256, src/scss/_components/_status-dashboard.scss */
+  .statusDash__box-wrapper.is-2 > div:nth-of-type(even) {
+    padding-left: 40px;
+  }
 }
 
-/* line 199, src/scss/_components/_status-dashboard.scss */
-.statusDash__box-wrapper.is-2 > div {
-  max-width: 50%;
+@media screen and (min-width: 768px) {
+  /* line 262, src/scss/_components/_status-dashboard.scss */
+  .statusDash__box-wrapper.is-4 {
+    position: relative;
+    left: -20px;
+    width: -webkit-calc(100% + 20px);
+    width: calc(100% + 20px);
+    max-width: unset;
+  }
+  /* line 269, src/scss/_components/_status-dashboard.scss */
+  .statusDash__box-wrapper.is-4 > div {
+    max-width: -webkit-calc(100% / 4);
+    max-width: calc(100% / 4);
+    padding-left: 20px;
+  }
+  /* line 274, src/scss/_components/_status-dashboard.scss */
+  .statusDash__box-wrapper.is-4 > div.is-info + .is-default {
+    padding: 0;
+    padding-left: 20px;
+    border-top: none;
+  }
+  /* line 282, src/scss/_components/_status-dashboard.scss */
+  .statusDash__box-wrapper.is-4 .statusDash__box {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 270px;
+    padding: 30px;
+  }
+  /* line 288, src/scss/_components/_status-dashboard.scss */
+  .statusDash__box-wrapper.is-4 .statusDash__box-body {
+    padding: 20px 0;
+  }
+  /* line 292, src/scss/_components/_status-dashboard.scss */
+  .statusDash__box-wrapper.is-4 .statusDash__box-footer {
+    width: 100%;
+  }
+  /* line 296, src/scss/_components/_status-dashboard.scss */
+  .statusDash__box-wrapper.is-4 .statusDash__box-title {
+    overflow: hidden;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+  }
 }
 
-/* line 202, src/scss/_components/_status-dashboard.scss */
-.statusDash__box-wrapper.is-2 > div:nth-last-of-type(1), .statusDash__box-wrapper.is-2 > div:nth-last-of-type(2) {
-  padding-bottom: 0;
-}
-
-/* line 208, src/scss/_components/_status-dashboard.scss */
-.statusDash__box-wrapper.is-2 > div.is-info + .is-default {
-  padding-top: 0;
-  border-top: none;
-}
-
-/* line 214, src/scss/_components/_status-dashboard.scss */
-.statusDash__box-wrapper.is-2 > div:nth-of-type(odd) {
-  padding-right: 40px;
-  border-right: 1px solid rgba(87, 100, 114, 0.2);
-}
-
-/* line 218, src/scss/_components/_status-dashboard.scss */
-.statusDash__box-wrapper.is-2 > div:nth-of-type(even) {
-  padding-left: 40px;
-}
-
-/* line 223, src/scss/_components/_status-dashboard.scss */
-.statusDash__box-wrapper.is-4 {
-  position: relative;
-  left: -20px;
-  width: -webkit-calc(100% + 20px);
-  width: calc(100% + 20px);
-  max-width: unset;
-}
-
-/* line 229, src/scss/_components/_status-dashboard.scss */
-.statusDash__box-wrapper.is-4 > div {
-  max-width: -webkit-calc(100% / 4);
-  max-width: calc(100% / 4);
-  padding-left: 20px;
-}
-
-/* line 234, src/scss/_components/_status-dashboard.scss */
-.statusDash__box-wrapper.is-4 > div.is-info + .is-default {
-  padding: 0;
-  padding-left: 20px;
-  border-top: none;
-}
-
-/* line 242, src/scss/_components/_status-dashboard.scss */
-.statusDash__box-wrapper.is-4 .statusDash__box {
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  min-height: 270px;
-  padding: 30px;
-}
-
-/* line 248, src/scss/_components/_status-dashboard.scss */
-.statusDash__box-wrapper.is-4 .statusDash__box-body {
-  padding: 20px 0;
-}
-
-/* line 252, src/scss/_components/_status-dashboard.scss */
-.statusDash__box-wrapper.is-4 .statusDash__box-footer {
-  width: 100%;
-}
-
-/* line 256, src/scss/_components/_status-dashboard.scss */
-.statusDash__box-wrapper.is-4 .statusDash__box-title {
-  overflow: hidden;
-  white-space: nowrap;
-  -o-text-overflow: ellipsis;
-     text-overflow: ellipsis;
-}
-
-/* line 264, src/scss/_components/_status-dashboard.scss */
+/* line 305, src/scss/_components/_status-dashboard.scss */
 .statusDash__box-wrapper > div {
   width: 100%;
   max-width: 100%;
   padding-bottom: 20px;
 }
 
-/* line 270, src/scss/_components/_status-dashboard.scss */
+/* line 311, src/scss/_components/_status-dashboard.scss */
 .statusDash__box-wrapper > div.is-info + .is-default {
   padding-top: 20px;
   border-top: 1px solid rgba(87, 100, 114, 0.2);
 }
 
-/* line 278, src/scss/_components/_status-dashboard.scss */
+/* line 319, src/scss/_components/_status-dashboard.scss */
 .statusDash__box-head {
   width: 30px;
 }
 
-/* line 281, src/scss/_components/_status-dashboard.scss */
+/* line 322, src/scss/_components/_status-dashboard.scss */
 .statusDash__box-head img {
   display: block;
   max-width: 100%;
@@ -3296,7 +3392,7 @@ picture {
   margin-right: auto;
 }
 
-/* line 290, src/scss/_components/_status-dashboard.scss */
+/* line 331, src/scss/_components/_status-dashboard.scss */
 .statusDash__box-body {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -3308,25 +3404,39 @@ picture {
   padding-right: 20px;
 }
 
-/* line 298, src/scss/_components/_status-dashboard.scss */
+/* line 339, src/scss/_components/_status-dashboard.scss */
 .statusDash__box-footer {
   width: 100px;
 }
 
-/* line 302, src/scss/_components/_status-dashboard.scss */
+@media screen and (max-width: 1024px) {
+  /* line 339, src/scss/_components/_status-dashboard.scss */
+  .statusDash__box-footer {
+    width: 85px;
+  }
+}
+
+/* line 346, src/scss/_components/_status-dashboard.scss */
 .statusDash__box-title {
   font-weight: bold;
   font-size: 20px;
   color: #163A5F;
 }
 
-/* line 309, src/scss/_components/_status-dashboard.scss */
+@media screen and (max-width: 1024px) {
+  /* line 346, src/scss/_components/_status-dashboard.scss */
+  .statusDash__box-title {
+    font-size: 16px;
+  }
+}
+
+/* line 356, src/scss/_components/_status-dashboard.scss */
 .statusDash__box-slogan {
   font-size: 14px;
   color: #163A5F;
 }
 
-/* line 314, src/scss/_components/_status-dashboard.scss */
+/* line 361, src/scss/_components/_status-dashboard.scss */
 .statusDash__box-status {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3350,6 +3460,21 @@ picture {
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+
+@media screen and (max-width: 1024px) {
+  /* line 361, src/scss/_components/_status-dashboard.scss */
+  .statusDash__box-status {
+    height: 40px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 361, src/scss/_components/_status-dashboard.scss */
+  .statusDash__box-status {
+    font-size: 13px;
+  }
 }
 
 /*# sourceMappingURL=maps/app.css.map */

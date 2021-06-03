@@ -14,12 +14,18 @@
 		margin-left: auto;
 		margin-right: auto;
 		border-top: 1px solid rgba(#576472, 0.2);
+		@include adaptive(767) {
+			height: 55px;
+		}
 
 		p {
 			font-size: 12px;
 			line-height: 15px;
 			text-align: center;
 			color: #576472;
+			@include adaptive(767) {
+				font-size: 11px;
+			}
 		}
 	}
 }
