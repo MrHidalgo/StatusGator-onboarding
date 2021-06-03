@@ -35,6 +35,12 @@ body {
   flex-direction: column;
   min-height: 100vh;
   padding-top: 100px;
+  @include adaptive(1535) {
+    padding-top: 80px;
+  }
+  @include adaptive(767) {
+    padding-top: 60px;
+  }
 
   &.page-status-dashboard {
     padding-top: 0;

@@ -2,6 +2,9 @@
 
 .step {
 	padding: 75px 10px;
+	@include adaptive(1535) {
+		padding: 50px 10px;
+	}
 
 	&.step--2 {
 		.step__form {
@@ -44,6 +47,9 @@
 			&-bg {
 				height: 365px;
 				background-color: rgba(#21BF73, 0.1);
+				@include adaptive(1535) {
+					height: 300px;
+				}
 			}
 		}
 
@@ -86,6 +92,10 @@
 		padding-top: 60px;
 		padding-bottom: 50px;
 		background-color: rgba(#21BF73, 0.1);
+		@include adaptive(767) {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
 
 		&-bg {
 			z-index: 0;
@@ -99,6 +109,9 @@
 			span {
 				position: absolute;
 				border-radius: 50%;
+				@include adaptive(767) {
+					opacity: 0.55;
+				}
 
 				&:nth-of-type(1) {
 					top: 40%;
@@ -155,6 +168,9 @@
 
 	&__desc {
 		padding-bottom: 40px;
+		@include adaptive(1535) {
+			padding-bottom: 30px;
+		}
 	}
 
 	&__row {
@@ -226,7 +242,7 @@
 					}
 				}
 
-				&.checkbox {
+				&.checkbox 	{
 					cursor: pointer;
 					flex-direction: row;
 					align-items: center;
@@ -301,10 +317,14 @@
 					}
 
 					p {
+						flex: 1;
 						padding-bottom: 0;
 						font-weight: 600;
 						font-size: 16px;
 						color: #163A5F;
+						@include adaptive(1535) {
+							font-size: 15px;
+						}
 					}
 				}
 
@@ -411,6 +431,9 @@
 					padding-bottom: 10px;
 					font-size: 18px;
 					color: #163A5F;
+					@include adaptive(1535) {
+						font-size: 16px;
+					}
 				}
 
 				input,
@@ -433,6 +456,9 @@
 						font-size: 14px;
 						line-height: 17px;
 						color: #576472;
+					}
+					@include adaptive(767) {
+						padding-left: 20px;
 					}
 				}
 			}
@@ -478,6 +504,9 @@
 			font-weight: 500;
 			font-size: 16px;
 			color: #163A5F;
+			@include adaptive(1535) {
+				font-size: 15px;
+			}
 		}
 
 		&-wrapper {
@@ -489,6 +518,9 @@
 			font-weight: bold;
 			font-size: 24px;
 			color: #163A5F;
+			@include adaptive(1535) {
+				font-size: 22px;
+			}
 		}
 
 		&-block {
@@ -527,6 +559,9 @@
 				position: relative;
 				display: flex;
 				width: 100%;
+				@include adaptive(767) {
+					flex-direction: column;
+				}
 
 				&.is-error {
 					input {
@@ -561,15 +596,25 @@
 					font-weight: 600;
 					font-size: 16px;
 				}
+				@include adaptive(767) {
+					min-height: 57px;
+				}
 			}
 
 			.c-btn {
 				min-width: 150px;
 				height: 57px;
 				box-shadow: none;
+				@include adaptive(767) {
+					width: 100%;
+				}
 
 				&__wrapper {
 					padding-left: 10px;
+					@include adaptive(767) {
+						padding-left: 0;
+						padding-top: 10px;
+					}
 				}
 			}
 		}
@@ -593,6 +638,9 @@
 			border-radius: 10px;
 			border: 2px solid #FFFFFF;
 			background-color: rgba(255, 255, 255, 0.5);
+			@include adaptive(767) {
+				padding: 10px;
+			}
 
 			.step__form {
 				max-width: 100%;
@@ -631,11 +679,17 @@
 					margin-right: 20px;
 					border-radius: 8px;
 					background-color: #F1F4F8;
+					@include adaptive(767) {
+						width: 40px;
+						height: 40px;
+						padding: 5px;
+					}
 
 					img {
 						display: block;
 						max-width: 100%;
 						height: auto;
+						max-height: 100%;
 					}
 				}
 
@@ -643,6 +697,9 @@
 					font-weight: 500;
 					font-size: 18px;
 					color: #163A5F;
+					@include adaptive(767) {
+						font-size: 14px;
+					}
 				}
 			}
 		}
@@ -653,6 +710,12 @@
 			box-shadow: 0 40px 80px 0 rgba(22, 58, 95, 0.05);
 			border-radius: 8px;
 			background-color: #FFFFFF;
+			@include adaptive(1279) {
+				padding: 30px;
+			}
+			@include adaptive(767) {
+				padding: 20px 10px;
+			}
 		}
 
 		&-title {
@@ -675,6 +738,10 @@
 			margin-top: 30px;
 			margin-bottom: 30px;
 			background-color: rgba(#576472, 0.2);
+			@include adaptive(1535) {
+				margin-top: 20px;
+				margin-bottom: 20px;
+			}
 		}
 	}
 
@@ -1221,6 +1288,9 @@
 
 	&__btn {
 		padding-top: 75px;
+		@include adaptive(1535) {
+			padding-top: 55px;
+		}
 	}
 }
 

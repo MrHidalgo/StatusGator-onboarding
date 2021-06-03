@@ -10,12 +10,22 @@
 	padding-right: 50px;
 	box-shadow: 0 4px 60px 0 rgba(24, 33, 53, 0.07);
 	background-color: #FFFFFF;
+	@include adaptive(767) {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 
 	&__wrapper {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		height: 100px;
+		@include adaptive(1535) {
+			height: 80px;
+		}
+		@include adaptive(767) {
+			height: 60px;
+		}
 	}
 
 	&__step {
@@ -26,12 +36,17 @@
 		height: 57px;
 		border: 1px solid #B0EACD;
 		border-radius: 6px;
+		@include adaptive(1535) {
+			height: 50px;
+		}
+		@include adaptive(767) {
+			width: 100px;
+			height: 40px;
+		}
 
 		&-wrapper {
 			display: flex;
 			align-items: center;
-
-
 		}
 
 		&-title {
@@ -39,16 +54,31 @@
 			font-weight: 500;
 			font-size: 18px;
 			color: #163A5F;
+			@include adaptive(1535) {
+				font-size: 17px;
+			}
+			@include adaptive(767) {
+				font-size: 14px;
+			}
 		}
 
 		&-num {
 			font-size: 18px;
 			color: #576472;
+			@include adaptive(1535) {
+				font-size: 17px;
+			}
+			@include adaptive(767) {
+				font-size: 14px;
+			}
 
 			span {
 				font-weight: 600;
 				font-size: 24px;
 				color: #21BF73;
+				@include adaptive(767) {
+					font-size: 21px;
+				}
 			}
 		}
 	}

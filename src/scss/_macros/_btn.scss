@@ -14,6 +14,15 @@
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 6px;
+  @include adaptive(1535) {
+    height: 60px;
+    min-width: 180px;
+  }
+  @include adaptive(767) {
+    min-width: 155px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
   &__wrapper {
     position: relative;
@@ -51,6 +60,10 @@
   &.c-btn--medium {
     min-width: 170px;
     height: 57px;
+    @include adaptive(1535) {
+      min-width: 155px;
+      height: 50px;
+    }
   }
 
   &.c-btn--primary {
@@ -162,6 +175,9 @@
 
   .icon-font {
     font-size: 16px;
+    @include adaptive(1535) {
+      font-size: 15px;
+    }
 
     & + span {
       padding-left: 10px;
@@ -173,6 +189,9 @@
     position: relative;
     font-weight: bold;
     font-size: 17px;
+    @include adaptive(1535) {
+      font-size: 16px;
+    }
 
     & + .icon-font {
       margin-left: 10px;

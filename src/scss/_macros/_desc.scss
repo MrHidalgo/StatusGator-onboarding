@@ -5,6 +5,12 @@
   font-size: 20px;
   text-align: center;
   color: #576472;
+  @include adaptive(1535) {
+    font-size: 18px;
+  }
+  @include adaptive(767) {
+    font-size: 16px;
+  }
 
   a {
     color: #21BF73;

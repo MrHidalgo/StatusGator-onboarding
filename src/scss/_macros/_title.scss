@@ -7,6 +7,12 @@
   font-size: 36px;
   text-align: center;
   color: #163a5f;
+  @include adaptive(1535) {
+    font-size: 33px;
+  }
+  @include adaptive(1279) {
+    font-size: 30px;
+  }
 
   span {
     color: #21BF73;

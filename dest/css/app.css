@@ -138,17 +138,31 @@ body {
   padding-top: 100px;
 }
 
-/* line 39, src/scss/_shared/_main-setting-reset.scss */
+@media screen and (max-width: 1535px) {
+  /* line 33, src/scss/_shared/_main-setting-reset.scss */
+  body {
+    padding-top: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 33, src/scss/_shared/_main-setting-reset.scss */
+  body {
+    padding-top: 60px;
+  }
+}
+
+/* line 45, src/scss/_shared/_main-setting-reset.scss */
 body.page-status-dashboard {
   padding-top: 0;
 }
 
-/* line 42, src/scss/_shared/_main-setting-reset.scss */
+/* line 48, src/scss/_shared/_main-setting-reset.scss */
 body.page-status-dashboard.is-dark {
   background-color: #28292c;
 }
 
-/* line 47, src/scss/_shared/_main-setting-reset.scss */
+/* line 53, src/scss/_shared/_main-setting-reset.scss */
 body > .body {
   display: -webkit-box;
   display: -webkit-flex;
@@ -169,7 +183,7 @@ body > .body {
           flex: 1 0 auto;
 }
 
-/* line 53, src/scss/_shared/_main-setting-reset.scss */
+/* line 59, src/scss/_shared/_main-setting-reset.scss */
 body > .body--start {
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
@@ -177,19 +191,19 @@ body > .body--start {
           justify-content: flex-start;
 }
 
-/* line 60, src/scss/_shared/_main-setting-reset.scss */
+/* line 66, src/scss/_shared/_main-setting-reset.scss */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-/* line 63, src/scss/_shared/_main-setting-reset.scss */
+/* line 69, src/scss/_shared/_main-setting-reset.scss */
 *:before, *:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-/* line 70, src/scss/_shared/_main-setting-reset.scss */
+/* line 76, src/scss/_shared/_main-setting-reset.scss */
 button,
 input,
 optgroup,
@@ -199,36 +213,36 @@ textarea {
   margin: 0;
 }
 
-/* line 80, src/scss/_shared/_main-setting-reset.scss */
+/* line 86, src/scss/_shared/_main-setting-reset.scss */
 button,
 input {
   overflow: visible;
 }
 
-/* line 86, src/scss/_shared/_main-setting-reset.scss */
+/* line 92, src/scss/_shared/_main-setting-reset.scss */
 button[disabled] {
   opacity: 0.55;
   cursor: not-allowed;
 }
 
-/* line 92, src/scss/_shared/_main-setting-reset.scss */
+/* line 98, src/scss/_shared/_main-setting-reset.scss */
 [type="search"] {
   -webkit-appearance: textfield;
   outline-offset: -2px;
 }
 
-/* line 98, src/scss/_shared/_main-setting-reset.scss */
+/* line 104, src/scss/_shared/_main-setting-reset.scss */
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-/* line 104, src/scss/_shared/_main-setting-reset.scss */
+/* line 110, src/scss/_shared/_main-setting-reset.scss */
 textarea {
   overflow: auto;
 }
 
-/* line 109, src/scss/_shared/_main-setting-reset.scss */
+/* line 115, src/scss/_shared/_main-setting-reset.scss */
 p,
 h1, h2, h3, h4, h5, h6,
 hr {
@@ -236,36 +250,36 @@ hr {
   padding: 0;
 }
 
-/* line 117, src/scss/_shared/_main-setting-reset.scss */
+/* line 123, src/scss/_shared/_main-setting-reset.scss */
 ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 122, src/scss/_shared/_main-setting-reset.scss */
+/* line 128, src/scss/_shared/_main-setting-reset.scss */
 ul li {
   list-style: none;
 }
 
-/* line 128, src/scss/_shared/_main-setting-reset.scss */
+/* line 134, src/scss/_shared/_main-setting-reset.scss */
 a {
   outline: none;
   text-decoration: none;
 }
 
-/* line 133, src/scss/_shared/_main-setting-reset.scss */
+/* line 139, src/scss/_shared/_main-setting-reset.scss */
 a:hover, a:focus {
   text-decoration: none;
 }
 
-/* line 140, src/scss/_shared/_main-setting-reset.scss */
+/* line 146, src/scss/_shared/_main-setting-reset.scss */
 input[type="text"] {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
 }
 
-/* line 144, src/scss/_shared/_main-setting-reset.scss */
+/* line 150, src/scss/_shared/_main-setting-reset.scss */
 picture {
   display: -webkit-box;
   display: -webkit-flex;
@@ -294,7 +308,14 @@ picture {
   display: flex;
 }
 
-/* line 6, src/scss/_macros/_logotype.scss */
+@media screen and (max-width: 767px) {
+  /* line 3, src/scss/_macros/_logotype.scss */
+  .logo {
+    max-width: 100px;
+  }
+}
+
+/* line 9, src/scss/_macros/_logotype.scss */
 .logo__btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -306,7 +327,7 @@ picture {
           align-items: flex-start;
 }
 
-/* line 10, src/scss/_macros/_logotype.scss */
+/* line 13, src/scss/_macros/_logotype.scss */
 .logo__btn img {
   display: block;
   max-width: 100%;
@@ -322,7 +343,21 @@ picture {
   color: #163a5f;
 }
 
-/* line 11, src/scss/_macros/_title.scss */
+@media screen and (max-width: 1535px) {
+  /* line 3, src/scss/_macros/_title.scss */
+  .c-title {
+    font-size: 33px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 3, src/scss/_macros/_title.scss */
+  .c-title {
+    font-size: 30px;
+  }
+}
+
+/* line 17, src/scss/_macros/_title.scss */
 .c-title span {
   color: #21BF73;
 }
@@ -335,7 +370,21 @@ picture {
   color: #576472;
 }
 
-/* line 9, src/scss/_macros/_desc.scss */
+@media screen and (max-width: 1535px) {
+  /* line 3, src/scss/_macros/_desc.scss */
+  .c-desc {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 3, src/scss/_macros/_desc.scss */
+  .c-desc {
+    font-size: 16px;
+  }
+}
+
+/* line 15, src/scss/_macros/_desc.scss */
 .c-desc a {
   color: #21BF73;
 }
@@ -367,7 +416,24 @@ picture {
           border-radius: 6px;
 }
 
-/* line 18, src/scss/_macros/_btn.scss */
+@media screen and (max-width: 1535px) {
+  /* line 3, src/scss/_macros/_btn.scss */
+  .c-btn {
+    height: 60px;
+    min-width: 180px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 3, src/scss/_macros/_btn.scss */
+  .c-btn {
+    min-width: 155px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* line 27, src/scss/_macros/_btn.scss */
 .c-btn__wrapper {
   position: relative;
   display: -webkit-box;
@@ -384,7 +450,7 @@ picture {
           justify-content: space-between;
 }
 
-/* line 24, src/scss/_macros/_btn.scss */
+/* line 33, src/scss/_macros/_btn.scss */
 .c-btn__wrapper.c-btn__wrapper--center {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -392,7 +458,7 @@ picture {
           justify-content: center;
 }
 
-/* line 27, src/scss/_macros/_btn.scss */
+/* line 36, src/scss/_macros/_btn.scss */
 .c-btn__wrapper.c-btn__wrapper--end {
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
@@ -400,7 +466,7 @@ picture {
           justify-content: flex-end;
 }
 
-/* line 32, src/scss/_macros/_btn.scss */
+/* line 41, src/scss/_macros/_btn.scss */
 .c-btn__error {
   display: none;
   position: absolute;
@@ -409,7 +475,7 @@ picture {
   width: 100%;
 }
 
-/* line 39, src/scss/_macros/_btn.scss */
+/* line 48, src/scss/_macros/_btn.scss */
 .c-btn__error span {
   height: 20px;
   display: -webkit-box;
@@ -430,13 +496,21 @@ picture {
   color: red;
 }
 
-/* line 51, src/scss/_macros/_btn.scss */
+/* line 60, src/scss/_macros/_btn.scss */
 .c-btn.c-btn--medium {
   min-width: 170px;
   height: 57px;
 }
 
-/* line 56, src/scss/_macros/_btn.scss */
+@media screen and (max-width: 1535px) {
+  /* line 60, src/scss/_macros/_btn.scss */
+  .c-btn.c-btn--medium {
+    min-width: 155px;
+    height: 50px;
+  }
+}
+
+/* line 69, src/scss/_macros/_btn.scss */
 .c-btn.c-btn--primary {
   -webkit-box-shadow: 0 6px 20px 0 rgba(40, 223, 153, 0.2), 0 20px 30px 0 rgba(40, 223, 153, 0.2);
           box-shadow: 0 6px 20px 0 rgba(40, 223, 153, 0.2), 0 20px 30px 0 rgba(40, 223, 153, 0.2);
@@ -448,7 +522,7 @@ picture {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 61, src/scss/_macros/_btn.scss */
+/* line 74, src/scss/_macros/_btn.scss */
 .c-btn.c-btn--primary:after {
   content: '';
   position: absolute;
@@ -473,7 +547,7 @@ picture {
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
-/* line 75, src/scss/_macros/_btn.scss */
+/* line 88, src/scss/_macros/_btn.scss */
 .c-btn.c-btn--primary:hover {
   -webkit-transform: translateY(-3px);
       -ms-transform: translateY(-3px);
@@ -487,7 +561,7 @@ picture {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 80, src/scss/_macros/_btn.scss */
+/* line 93, src/scss/_macros/_btn.scss */
 .c-btn.c-btn--primary:hover:after {
   -webkit-transform: skewX(-20deg) translateX(300%);
       -ms-transform: skewX(-20deg) translateX(300%);
@@ -499,7 +573,7 @@ picture {
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
-/* line 85, src/scss/_macros/_btn.scss */
+/* line 98, src/scss/_macros/_btn.scss */
 .c-btn.c-btn--primary:hover .icon-font {
   -webkit-transform: translateX(50%);
       -ms-transform: translateX(50%);
@@ -511,13 +585,13 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 91, src/scss/_macros/_btn.scss */
+/* line 104, src/scss/_macros/_btn.scss */
 .c-btn.c-btn--primary .icon-font,
 .c-btn.c-btn--primary span {
   color: #ffffff;
 }
 
-/* line 96, src/scss/_macros/_btn.scss */
+/* line 109, src/scss/_macros/_btn.scss */
 .c-btn.c-btn--primary .icon-font {
   -webkit-transform-origin: center;
       -ms-transform-origin: center;
@@ -529,7 +603,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 102, src/scss/_macros/_btn.scss */
+/* line 115, src/scss/_macros/_btn.scss */
 .c-btn.c-btn--secondary {
   border: 1px solid #576472;
   background-color: #FFFFFF;
@@ -540,7 +614,7 @@ picture {
   transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 107, src/scss/_macros/_btn.scss */
+/* line 120, src/scss/_macros/_btn.scss */
 .c-btn.c-btn--secondary:after {
   content: '';
   position: absolute;
@@ -565,7 +639,7 @@ picture {
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
-/* line 121, src/scss/_macros/_btn.scss */
+/* line 134, src/scss/_macros/_btn.scss */
 .c-btn.c-btn--secondary:hover {
   background-color: #576472;
   -webkit-transform: translateY(-3px);
@@ -578,7 +652,7 @@ picture {
   transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 126, src/scss/_macros/_btn.scss */
+/* line 139, src/scss/_macros/_btn.scss */
 .c-btn.c-btn--secondary:hover:after {
   -webkit-transform: skewX(-20deg) translateX(300%);
       -ms-transform: skewX(-20deg) translateX(300%);
@@ -593,7 +667,7 @@ picture {
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
-/* line 132, src/scss/_macros/_btn.scss */
+/* line 145, src/scss/_macros/_btn.scss */
 .c-btn.c-btn--secondary:hover span {
   color: #ffffff;
   -webkit-transition: color 0.3s ease-in-out;
@@ -601,7 +675,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 138, src/scss/_macros/_btn.scss */
+/* line 151, src/scss/_macros/_btn.scss */
 .c-btn.c-btn--secondary span {
   font-weight: 500;
   color: #576472;
@@ -610,39 +684,46 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 145, src/scss/_macros/_btn.scss */
+/* line 158, src/scss/_macros/_btn.scss */
 .c-btn.c-btn--white {
   background-color: #FFFFFF;
 }
 
-/* line 148, src/scss/_macros/_btn.scss */
+/* line 161, src/scss/_macros/_btn.scss */
 .c-btn.c-btn--white span {
   font-weight: 500;
   color: #21BF73;
 }
 
-/* line 154, src/scss/_macros/_btn.scss */
+/* line 167, src/scss/_macros/_btn.scss */
 .c-btn.c-btn--red {
   background-color: #FD5E53;
 }
 
-/* line 157, src/scss/_macros/_btn.scss */
+/* line 170, src/scss/_macros/_btn.scss */
 .c-btn.c-btn--red span {
   font-weight: 500;
   color: #fff;
 }
 
-/* line 163, src/scss/_macros/_btn.scss */
+/* line 176, src/scss/_macros/_btn.scss */
 .c-btn .icon-font {
   font-size: 16px;
 }
 
-/* line 166, src/scss/_macros/_btn.scss */
+@media screen and (max-width: 1535px) {
+  /* line 176, src/scss/_macros/_btn.scss */
+  .c-btn .icon-font {
+    font-size: 15px;
+  }
+}
+
+/* line 182, src/scss/_macros/_btn.scss */
 .c-btn .icon-font + span {
   padding-left: 10px;
 }
 
-/* line 171, src/scss/_macros/_btn.scss */
+/* line 187, src/scss/_macros/_btn.scss */
 .c-btn span {
   z-index: 2;
   position: relative;
@@ -650,12 +731,19 @@ picture {
   font-size: 17px;
 }
 
-/* line 177, src/scss/_macros/_btn.scss */
+@media screen and (max-width: 1535px) {
+  /* line 187, src/scss/_macros/_btn.scss */
+  .c-btn span {
+    font-size: 16px;
+  }
+}
+
+/* line 196, src/scss/_macros/_btn.scss */
 .c-btn span + .icon-font {
   margin-left: 10px;
 }
 
-/* line 181, src/scss/_macros/_btn.scss */
+/* line 200, src/scss/_macros/_btn.scss */
 .c-btn span strong {
   font-weight: 700;
 }
@@ -674,7 +762,15 @@ picture {
   background-color: #FFFFFF;
 }
 
-/* line 14, src/scss/_components/common/_header.scss */
+@media screen and (max-width: 767px) {
+  /* line 3, src/scss/_components/common/_header.scss */
+  .header {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/* line 18, src/scss/_components/common/_header.scss */
 .header__wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -691,7 +787,21 @@ picture {
   height: 100px;
 }
 
-/* line 21, src/scss/_components/common/_header.scss */
+@media screen and (max-width: 1535px) {
+  /* line 18, src/scss/_components/common/_header.scss */
+  .header__wrapper {
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 18, src/scss/_components/common/_header.scss */
+  .header__wrapper {
+    height: 60px;
+  }
+}
+
+/* line 31, src/scss/_components/common/_header.scss */
 .header__step {
   display: -webkit-box;
   display: -webkit-flex;
@@ -712,7 +822,22 @@ picture {
           border-radius: 6px;
 }
 
-/* line 30, src/scss/_components/common/_header.scss */
+@media screen and (max-width: 1535px) {
+  /* line 31, src/scss/_components/common/_header.scss */
+  .header__step {
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 31, src/scss/_components/common/_header.scss */
+  .header__step {
+    width: 100px;
+    height: 40px;
+  }
+}
+
+/* line 47, src/scss/_components/common/_header.scss */
 .header__step-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -724,7 +849,7 @@ picture {
           align-items: center;
 }
 
-/* line 37, src/scss/_components/common/_header.scss */
+/* line 52, src/scss/_components/common/_header.scss */
 .header__step-title {
   padding-right: 20px;
   font-weight: 500;
@@ -732,17 +857,52 @@ picture {
   color: #163A5F;
 }
 
-/* line 44, src/scss/_components/common/_header.scss */
+@media screen and (max-width: 1535px) {
+  /* line 52, src/scss/_components/common/_header.scss */
+  .header__step-title {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 52, src/scss/_components/common/_header.scss */
+  .header__step-title {
+    font-size: 14px;
+  }
+}
+
+/* line 65, src/scss/_components/common/_header.scss */
 .header__step-num {
   font-size: 18px;
   color: #576472;
 }
 
-/* line 48, src/scss/_components/common/_header.scss */
+@media screen and (max-width: 1535px) {
+  /* line 65, src/scss/_components/common/_header.scss */
+  .header__step-num {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 65, src/scss/_components/common/_header.scss */
+  .header__step-num {
+    font-size: 14px;
+  }
+}
+
+/* line 75, src/scss/_components/common/_header.scss */
 .header__step-num span {
   font-weight: 600;
   font-size: 24px;
   color: #21BF73;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 75, src/scss/_components/common/_header.scss */
+  .header__step-num span {
+    font-size: 21px;
+  }
 }
 
 /* line 3, src/scss/_components/common/_footer.scss */
@@ -786,62 +946,76 @@ picture {
   padding: 75px 10px;
 }
 
-/* line 7, src/scss/_components/_step.scss */
+@media screen and (max-width: 1535px) {
+  /* line 3, src/scss/_components/_step.scss */
+  .step {
+    padding: 50px 10px;
+  }
+}
+
+/* line 10, src/scss/_components/_step.scss */
 .step.step--2 .step__form {
   max-width: 650px;
 }
 
-/* line 11, src/scss/_components/_step.scss */
+/* line 14, src/scss/_components/_step.scss */
 .step.step--3, .step.step--5, .step.step--6, .step.step--7 {
   padding-top: 0;
 }
 
-/* line 21, src/scss/_components/_step.scss */
+/* line 24, src/scss/_components/_step.scss */
 .step.step--4 {
   padding-top: 0;
 }
 
-/* line 24, src/scss/_components/_step.scss */
+/* line 27, src/scss/_components/_step.scss */
 .step.step--4 .step__title {
   padding-bottom: 40px;
 }
 
-/* line 27, src/scss/_components/_step.scss */
+/* line 30, src/scss/_components/_step.scss */
 .step.step--4 .step__container {
   padding-bottom: 0;
   background-color: transparent;
 }
 
-/* line 31, src/scss/_components/_step.scss */
+/* line 34, src/scss/_components/_step.scss */
 .step.step--4 .step__container-bg {
   height: 365px;
   background-color: rgba(33, 191, 115, 0.1);
 }
 
-/* line 40, src/scss/_components/_step.scss */
+/* line 43, src/scss/_components/_step.scss */
 .step.step--5 .step__container, .step.step--6 .step__container, .step.step--7 .step__container {
   padding-bottom: 0;
   background-color: transparent;
 }
 
-/* line 44, src/scss/_components/_step.scss */
+/* line 47, src/scss/_components/_step.scss */
 .step.step--5 .step__container-bg, .step.step--6 .step__container-bg, .step.step--7 .step__container-bg {
   height: 365px;
   background-color: rgba(33, 191, 115, 0.1);
 }
 
-/* line 50, src/scss/_components/_step.scss */
+@media screen and (max-width: 1535px) {
+  /* line 47, src/scss/_components/_step.scss */
+  .step.step--5 .step__container-bg, .step.step--6 .step__container-bg, .step.step--7 .step__container-bg {
+    height: 300px;
+  }
+}
+
+/* line 56, src/scss/_components/_step.scss */
 .step.step--5 .step__form, .step.step--6 .step__form, .step.step--7 .step__form {
   max-width: 800px;
 }
 
-/* line 55, src/scss/_components/_step.scss */
+/* line 61, src/scss/_components/_step.scss */
 .step.step--5 .step__form-field label p, .step.step--6 .step__form-field label p, .step.step--7 .step__form-field label p {
   font-size: 14px;
   font-weight: normal;
 }
 
-/* line 60, src/scss/_components/_step.scss */
+/* line 66, src/scss/_components/_step.scss */
 .step.step--5 .step__form-field label input,
 .step.step--5 .step__form-field label select, .step.step--6 .step__form-field label input,
 .step.step--6 .step__form-field label select, .step.step--7 .step__form-field label input,
@@ -849,17 +1023,17 @@ picture {
   height: 48px;
 }
 
-/* line 69, src/scss/_components/_step.scss */
+/* line 75, src/scss/_components/_step.scss */
 .step.step--7 .step__desc {
   padding-bottom: 40px;
 }
 
-/* line 74, src/scss/_components/_step.scss */
+/* line 80, src/scss/_components/_step.scss */
 .step.step--8 .step__btn {
   padding-top: 25px;
 }
 
-/* line 79, src/scss/_components/_step.scss */
+/* line 85, src/scss/_components/_step.scss */
 .step__container {
   position: relative;
   left: -10px;
@@ -882,7 +1056,15 @@ picture {
   background-color: rgba(33, 191, 115, 0.1);
 }
 
-/* line 90, src/scss/_components/_step.scss */
+@media screen and (max-width: 767px) {
+  /* line 85, src/scss/_components/_step.scss */
+  .step__container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/* line 100, src/scss/_components/_step.scss */
 .step__container-bg {
   z-index: 0;
   overflow: hidden;
@@ -893,14 +1075,21 @@ picture {
   height: 100%;
 }
 
-/* line 99, src/scss/_components/_step.scss */
+/* line 109, src/scss/_components/_step.scss */
 .step__container-bg span {
   position: absolute;
   -webkit-border-radius: 50%;
           border-radius: 50%;
 }
 
-/* line 103, src/scss/_components/_step.scss */
+@media screen and (max-width: 767px) {
+  /* line 109, src/scss/_components/_step.scss */
+  .step__container-bg span {
+    opacity: 0.55;
+  }
+}
+
+/* line 116, src/scss/_components/_step.scss */
 .step__container-bg span:nth-of-type(1) {
   top: 40%;
   left: 10%;
@@ -909,7 +1098,7 @@ picture {
   background-color: #99F3BD;
 }
 
-/* line 110, src/scss/_components/_step.scss */
+/* line 123, src/scss/_components/_step.scss */
 .step__container-bg span:nth-of-type(2) {
   top: -10px;
   right: 10%;
@@ -918,7 +1107,7 @@ picture {
   background-color: #F5DEA3;
 }
 
-/* line 117, src/scss/_components/_step.scss */
+/* line 130, src/scss/_components/_step.scss */
 .step__container-bg span:nth-of-type(3) {
   right: 20%;
   bottom: 20px;
@@ -927,7 +1116,7 @@ picture {
   background-color: #99F3BD;
 }
 
-/* line 124, src/scss/_components/_step.scss */
+/* line 137, src/scss/_components/_step.scss */
 .step__container-bg span:nth-of-type(4) {
   left: 15%;
   bottom: 40px;
@@ -936,7 +1125,7 @@ picture {
   background-color: #F5DEA3;
 }
 
-/* line 134, src/scss/_components/_step.scss */
+/* line 147, src/scss/_components/_step.scss */
 .step__container-content {
   z-index: 2;
   position: relative;
@@ -946,7 +1135,7 @@ picture {
   margin-right: auto;
 }
 
-/* line 144, src/scss/_components/_step.scss */
+/* line 157, src/scss/_components/_step.scss */
 .step__wrapper {
   width: 100%;
   max-width: 1140px;
@@ -954,18 +1143,25 @@ picture {
   margin-right: auto;
 }
 
-/* line 151, src/scss/_components/_step.scss */
+/* line 164, src/scss/_components/_step.scss */
 .step__title {
   padding-bottom: 5px;
   line-height: 1.2;
 }
 
-/* line 156, src/scss/_components/_step.scss */
+/* line 169, src/scss/_components/_step.scss */
 .step__desc {
   padding-bottom: 40px;
 }
 
-/* line 160, src/scss/_components/_step.scss */
+@media screen and (max-width: 1535px) {
+  /* line 169, src/scss/_components/_step.scss */
+  .step__desc {
+    padding-bottom: 30px;
+  }
+}
+
+/* line 176, src/scss/_components/_step.scss */
 .step__row {
   display: -webkit-box;
   display: -webkit-flex;
@@ -974,7 +1170,7 @@ picture {
   padding-top: 50px;
 }
 
-/* line 169, src/scss/_components/_step.scss */
+/* line 185, src/scss/_components/_step.scss */
 .step__col-2 {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -984,7 +1180,7 @@ picture {
   max-width: 100%;
 }
 
-/* line 176, src/scss/_components/_step.scss */
+/* line 192, src/scss/_components/_step.scss */
 .step__form {
   width: 100%;
   max-width: 600px;
@@ -992,12 +1188,12 @@ picture {
   margin-right: auto;
 }
 
-/* line 184, src/scss/_components/_step.scss */
+/* line 200, src/scss/_components/_step.scss */
 .step__form.step__form--2 .step__form-field:not(:last-of-type) {
   padding-bottom: 10px;
 }
 
-/* line 190, src/scss/_components/_step.scss */
+/* line 206, src/scss/_components/_step.scss */
 .step__form-field {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1005,17 +1201,17 @@ picture {
   display: flex;
 }
 
-/* line 193, src/scss/_components/_step.scss */
+/* line 209, src/scss/_components/_step.scss */
 .step__form-field:not(:last-of-type) {
   padding-bottom: 25px;
 }
 
-/* line 197, src/scss/_components/_step.scss */
+/* line 213, src/scss/_components/_step.scss */
 .step__form-field.step__form-field--hidden {
   display: none;
 }
 
-/* line 201, src/scss/_components/_step.scss */
+/* line 217, src/scss/_components/_step.scss */
 .step__form-field label {
   position: relative;
   display: -webkit-box;
@@ -1030,7 +1226,7 @@ picture {
   width: 100%;
 }
 
-/* line 207, src/scss/_components/_step.scss */
+/* line 223, src/scss/_components/_step.scss */
 .step__form-field label label.error {
   position: absolute;
   bottom: -20px;
@@ -1054,7 +1250,7 @@ picture {
   color: red;
 }
 
-/* line 222, src/scss/_components/_step.scss */
+/* line 238, src/scss/_components/_step.scss */
 .step__form-field label.is-error input,
 .step__form-field label.is-error select {
   border-color: red;
@@ -1063,7 +1259,7 @@ picture {
   transition: border-color 0.3s ease-in-out;
 }
 
-/* line 229, src/scss/_components/_step.scss */
+/* line 245, src/scss/_components/_step.scss */
 .step__form-field label.checkbox {
   cursor: pointer;
   -webkit-box-orient: horizontal;
@@ -1090,7 +1286,7 @@ picture {
   transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 241, src/scss/_components/_step.scss */
+/* line 257, src/scss/_components/_step.scss */
 .step__form-field label.checkbox.is-error {
   border-color: red;
   -webkit-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
@@ -1100,12 +1296,12 @@ picture {
   transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 246, src/scss/_components/_step.scss */
+/* line 262, src/scss/_components/_step.scss */
 .step__form-field label.checkbox label.error {
   display: none !important;
 }
 
-/* line 250, src/scss/_components/_step.scss */
+/* line 266, src/scss/_components/_step.scss */
 .step__form-field label.checkbox:hover {
   background-color: rgba(87, 100, 114, 0.05);
   -webkit-box-shadow: 0 5px 30px 0 rgba(22, 58, 95, 0.06);
@@ -1117,7 +1313,7 @@ picture {
   transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 255, src/scss/_components/_step.scss */
+/* line 271, src/scss/_components/_step.scss */
 .step__form-field label.checkbox:hover i {
   background-color: #ffffff;
   -webkit-transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
@@ -1125,7 +1321,7 @@ picture {
   transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
-/* line 261, src/scss/_components/_step.scss */
+/* line 277, src/scss/_components/_step.scss */
 .step__form-field label.checkbox input {
   opacity: 0;
   position: absolute;
@@ -1135,7 +1331,7 @@ picture {
   height: 0;
 }
 
-/* line 270, src/scss/_components/_step.scss */
+/* line 286, src/scss/_components/_step.scss */
 .step__form-field label.checkbox input:checked + i {
   border-color: #21BF73;
   -webkit-transition: border-color 0.3s ease-in-out;
@@ -1143,7 +1339,7 @@ picture {
   transition: border-color 0.3s ease-in-out;
 }
 
-/* line 274, src/scss/_components/_step.scss */
+/* line 290, src/scss/_components/_step.scss */
 .step__form-field label.checkbox input:checked + i:after {
   opacity: 1;
   -webkit-transition: opacity 0.3s ease-in-out;
@@ -1151,7 +1347,7 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 282, src/scss/_components/_step.scss */
+/* line 298, src/scss/_components/_step.scss */
 .step__form-field label.checkbox i {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1174,7 +1370,7 @@ picture {
   transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
-/* line 292, src/scss/_components/_step.scss */
+/* line 308, src/scss/_components/_step.scss */
 .step__form-field label.checkbox i:after {
   content: '';
   opacity: 0;
@@ -1187,20 +1383,31 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 303, src/scss/_components/_step.scss */
+/* line 319, src/scss/_components/_step.scss */
 .step__form-field label.checkbox p {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   padding-bottom: 0;
   font-weight: 600;
   font-size: 16px;
   color: #163A5F;
 }
 
-/* line 311, src/scss/_components/_step.scss */
+@media screen and (max-width: 1535px) {
+  /* line 319, src/scss/_components/_step.scss */
+  .step__form-field label.checkbox p {
+    font-size: 15px;
+  }
+}
+
+/* line 331, src/scss/_components/_step.scss */
 .step__form-field label.toggle {
   cursor: pointer;
 }
 
-/* line 314, src/scss/_components/_step.scss */
+/* line 334, src/scss/_components/_step.scss */
 .step__form-field label.toggle input {
   opacity: 0;
   position: absolute;
@@ -1210,7 +1417,7 @@ picture {
   height: 0;
 }
 
-/* line 323, src/scss/_components/_step.scss */
+/* line 343, src/scss/_components/_step.scss */
 .step__form-field label.toggle input:checked + span {
   background-color: #21bf73;
   -webkit-transition: background-color 0.3s ease-in-out;
@@ -1218,7 +1425,7 @@ picture {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 327, src/scss/_components/_step.scss */
+/* line 347, src/scss/_components/_step.scss */
 .step__form-field label.toggle input:checked + span i {
   -webkit-transform: translateX(30px);
       -ms-transform: translateX(30px);
@@ -1230,7 +1437,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 335, src/scss/_components/_step.scss */
+/* line 355, src/scss/_components/_step.scss */
 .step__form-field label.toggle span {
   position: relative;
   display: -webkit-box;
@@ -1249,7 +1456,7 @@ picture {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 345, src/scss/_components/_step.scss */
+/* line 365, src/scss/_components/_step.scss */
 .step__form-field label.toggle span i {
   position: absolute;
   top: 2px;
@@ -1271,7 +1478,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 361, src/scss/_components/_step.scss */
+/* line 381, src/scss/_components/_step.scss */
 .step__form-field label.file > div {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1279,7 +1486,7 @@ picture {
   display: flex;
 }
 
-/* line 364, src/scss/_components/_step.scss */
+/* line 384, src/scss/_components/_step.scss */
 .step__form-field label.file > div label {
   position: relative;
   display: -webkit-box;
@@ -1299,7 +1506,7 @@ picture {
   height: auto;
 }
 
-/* line 372, src/scss/_components/_step.scss */
+/* line 392, src/scss/_components/_step.scss */
 .step__form-field label.file > div label p {
   cursor: pointer;
   display: -webkit-box;
@@ -1325,13 +1532,13 @@ picture {
   background-color: #F1F4F8;
 }
 
-/* line 387, src/scss/_components/_step.scss */
+/* line 407, src/scss/_components/_step.scss */
 .step__form-field label.file > div label span {
   font-size: 14px;
   color: #576472;
 }
 
-/* line 394, src/scss/_components/_step.scss */
+/* line 414, src/scss/_components/_step.scss */
 .step__form-field label.file input {
   opacity: 0;
   position: absolute;
@@ -1340,7 +1547,7 @@ picture {
   max-width: 200px;
 }
 
-/* line 403, src/scss/_components/_step.scss */
+/* line 423, src/scss/_components/_step.scss */
 .step__form-field label h6 {
   padding-bottom: 5px;
   font-weight: 600;
@@ -1348,14 +1555,21 @@ picture {
   color: #163A5F;
 }
 
-/* line 410, src/scss/_components/_step.scss */
+/* line 430, src/scss/_components/_step.scss */
 .step__form-field label p {
   padding-bottom: 10px;
   font-size: 18px;
   color: #163A5F;
 }
 
-/* line 416, src/scss/_components/_step.scss */
+@media screen and (max-width: 1535px) {
+  /* line 430, src/scss/_components/_step.scss */
+  .step__form-field label p {
+    font-size: 16px;
+  }
+}
+
+/* line 439, src/scss/_components/_step.scss */
 .step__form-field label input,
 .step__form-field label select {
   outline: none;
@@ -1421,7 +1635,15 @@ picture {
   color: #576472;
 }
 
-/* line 442, src/scss/_components/_step.scss */
+@media screen and (max-width: 767px) {
+  /* line 439, src/scss/_components/_step.scss */
+  .step__form-field label input,
+  .step__form-field label select {
+    padding-left: 20px;
+  }
+}
+
+/* line 468, src/scss/_components/_step.scss */
 .step__list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1448,7 +1670,7 @@ picture {
   transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-/* line 455, src/scss/_components/_step.scss */
+/* line 481, src/scss/_components/_step.scss */
 .step__list.is-active, .step__list:hover {
   border-color: #21BF73;
   background-color: #21bf73;
@@ -1457,38 +1679,45 @@ picture {
   transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-/* line 461, src/scss/_components/_step.scss */
+/* line 487, src/scss/_components/_step.scss */
 .step__list.is-active img,
 .step__list.is-active span, .step__list:hover img,
 .step__list:hover span {
   color: #ffffff;
 }
 
-/* line 467, src/scss/_components/_step.scss */
+/* line 493, src/scss/_components/_step.scss */
 .step__list > img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* line 472, src/scss/_components/_step.scss */
+/* line 498, src/scss/_components/_step.scss */
 .step__list > img + span {
   padding-left: 10px;
 }
 
-/* line 477, src/scss/_components/_step.scss */
+/* line 503, src/scss/_components/_step.scss */
 .step__list > span {
   font-weight: 500;
   font-size: 16px;
   color: #163A5F;
 }
 
-/* line 483, src/scss/_components/_step.scss */
+@media screen and (max-width: 1535px) {
+  /* line 503, src/scss/_components/_step.scss */
+  .step__list > span {
+    font-size: 15px;
+  }
+}
+
+/* line 512, src/scss/_components/_step.scss */
 .step__list-wrapper {
   padding-bottom: 30px;
 }
 
-/* line 487, src/scss/_components/_step.scss */
+/* line 516, src/scss/_components/_step.scss */
 .step__list-title {
   padding-bottom: 20px;
   font-weight: bold;
@@ -1496,7 +1725,14 @@ picture {
   color: #163A5F;
 }
 
-/* line 494, src/scss/_components/_step.scss */
+@media screen and (max-width: 1535px) {
+  /* line 516, src/scss/_components/_step.scss */
+  .step__list-title {
+    font-size: 22px;
+  }
+}
+
+/* line 526, src/scss/_components/_step.scss */
 .step__list-block {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1507,7 +1743,7 @@ picture {
           flex-wrap: wrap;
 }
 
-/* line 500, src/scss/_components/_step.scss */
+/* line 532, src/scss/_components/_step.scss */
 .step__search {
   padding: 10px;
   border: 1px solid rgba(203, 219, 227, 0.8);
@@ -1516,7 +1752,7 @@ picture {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-/* line 506, src/scss/_components/_step.scss */
+/* line 538, src/scss/_components/_step.scss */
 .step__search-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1529,7 +1765,7 @@ picture {
           flex-direction: column;
 }
 
-/* line 511, src/scss/_components/_step.scss */
+/* line 543, src/scss/_components/_step.scss */
 .step__search-title {
   padding-bottom: 10px;
   font-weight: bold;
@@ -1537,7 +1773,7 @@ picture {
   color: #163A5F;
 }
 
-/* line 518, src/scss/_components/_step.scss */
+/* line 550, src/scss/_components/_step.scss */
 .step__search-cover {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1555,7 +1791,7 @@ picture {
   background-color: #FFFFFF;
 }
 
-/* line 526, src/scss/_components/_step.scss */
+/* line 558, src/scss/_components/_step.scss */
 .step__search-cover label {
   position: relative;
   display: -webkit-box;
@@ -1565,7 +1801,18 @@ picture {
   width: 100%;
 }
 
-/* line 532, src/scss/_components/_step.scss */
+@media screen and (max-width: 767px) {
+  /* line 558, src/scss/_components/_step.scss */
+  .step__search-cover label {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+/* line 567, src/scss/_components/_step.scss */
 .step__search-cover label.is-error input {
   border-color: red;
   -webkit-transition: border-color 0.3s ease-in-out;
@@ -1573,12 +1820,12 @@ picture {
   transition: border-color 0.3s ease-in-out;
 }
 
-/* line 538, src/scss/_components/_step.scss */
+/* line 573, src/scss/_components/_step.scss */
 .step__search-cover label label.error {
   display: none !important;
 }
 
-/* line 543, src/scss/_components/_step.scss */
+/* line 578, src/scss/_components/_step.scss */
 .step__search-cover input {
   outline: none;
   position: relative;
@@ -1638,7 +1885,14 @@ picture {
   font-size: 16px;
 }
 
-/* line 566, src/scss/_components/_step.scss */
+@media screen and (max-width: 767px) {
+  /* line 578, src/scss/_components/_step.scss */
+  .step__search-cover input {
+    min-height: 57px;
+  }
+}
+
+/* line 604, src/scss/_components/_step.scss */
 .step__search-cover .c-btn {
   min-width: 150px;
   height: 57px;
@@ -1646,12 +1900,27 @@ picture {
           box-shadow: none;
 }
 
-/* line 571, src/scss/_components/_step.scss */
+@media screen and (max-width: 767px) {
+  /* line 604, src/scss/_components/_step.scss */
+  .step__search-cover .c-btn {
+    width: 100%;
+  }
+}
+
+/* line 612, src/scss/_components/_step.scss */
 .step__search-cover .c-btn__wrapper {
   padding-left: 10px;
 }
 
-/* line 578, src/scss/_components/_step.scss */
+@media screen and (max-width: 767px) {
+  /* line 612, src/scss/_components/_step.scss */
+  .step__search-cover .c-btn__wrapper {
+    padding-left: 0;
+    padding-top: 10px;
+  }
+}
+
+/* line 623, src/scss/_components/_step.scss */
 .step__notification {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1668,7 +1937,7 @@ picture {
   width: 100%;
 }
 
-/* line 584, src/scss/_components/_step.scss */
+/* line 629, src/scss/_components/_step.scss */
 .step__notification-wrapper {
   z-index: 2;
   position: relative;
@@ -1687,29 +1956,36 @@ picture {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-/* line 597, src/scss/_components/_step.scss */
+@media screen and (max-width: 767px) {
+  /* line 629, src/scss/_components/_step.scss */
+  .step__notification-wrapper {
+    padding: 10px;
+  }
+}
+
+/* line 645, src/scss/_components/_step.scss */
 .step__notification-wrapper .step__form {
   max-width: 100%;
   padding-bottom: 20px;
 }
 
-/* line 603, src/scss/_components/_step.scss */
+/* line 651, src/scss/_components/_step.scss */
 .step__notification-wrapper .step__form-field label p {
   font-size: 14px;
 }
 
-/* line 607, src/scss/_components/_step.scss */
+/* line 655, src/scss/_components/_step.scss */
 .step__notification-wrapper .step__form-field label input {
   height: 48px;
 }
 
-/* line 614, src/scss/_components/_step.scss */
+/* line 662, src/scss/_components/_step.scss */
 .step__notification-wrapper .c-btn {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-/* line 619, src/scss/_components/_step.scss */
+/* line 667, src/scss/_components/_step.scss */
 .step__notification-block {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1721,7 +1997,7 @@ picture {
           align-items: center;
 }
 
-/* line 624, src/scss/_components/_step.scss */
+/* line 672, src/scss/_components/_step.scss */
 .step__notification-block > div:nth-of-type(1) {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1744,21 +2020,38 @@ picture {
   background-color: #F1F4F8;
 }
 
-/* line 635, src/scss/_components/_step.scss */
+@media screen and (max-width: 767px) {
+  /* line 672, src/scss/_components/_step.scss */
+  .step__notification-block > div:nth-of-type(1) {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+  }
+}
+
+/* line 688, src/scss/_components/_step.scss */
 .step__notification-block > div:nth-of-type(1) img {
   display: block;
   max-width: 100%;
   height: auto;
+  max-height: 100%;
 }
 
-/* line 642, src/scss/_components/_step.scss */
+/* line 696, src/scss/_components/_step.scss */
 .step__notification-block > div p {
   font-weight: 500;
   font-size: 18px;
   color: #163A5F;
 }
 
-/* line 650, src/scss/_components/_step.scss */
+@media screen and (max-width: 767px) {
+  /* line 696, src/scss/_components/_step.scss */
+  .step__notification-block > div p {
+    font-size: 14px;
+  }
+}
+
+/* line 707, src/scss/_components/_step.scss */
 .step__notification-cover {
   width: 100%;
   padding: 40px 50px;
@@ -1769,7 +2062,21 @@ picture {
   background-color: #FFFFFF;
 }
 
-/* line 658, src/scss/_components/_step.scss */
+@media screen and (max-width: 1279px) {
+  /* line 707, src/scss/_components/_step.scss */
+  .step__notification-cover {
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 707, src/scss/_components/_step.scss */
+  .step__notification-cover {
+    padding: 20px 10px;
+  }
+}
+
+/* line 721, src/scss/_components/_step.scss */
 .step__notification-title {
   padding-bottom: 5px;
   font-weight: bold;
@@ -1777,14 +2084,14 @@ picture {
   color: #163A5F;
 }
 
-/* line 666, src/scss/_components/_step.scss */
+/* line 729, src/scss/_components/_step.scss */
 .step__notification-desc {
   padding-bottom: 10px;
   font-size: 16px;
   color: #576472;
 }
 
-/* line 672, src/scss/_components/_step.scss */
+/* line 735, src/scss/_components/_step.scss */
 .step__notification-line {
   width: 100%;
   height: 1px;
@@ -1793,7 +2100,15 @@ picture {
   background-color: rgba(87, 100, 114, 0.2);
 }
 
-/* line 681, src/scss/_components/_step.scss */
+@media screen and (max-width: 1535px) {
+  /* line 735, src/scss/_components/_step.scss */
+  .step__notification-line {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+/* line 748, src/scss/_components/_step.scss */
 .step__status {
   z-index: 2;
   position: relative;
@@ -1812,7 +2127,7 @@ picture {
   margin-bottom: 50px;
 }
 
-/* line 689, src/scss/_components/_step.scss */
+/* line 756, src/scss/_components/_step.scss */
 .step__status img,
 .step__status svg {
   display: block;
@@ -1824,12 +2139,12 @@ picture {
           filter: drop-shadow(0px 40px 80px rgba(22, 58, 95, 0.05));
 }
 
-/* line 700, src/scss/_components/_step.scss */
+/* line 767, src/scss/_components/_step.scss */
 .step__congratulations {
   position: relative;
 }
 
-/* line 703, src/scss/_components/_step.scss */
+/* line 770, src/scss/_components/_step.scss */
 .step__congratulations-visual {
   display: block;
   max-width: 100%;
@@ -1838,7 +2153,7 @@ picture {
   margin-right: auto;
 }
 
-/* line 711, src/scss/_components/_step.scss */
+/* line 778, src/scss/_components/_step.scss */
 .step__congratulations-box {
   position: relative;
   -webkit-transform: translateY(-50%);
@@ -1855,7 +2170,7 @@ picture {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-/* line 723, src/scss/_components/_step.scss */
+/* line 790, src/scss/_components/_step.scss */
 .step__congratulations-box-cover {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1873,7 +2188,7 @@ picture {
           border-radius: 8px;
 }
 
-/* line 732, src/scss/_components/_step.scss */
+/* line 799, src/scss/_components/_step.scss */
 .step__congratulations-box-cover > div:nth-of-type(1) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -1884,20 +2199,20 @@ picture {
   padding-right: 50px;
 }
 
-/* line 740, src/scss/_components/_step.scss */
+/* line 807, src/scss/_components/_step.scss */
 .step__congratulations-box-cover p {
   padding-bottom: 10px;
   font-size: 20px;
   color: #FFFFFF;
 }
 
-/* line 746, src/scss/_components/_step.scss */
+/* line 813, src/scss/_components/_step.scss */
 .step__congratulations-box-cover span {
   font-size: 16px;
   color: #FFFFFF;
 }
 
-/* line 754, src/scss/_components/_step.scss */
+/* line 821, src/scss/_components/_step.scss */
 .step__push {
   z-index: 2;
   position: relative;
@@ -1912,7 +2227,7 @@ picture {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-/* line 766, src/scss/_components/_step.scss */
+/* line 833, src/scss/_components/_step.scss */
 .step__push-cover {
   padding: 50px;
   -webkit-box-shadow: 0 0 80px 0 rgba(28, 202, 135, 0.2);
@@ -1922,7 +2237,7 @@ picture {
   background-color: #FFFFFF;
 }
 
-/* line 772, src/scss/_components/_step.scss */
+/* line 839, src/scss/_components/_step.scss */
 .step__push-cover p {
   padding-bottom: 40px;
   text-align: center;
@@ -1930,12 +2245,12 @@ picture {
   color: #163A5F;
 }
 
-/* line 778, src/scss/_components/_step.scss */
+/* line 845, src/scss/_components/_step.scss */
 .step__push-cover p span {
   color: #21bf73;
 }
 
-/* line 785, src/scss/_components/_step.scss */
+/* line 852, src/scss/_components/_step.scss */
 .step__invite {
   z-index: 2;
   position: relative;
@@ -1948,7 +2263,7 @@ picture {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-/* line 795, src/scss/_components/_step.scss */
+/* line 862, src/scss/_components/_step.scss */
 .step__invite-cover {
   padding: 40px 50px;
   -webkit-box-shadow: 0 40px 80px 0 rgba(22, 58, 95, 0.05);
@@ -1958,7 +2273,7 @@ picture {
   background-color: #FFFFFF;
 }
 
-/* line 802, src/scss/_components/_step.scss */
+/* line 869, src/scss/_components/_step.scss */
 .step__invite-form {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1971,21 +2286,21 @@ picture {
           flex-direction: column;
 }
 
-/* line 806, src/scss/_components/_step.scss */
+/* line 873, src/scss/_components/_step.scss */
 .step__invite-form-title {
   padding-bottom: 15px;
   font-size: 20px;
   color: #163A5F;
 }
 
-/* line 813, src/scss/_components/_step.scss */
+/* line 880, src/scss/_components/_step.scss */
 .step__invite-form-desc {
   padding-bottom: 10px;
   font-size: 14px;
   color: #576472;
 }
 
-/* line 819, src/scss/_components/_step.scss */
+/* line 886, src/scss/_components/_step.scss */
 .step__invite-form-line {
   width: 100%;
   height: 1px;
@@ -1994,7 +2309,7 @@ picture {
   background-color: rgba(87, 100, 114, 0.2);
 }
 
-/* line 827, src/scss/_components/_step.scss */
+/* line 894, src/scss/_components/_step.scss */
 .step__invite-form-group {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2002,7 +2317,7 @@ picture {
   display: flex;
 }
 
-/* line 832, src/scss/_components/_step.scss */
+/* line 899, src/scss/_components/_step.scss */
 .step__invite-form-group--1 > div:nth-of-type(1) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -2013,20 +2328,20 @@ picture {
   padding-right: 10px;
 }
 
-/* line 842, src/scss/_components/_step.scss */
+/* line 909, src/scss/_components/_step.scss */
 .step__invite-form-group--2 > div:nth-of-type(1) {
   width: 25%;
   padding-right: 5px;
 }
 
-/* line 846, src/scss/_components/_step.scss */
+/* line 913, src/scss/_components/_step.scss */
 .step__invite-form-group--2 > div:nth-of-type(2) {
   width: 25%;
   padding-left: 5px;
   padding-right: 5px;
 }
 
-/* line 851, src/scss/_components/_step.scss */
+/* line 918, src/scss/_components/_step.scss */
 .step__invite-form-group--2 > div:nth-of-type(3) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -2037,18 +2352,18 @@ picture {
   padding-left: 5px;
 }
 
-/* line 857, src/scss/_components/_step.scss */
+/* line 924, src/scss/_components/_step.scss */
 .step__invite-form-group--2 > div:nth-of-type(4) {
   padding-left: 10px;
 }
 
-/* line 864, src/scss/_components/_step.scss */
+/* line 931, src/scss/_components/_step.scss */
 .step__invite-form-field {
   position: relative;
   padding-bottom: 15px;
 }
 
-/* line 868, src/scss/_components/_step.scss */
+/* line 935, src/scss/_components/_step.scss */
 .step__invite-form-field label {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2060,7 +2375,7 @@ picture {
           align-items: center;
 }
 
-/* line 876, src/scss/_components/_step.scss */
+/* line 943, src/scss/_components/_step.scss */
 .step__invite-form-field label span {
   padding-top: 2px;
   padding-left: 10px;
@@ -2068,7 +2383,7 @@ picture {
   color: #163A5F;
 }
 
-/* line 884, src/scss/_components/_step.scss */
+/* line 951, src/scss/_components/_step.scss */
 .step__invite-form-field input[type='text'],
 .step__invite-form-field input[type='email'],
 .step__invite-form-field input[type='number'],
@@ -2144,7 +2459,7 @@ picture {
   color: #576472;
 }
 
-/* line 912, src/scss/_components/_step.scss */
+/* line 979, src/scss/_components/_step.scss */
 .step__almostsReady {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2162,7 +2477,7 @@ picture {
   padding-bottom: 100px;
 }
 
-/* line 919, src/scss/_components/_step.scss */
+/* line 986, src/scss/_components/_step.scss */
 .step__almostsReady img {
   display: block;
   max-width: 100%;
@@ -2171,7 +2486,7 @@ picture {
   margin-right: auto;
 }
 
-/* line 928, src/scss/_components/_step.scss */
+/* line 995, src/scss/_components/_step.scss */
 .step__down {
   z-index: 2;
   position: relative;
@@ -2186,7 +2501,7 @@ picture {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-/* line 940, src/scss/_components/_step.scss */
+/* line 1007, src/scss/_components/_step.scss */
 .step__down-cover {
   padding: 50px;
   -webkit-border-radius: 8px;
@@ -2196,7 +2511,7 @@ picture {
   background-color: #FFFFFF;
 }
 
-/* line 947, src/scss/_components/_step.scss */
+/* line 1014, src/scss/_components/_step.scss */
 .step__down-title {
   padding-bottom: 5px;
   font-size: 24px;
@@ -2204,12 +2519,12 @@ picture {
   color: #FD5E53;
 }
 
-/* line 953, src/scss/_components/_step.scss */
+/* line 1020, src/scss/_components/_step.scss */
 .step__down-title span {
   font-weight: 600;
 }
 
-/* line 958, src/scss/_components/_step.scss */
+/* line 1025, src/scss/_components/_step.scss */
 .step__down-subtitle {
   padding-bottom: 30px;
   font-size: 18px;
@@ -2217,7 +2532,7 @@ picture {
   color: #576472;
 }
 
-/* line 965, src/scss/_components/_step.scss */
+/* line 1032, src/scss/_components/_step.scss */
 .step__down-row {
   padding: 40px;
   border: 1px solid rgba(87, 100, 114, 0.2);
@@ -2225,7 +2540,7 @@ picture {
           border-radius: 8px;
 }
 
-/* line 971, src/scss/_components/_step.scss */
+/* line 1038, src/scss/_components/_step.scss */
 .step__down-box {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2237,49 +2552,49 @@ picture {
           align-items: center;
 }
 
-/* line 978, src/scss/_components/_step.scss */
+/* line 1045, src/scss/_components/_step.scss */
 .step__down-box.is-disabled .step__down-box-image img {
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
 }
 
-/* line 982, src/scss/_components/_step.scss */
+/* line 1049, src/scss/_components/_step.scss */
 .step__down-box.is-disabled .step__down-box-title {
   color: #576472;
 }
 
-/* line 985, src/scss/_components/_step.scss */
+/* line 1052, src/scss/_components/_step.scss */
 .step__down-box.is-disabled .step__down-box-info {
   color: rgba(87, 100, 114, 0.5);
 }
 
-/* line 993, src/scss/_components/_step.scss */
+/* line 1060, src/scss/_components/_step.scss */
 .step__down-box.is-send .step__down-box-info {
   color: #21BF73;
 }
 
-/* line 996, src/scss/_components/_step.scss */
+/* line 1063, src/scss/_components/_step.scss */
 .step__down-box.is-send .step__down-box-status {
   border-color: #21BF73;
   background-color: #21bf73;
 }
 
-/* line 1000, src/scss/_components/_step.scss */
+/* line 1067, src/scss/_components/_step.scss */
 .step__down-box.is-send .step__down-box-status .icon-font {
   opacity: 1;
 }
 
-/* line 1007, src/scss/_components/_step.scss */
+/* line 1074, src/scss/_components/_step.scss */
 .step__down-box:not(:last-of-type) {
   margin-bottom: 25px;
 }
 
-/* line 1012, src/scss/_components/_step.scss */
+/* line 1079, src/scss/_components/_step.scss */
 .step__down-box > div:nth-of-type(1) {
   width: 50px;
 }
 
-/* line 1015, src/scss/_components/_step.scss */
+/* line 1082, src/scss/_components/_step.scss */
 .step__down-box > div:nth-of-type(2), .step__down-box > div:nth-of-type(3) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -2290,12 +2605,12 @@ picture {
   padding-left: 20px;
 }
 
-/* line 1022, src/scss/_components/_step.scss */
+/* line 1089, src/scss/_components/_step.scss */
 .step__down-box > div:nth-of-type(4) {
   width: 30px;
 }
 
-/* line 1027, src/scss/_components/_step.scss */
+/* line 1094, src/scss/_components/_step.scss */
 .step__down-box-image {
   position: relative;
   display: -webkit-box;
@@ -2318,7 +2633,7 @@ picture {
   background-color: #F1F4F8;
 }
 
-/* line 1038, src/scss/_components/_step.scss */
+/* line 1105, src/scss/_components/_step.scss */
 .step__down-box-image img {
   display: block;
   max-width: 100%;
@@ -2327,20 +2642,20 @@ picture {
   margin-right: auto;
 }
 
-/* line 1047, src/scss/_components/_step.scss */
+/* line 1114, src/scss/_components/_step.scss */
 .step__down-box-title {
   font-weight: 500;
   font-size: 18px;
   color: #163A5F;
 }
 
-/* line 1053, src/scss/_components/_step.scss */
+/* line 1120, src/scss/_components/_step.scss */
 .step__down-box-info {
   font-size: 14px;
   color: #E7AA31;
 }
 
-/* line 1058, src/scss/_components/_step.scss */
+/* line 1125, src/scss/_components/_step.scss */
 .step__down-box-status {
   position: relative;
   display: -webkit-box;
@@ -2363,13 +2678,13 @@ picture {
   background-color: transparent;
 }
 
-/* line 1069, src/scss/_components/_step.scss */
+/* line 1136, src/scss/_components/_step.scss */
 .step__down-box-status .icon-font {
   opacity: 0;
   color: #ffffff;
 }
 
-/* line 1077, src/scss/_components/_step.scss */
+/* line 1144, src/scss/_components/_step.scss */
 .step__updating {
   z-index: 2;
   position: relative;
@@ -2384,7 +2699,7 @@ picture {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-/* line 1089, src/scss/_components/_step.scss */
+/* line 1156, src/scss/_components/_step.scss */
 .step__updating-cover {
   padding: 50px;
   -webkit-border-radius: 8px;
@@ -2394,7 +2709,7 @@ picture {
   background-color: #FFFFFF;
 }
 
-/* line 1096, src/scss/_components/_step.scss */
+/* line 1163, src/scss/_components/_step.scss */
 .step__updating-header {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2411,19 +2726,19 @@ picture {
   padding-bottom: 10px;
 }
 
-/* line 1103, src/scss/_components/_step.scss */
+/* line 1170, src/scss/_components/_step.scss */
 .step__updating-title {
   font-weight: 600;
   font-size: 24px;
   color: #163A5F;
 }
 
-/* line 1108, src/scss/_components/_step.scss */
+/* line 1175, src/scss/_components/_step.scss */
 .step__updating-title span {
   color: #FD5E53;
 }
 
-/* line 1113, src/scss/_components/_step.scss */
+/* line 1180, src/scss/_components/_step.scss */
 .step__updating-num {
   font-weight: 600;
   font-size: 36px;
@@ -2431,19 +2746,19 @@ picture {
   color: #FD5E53;
 }
 
-/* line 1120, src/scss/_components/_step.scss */
+/* line 1187, src/scss/_components/_step.scss */
 .step__updating-desc {
   padding-bottom: 30px;
   font-size: 14px;
   color: #576472;
 }
 
-/* line 1125, src/scss/_components/_step.scss */
+/* line 1192, src/scss/_components/_step.scss */
 .step__updating-desc strong {
   font-weight: 600;
 }
 
-/* line 1130, src/scss/_components/_step.scss */
+/* line 1197, src/scss/_components/_step.scss */
 .step__updating-row {
   padding: 40px;
   border: 1px solid rgba(87, 100, 114, 0.2);
@@ -2451,7 +2766,7 @@ picture {
           border-radius: 8px;
 }
 
-/* line 1136, src/scss/_components/_step.scss */
+/* line 1203, src/scss/_components/_step.scss */
 .step__updating-list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2463,14 +2778,14 @@ picture {
           align-items: center;
 }
 
-/* line 1140, src/scss/_components/_step.scss */
+/* line 1207, src/scss/_components/_step.scss */
 .step__updating-list:not(:last-of-type) {
   padding-bottom: 20px;
   margin-bottom: 20px;
   border-bottom: 1px solid rgba(87, 100, 114, 0.2);
 }
 
-/* line 1146, src/scss/_components/_step.scss */
+/* line 1213, src/scss/_components/_step.scss */
 .step__updating-list-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2483,12 +2798,12 @@ picture {
           flex-direction: column;
 }
 
-/* line 1152, src/scss/_components/_step.scss */
+/* line 1219, src/scss/_components/_step.scss */
 .step__updating-list > div:nth-of-type(1) {
   width: 20px;
 }
 
-/* line 1155, src/scss/_components/_step.scss */
+/* line 1222, src/scss/_components/_step.scss */
 .step__updating-list > div:nth-of-type(2) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -2500,12 +2815,12 @@ picture {
   padding-right: 10px;
 }
 
-/* line 1162, src/scss/_components/_step.scss */
+/* line 1229, src/scss/_components/_step.scss */
 .step__updating-list > div:nth-of-type(3) {
   width: 70px;
 }
 
-/* line 1167, src/scss/_components/_step.scss */
+/* line 1234, src/scss/_components/_step.scss */
 .step__updating-list-logo {
   display: block;
   max-width: 100%;
@@ -2513,14 +2828,14 @@ picture {
   max-height: 100%;
 }
 
-/* line 1174, src/scss/_components/_step.scss */
+/* line 1241, src/scss/_components/_step.scss */
 .step__updating-list-name {
   font-weight: 500;
   font-size: 16px;
   color: #576472;
 }
 
-/* line 1180, src/scss/_components/_step.scss */
+/* line 1247, src/scss/_components/_step.scss */
 .step__updating-list-status {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2545,12 +2860,12 @@ picture {
   color: #fff;
 }
 
-/* line 1193, src/scss/_components/_step.scss */
+/* line 1260, src/scss/_components/_step.scss */
 .step__updating-list-status.is-down {
   background-color: #fd5e53;
 }
 
-/* line 1201, src/scss/_components/_step.scss */
+/* line 1268, src/scss/_components/_step.scss */
 .step__success-title {
   width: 100%;
   max-width: 600px;
@@ -2563,7 +2878,7 @@ picture {
   color: #21BF73;
 }
 
-/* line 1213, src/scss/_components/_step.scss */
+/* line 1280, src/scss/_components/_step.scss */
 .step__success-media {
   display: block;
   max-width: 100%;
@@ -2572,9 +2887,16 @@ picture {
   margin-right: auto;
 }
 
-/* line 1222, src/scss/_components/_step.scss */
+/* line 1289, src/scss/_components/_step.scss */
 .step__btn {
   padding-top: 75px;
+}
+
+@media screen and (max-width: 1535px) {
+  /* line 1289, src/scss/_components/_step.scss */
+  .step__btn {
+    padding-top: 55px;
+  }
 }
 
 /* line 3, src/scss/_components/_status-dashboard.scss */
