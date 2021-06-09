@@ -18,7 +18,7 @@ section#step.step.step--6
       .step__push-cover
         p!= "Hit the button to see what happens when <br><span>Blocksi Manager Education Everywhere</span> will have an outage"
         .c-btn__wrapper.c-btn__wrapper--center
-          a.c-btn.c-btn--red(href="#")
+          a.c-btn.c-btn--red(href="#" push-js)
             span!= "Push <strong>Blocksi Manager Education Everywhere</strong> Down"
 
     .step__btn.c-btn__wrapper
@@ -27,5 +27,144 @@ section#step.step.step--6
       a.c-btn.c-btn--primary(href="/screen-7.html")
         span Next
         i.icon-font.icon-arrow-right
+
+    .step__hidden-wrapper
+      .step__hidden.step__hidden-1
+
+        .step__almostsReady
+          video#videoServiceDown(muted playsinline preload='auto')
+            source(src="img/video-service-down.mp4" type="video/mp4")
+
+      .step__hidden.step__hidden-2
+
+        .step__down
+          .step__down-cover
+            p.step__down-title!= "<span>Blocksi Manager Education Everywhere</span> is  now Down*"
+            p.step__down-subtitle *this is fake outage for testing reasons visible in your account only
+
+            .step__down-row
+              .step__down-box.is-load
+                div
+                  .step__down-box-image
+                    img(src="img/img-slack.svg" alt="")
+                div
+                  p.step__down-box-title Slack
+                div
+                  p.step__down-box-info Sending notification
+                div
+                  .step__down-box-loader
+                    img(src="img/loaders.gif" alt="")
+                  .step__down-box-status
+                    i.icon-font.icon-checked
+
+              .step__down-box
+                div
+                  .step__down-box-image
+                    img(src="img/img-microsoft-teams.svg" alt="")
+                div
+                  p.step__down-box-title Microsoft Teams
+                div
+                  p.step__down-box-info Sending notification
+                div
+              .step__down-box.is-disabled
+                div
+                  .step__down-box-image
+                    img(src="img/img-sms.svg" alt="")
+                div
+                  p.step__down-box-title SMS
+                div
+                  p.step__down-box-info Not configured
+                div
+
+              .step__down-box.is-disabled
+                div
+                  .step__down-box-image
+                    img(src="img/img-webhooks.png" srcset='img/img-webhooks@2x.png 2x' alt="")
+                div
+                  p.step__down-box-title Web Hooks
+                div
+                  p.step__down-box-info Not configured
+                div
+
+              .step__down-box.is-disabled
+                div
+                  .step__down-box-image
+                    img(src="img/img-email.svg" alt="")
+                div
+                  p.step__down-box-title Email
+                div
+                  p.step__down-box-info Not configured
+                div
+
+      .step__hidden.step__hidden-3
+
+        .step__updating
+          .step__updating-cover
+            .step__updating-header
+              div
+                p.step__updating-title Updating dashboard
+                p.step__updating-desc You branded dashboard
+              div
+                span.step__updating-num
+                  img(data-src="img/countdown.gif" alt="")
+                  span 3
+            .step__updating-header.step__updating-header--hidden
+              div
+                p.step__updating-title!= "Dashboard successfully updated! <span>*</span>"
+                p.step__updating-desc!= "*We update only dashboard on this page for testing reasons. Your real dashboard shows real <br><strong>Blocksi Manager Education Everywhere</strong> status."
+              div
+
+            .step__updating-row
+
+              .step__updating-list-wrapper
+                .step__updating-list
+
+                  div
+                    img.step__updating-list-logo(src="img/img-amazon-web-services.png" srcset="img/img-amazon-web-services@2x.png 2x" alt="")
+                  div
+                    p.step__updating-list-name Amazon Web Services
+                  div
+                    .step__updating-list-status
+                      span(data-up='up' data-down='down')
+                .step__updating-list
+                  div
+                    img.step__updating-list-logo(src="img/img-google-workspace.png" srcset="img/img-google-workspace@2x.png 2x" alt="")
+                  div
+                    p.step__updating-list-name Google Workspace
+                  div
+                    .step__updating-list-status
+                      span(data-up='up' data-down='down')
+                .step__updating-list
+                  div
+                    img.step__updating-list-logo(src="img/img-gitHub.png" srcset="img/img-gitHub@2x.png 2x" alt="")
+                  div
+                    p.step__updating-list-name GitHub
+                  div
+                    .step__updating-list-status
+                      span(data-up='up' data-down='down')
+                .step__updating-list
+                  div
+                    img.step__updating-list-logo(src="img/img-azure.png" srcset="img/img-azure@2x.png 2x" alt="")
+                  div
+                    p.step__updating-list-name Azure
+                  div
+                    .step__updating-list-status
+                      span(data-up='up' data-down='down')
+                .step__updating-list
+                  div
+                    img.step__updating-list-logo(src="img/img-google-cloud.png" srcset="img/img-google-cloud@2x.png 2x" alt="")
+                  div
+                    p.step__updating-list-name Google Cloud
+                  div
+                    .step__updating-list-status
+                      span(data-up='up' data-down='down')
+                .step__updating-list
+                  div
+                    img.step__updating-list-logo(src="img/img-cloudflare.png" srcset="img/img-cloudflare@2x.png 2x" alt="")
+                  div
+                    p.step__updating-list-name Cloudflare
+                  div
+                    .step__updating-list-status
+                      span(data-up='up' data-down='down')
 
 // SECTION :: END

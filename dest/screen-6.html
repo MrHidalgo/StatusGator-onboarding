@@ -51,10 +51,170 @@
           <div class="step__push">
             <div class="step__push-cover">
               <p>Hit the button to see what happens when <br><span>Blocksi Manager Education Everywhere</span> will have an outage</p>
-              <div class="c-btn__wrapper c-btn__wrapper--center"><a class="c-btn c-btn--red" href="#"><span>Push <strong>Blocksi Manager Education Everywhere</strong> Down</span></a></div>
+              <div class="c-btn__wrapper c-btn__wrapper--center"><a class="c-btn c-btn--red" href="#" push-js><span>Push <strong>Blocksi Manager Education Everywhere</strong> Down</span></a></div>
             </div>
           </div>
           <div class="step__btn c-btn__wrapper"><a class="c-btn c-btn--secondary" href="/screen-5.html"><span>Previous</span></a><a class="c-btn c-btn--primary" href="/screen-7.html"><span>Next</span><i class="icon-font icon-arrow-right"></i></a></div>
+          <div class="step__hidden-wrapper">
+            <div class="step__hidden step__hidden-1">
+              <div class="step__almostsReady">
+                <video id="videoServiceDown" muted playsinline preload="auto">
+                  <source src="img/video-service-down.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <div class="step__hidden step__hidden-2">
+              <div class="step__down">
+                <div class="step__down-cover">
+                  <p class="step__down-title"><span>Blocksi Manager Education Everywhere</span> is  now Down*</p>
+                  <p class="step__down-subtitle">*this is fake outage for testing reasons visible in your account only</p>
+                  <div class="step__down-row">
+                    <div class="step__down-box is-load">
+                      <div>
+                        <div class="step__down-box-image"><img src="img/img-slack.svg" alt=""></div>
+                      </div>
+                      <div>
+                        <p class="step__down-box-title">Slack</p>
+                      </div>
+                      <div>
+                        <p class="step__down-box-info">Sending notification</p>
+                      </div>
+                      <div>
+                        <div class="step__down-box-loader"><img src="img/loaders.gif" alt=""></div>
+                        <div class="step__down-box-status"><i class="icon-font icon-checked"></i></div>
+                      </div>
+                    </div>
+                    <div class="step__down-box">
+                      <div>
+                        <div class="step__down-box-image"><img src="img/img-microsoft-teams.svg" alt=""></div>
+                      </div>
+                      <div>
+                        <p class="step__down-box-title">Microsoft Teams</p>
+                      </div>
+                      <div>
+                        <p class="step__down-box-info">Sending notification</p>
+                      </div>
+                      <div></div>
+                    </div>
+                    <div class="step__down-box is-disabled">
+                      <div>
+                        <div class="step__down-box-image"><img src="img/img-sms.svg" alt=""></div>
+                      </div>
+                      <div>
+                        <p class="step__down-box-title">SMS</p>
+                      </div>
+                      <div>
+                        <p class="step__down-box-info">Not configured</p>
+                      </div>
+                      <div></div>
+                    </div>
+                    <div class="step__down-box is-disabled">
+                      <div>
+                        <div class="step__down-box-image"><img src="img/img-webhooks.png" srcset="img/img-webhooks@2x.png 2x" alt=""></div>
+                      </div>
+                      <div>
+                        <p class="step__down-box-title">Web Hooks</p>
+                      </div>
+                      <div>
+                        <p class="step__down-box-info">Not configured</p>
+                      </div>
+                      <div></div>
+                    </div>
+                    <div class="step__down-box is-disabled">
+                      <div>
+                        <div class="step__down-box-image"><img src="img/img-email.svg" alt=""></div>
+                      </div>
+                      <div>
+                        <p class="step__down-box-title">Email</p>
+                      </div>
+                      <div>
+                        <p class="step__down-box-info">Not configured</p>
+                      </div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="step__hidden step__hidden-3">
+              <div class="step__updating">
+                <div class="step__updating-cover">
+                  <div class="step__updating-header">
+                    <div>
+                      <p class="step__updating-title">Updating dashboard</p>
+                      <p class="step__updating-desc">You branded dashboard</p>
+                    </div>
+                    <div><span class="step__updating-num"><img data-src="img/countdown.gif" alt=""><span>3</span></span></div>
+                  </div>
+                  <div class="step__updating-header step__updating-header--hidden">
+                    <div>
+                      <p class="step__updating-title">Dashboard successfully updated! <span>*</span></p>
+                      <p class="step__updating-desc">*We update only dashboard on this page for testing reasons. Your real dashboard shows real <br><strong>Blocksi Manager Education Everywhere</strong> status.</p>
+                    </div>
+                    <div></div>
+                  </div>
+                  <div class="step__updating-row">
+                    <div class="step__updating-list-wrapper">
+                      <div class="step__updating-list">
+                        <div><img class="step__updating-list-logo" src="img/img-amazon-web-services.png" srcset="img/img-amazon-web-services@2x.png 2x" alt=""></div>
+                        <div>
+                          <p class="step__updating-list-name">Amazon Web Services</p>
+                        </div>
+                        <div>
+                          <div class="step__updating-list-status"><span data-up="up" data-down="down"></span></div>
+                        </div>
+                      </div>
+                      <div class="step__updating-list">
+                        <div><img class="step__updating-list-logo" src="img/img-google-workspace.png" srcset="img/img-google-workspace@2x.png 2x" alt=""></div>
+                        <div>
+                          <p class="step__updating-list-name">Google Workspace</p>
+                        </div>
+                        <div>
+                          <div class="step__updating-list-status"><span data-up="up" data-down="down"></span></div>
+                        </div>
+                      </div>
+                      <div class="step__updating-list">
+                        <div><img class="step__updating-list-logo" src="img/img-gitHub.png" srcset="img/img-gitHub@2x.png 2x" alt=""></div>
+                        <div>
+                          <p class="step__updating-list-name">GitHub</p>
+                        </div>
+                        <div>
+                          <div class="step__updating-list-status"><span data-up="up" data-down="down"></span></div>
+                        </div>
+                      </div>
+                      <div class="step__updating-list">
+                        <div><img class="step__updating-list-logo" src="img/img-azure.png" srcset="img/img-azure@2x.png 2x" alt=""></div>
+                        <div>
+                          <p class="step__updating-list-name">Azure</p>
+                        </div>
+                        <div>
+                          <div class="step__updating-list-status"><span data-up="up" data-down="down"></span></div>
+                        </div>
+                      </div>
+                      <div class="step__updating-list">
+                        <div><img class="step__updating-list-logo" src="img/img-google-cloud.png" srcset="img/img-google-cloud@2x.png 2x" alt=""></div>
+                        <div>
+                          <p class="step__updating-list-name">Google Cloud</p>
+                        </div>
+                        <div>
+                          <div class="step__updating-list-status"><span data-up="up" data-down="down"></span></div>
+                        </div>
+                      </div>
+                      <div class="step__updating-list">
+                        <div><img class="step__updating-list-logo" src="img/img-cloudflare.png" srcset="img/img-cloudflare@2x.png 2x" alt=""></div>
+                        <div>
+                          <p class="step__updating-list-name">Cloudflare</p>
+                        </div>
+                        <div>
+                          <div class="step__updating-list-status"><span data-up="up" data-down="down"></span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <!-- SECTION :: END-->
