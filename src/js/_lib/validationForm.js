@@ -136,7 +136,7 @@ const initValidation = () => {
 	
 	/* FORM 5
 	* =============== */
-	const stepForm5 = $(document.formStep5);
+	/*const stepForm5 = $(document.formStep5);
 	
 	stepForm5.validate({
 		errorPlacement: validationErrorPlacement,
@@ -177,10 +177,10 @@ const initValidation = () => {
 	
 	$('[form-step-5-js]').on('click', (ev) => {
 		if(stepForm5.valid()) {
-			/* ACTION */
+			/!* ACTION *!/
 			window.location = '/screen-6.html';
 		}
-	});
+	});*/
 	
 	
 	/* FORM 6 & 7

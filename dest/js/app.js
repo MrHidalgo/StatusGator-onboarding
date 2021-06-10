@@ -165,51 +165,51 @@ var initValidation = function initValidation() {
 
 	/* FORM 5
  * =============== */
-	var stepForm5 = $(document.formStep5);
-
-	stepForm5.validate({
-		errorPlacement: validationErrorPlacement,
-		highlight: validationHighlight,
-		unhighlight: validationUnhighlight,
-		onkeyup: function onkeyup(element) {
-			$(element).valid();
-		},
-		rules: {
-			step_5_service: 'required',
-			step_5_pageTitle: 'required',
-			step_5_pageSubtitle: 'required',
-			step_5_file: 'required',
-			step_5_domain: 'required'
-		},
-		messages: {
-			step_5_service: {
-				required: "Please specify the Service Statuses"
-			},
-			step_5_pageTitle: {
-				required: "Please specify the Page Title"
-			},
-			step_5_pageSubtitle: {
-				required: "Please specify the Page subtitle"
-			},
-			step_5_file: {
-				required: "Please specify the Logo"
-			},
-			step_5_domain: {
-				required: "Please specify the Custom Domain"
-			}
-		}
-	});
-
-	$('#formStep5 select, #formStep5 input[type="file"]').change(function (ev) {
-		$(ev.currentTarget).val().length > 0 ? $(ev.currentTarget).blur() : '';
-	});
-
-	$('[form-step-5-js]').on('click', function (ev) {
-		if (stepForm5.valid()) {
-			/* ACTION */
-			window.location = '/screen-6.html';
-		}
-	});
+	/*const stepForm5 = $(document.formStep5);
+ 
+ stepForm5.validate({
+ 	errorPlacement: validationErrorPlacement,
+ 	highlight: validationHighlight,
+ 	unhighlight: validationUnhighlight,
+ 	onkeyup: function(element) {
+ 		$(element).valid();
+ 	},
+ 	rules: {
+ 		step_5_service: 'required',
+ 		step_5_pageTitle: 'required',
+ 		step_5_pageSubtitle: 'required',
+ 		step_5_file: 'required',
+ 		step_5_domain: 'required',
+ 	},
+ 	messages: {
+ 		step_5_service: {
+ 			required: "Please specify the Service Statuses"
+ 		},
+ 		step_5_pageTitle: {
+ 			required: "Please specify the Page Title"
+ 		},
+ 		step_5_pageSubtitle: {
+ 			required: "Please specify the Page subtitle"
+ 		},
+ 		step_5_file: {
+ 			required: "Please specify the Logo"
+ 		},
+ 		step_5_domain: {
+ 			required: "Please specify the Custom Domain"
+ 		},
+ 	}
+ });
+ 
+ $('#formStep5 select, #formStep5 input[type="file"]').change((ev) => {
+ 	$(ev.currentTarget).val().length > 0 ? $(ev.currentTarget).blur() : '';
+ });
+ 
+ $('[form-step-5-js]').on('click', (ev) => {
+ 	if(stepForm5.valid()) {
+ 		/!* ACTION *!/
+ 		window.location = '/screen-6.html';
+ 	}
+ });*/
 
 	/* FORM 6 & 7
  * =============== */
