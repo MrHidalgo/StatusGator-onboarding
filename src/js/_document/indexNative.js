@@ -81,41 +81,44 @@
 		const videoServiceDown = $('#videoServiceDown');
 		
 		$('[push-js]').on('click', (ev) => {
-			$('.step__btn').hide();
+			videoServiceDown[0].play();
+			
+			$('.step__btn, .step__container-content, .step__push').hide();
 			
 			$('.step__hidden-1').fadeIn(500);
-			videoServiceDown[0].play();
 		});
 		
 		videoServiceDown.on('ended', (event) => {
-			$('.step__hidden-1, .step__push').hide();
-			$('.step__hidden-2').fadeIn(500);
-			
 			setTimeout(() => {
-				$('.step__down-box.is-load').addClass('is-send');
-				$('.step__down-box.is-load').siblings('.step__down-box').eq(0).addClass('is-send');
-			}, 4000);
-			
-			setTimeout(() => {
-				$('.step__hidden-2').hide();
-				$('.step__hidden-3').fadeIn(500);
-				
-				$('.step__updating-num img').attr('src', $('.step__updating-num img').attr('data-src'));
-				$('.step__updating-num span').fadeOut(100);
-			}, 5500);
-			
-			setTimeout(() => {
-				$('.step__updating-header').hide();
-				$('.step__updating-header--hidden').fadeIn(500);
-				
-				$('.step__updating-list').eq(0).addClass('is-down');
-				$('.step__updating-list').eq(1).addClass('is-down').delay(1000);
+				$('.step__hidden-1, .step__push').hide();
+				$('.step__hidden-2').fadeIn(500);
 				
 				setTimeout(() => {
-					window.location = '/success-page.html';
-				}, 1750);
+					$('.step__down-box.is-load').addClass('is-send');
+					$('.step__down-box.is-load').siblings('.step__down-box').eq(0).addClass('is-send');
+				}, 4000);
 				
-			}, 10750);
+				setTimeout(() => {
+					$('.step__hidden-2').hide();
+					$('.step__hidden-3').fadeIn(500);
+					
+					$('.step__updating-num img').attr('src', $('.step__updating-num img').attr('data-src'));
+					$('.step__updating-num span').fadeOut(100);
+				}, 5500);
+				
+				setTimeout(() => {
+					$('.step__updating-header').hide();
+					$('.step__updating-header--hidden').fadeIn(500);
+					
+					$('.step__updating-list').eq(0).addClass('is-down');
+					$('.step__updating-list').eq(1).addClass('is-down').delay(1000);
+					
+					setTimeout(() => {
+						window.location = '/success-page.html';
+					}, 1750);
+					
+				}, 10750);
+			}, 100);
 		});
 	};
 	/*

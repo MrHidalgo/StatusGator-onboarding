@@ -171,6 +171,10 @@
 		@include adaptive(1535) {
 			padding-bottom: 30px;
 		}
+
+		strong {
+			font-weight: 500;
+		}
 	}
 
 	&__row {
@@ -776,8 +780,8 @@
 			align-items: flex-start;
 			justify-content: center;
 			width: 100%;
-			max-width: 600px;
-			height: 500px;
+			max-width: 425px;
+			height: 375px;
 			margin-left: auto;
 			margin-right: auto;
 			@include adaptive(1279) {
@@ -879,16 +883,50 @@
 	&__push {
 		z-index: 2;
 		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		width: 100%;
 		max-width: 900px;
+		padding-top: 30px;
 		margin-left: auto;
 		margin-right: auto;
-		padding: 20px;
-		border: 2px solid #FFFFFF;
-		border-radius: 10px;
-		background-color: rgba(255, 255, 255, 0.5);
 
-		&-cover {
+		a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			&:hover {
+				svg {
+					#button3d-top {
+						transform: translate(30px, 5px) scaleY(0.9);
+						@include transition(transform);
+					}
+				}
+			}
+		}
+
+		svg {
+			display: block;
+			width: 100%;
+			max-width: 175px;
+			height: auto;
+			margin-left: auto;
+			margin-right: auto;
+
+			#button3d-top {
+				transform-origin: center;
+				@include transition(transform);
+			}
+		}
+
+		//padding: 20px;
+		//border: 2px solid #FFFFFF;
+		//border-radius: 10px;
+		//background-color: rgba(255, 255, 255, 0.5);
+
+		/*&-cover {
 			padding: 35px 30px;
 			box-shadow: 0 0 80px 0 rgba(28, 202, 135, 0.2);
 			border-radius: 10px;
@@ -904,7 +942,7 @@
 					color: #21bf73;
 				}
 			}
-		}
+		}*/
 	}
 
 	&__invite {
@@ -1260,6 +1298,7 @@
 					display: block;
 					max-width: 100%;
 					height: auto;
+					transform: scale(1.2);
 				}
 			}
 
@@ -1268,8 +1307,8 @@
 				display: flex;
 				align-items: center;
 				justify-content: center;
-				width: 30px;
-				height: 30px;
+				width: 32px;
+				height: 32px;
 				border-radius: 50%;
 				background-color: transparent;
 				@include transition(background-color);
@@ -1329,8 +1368,8 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			width: 75px;
-			height: 75px;
+			width: 100px;
+			height: 100px;
 
 			img {
 				display: block;
@@ -1340,8 +1379,9 @@
 
 			span {
 				position: absolute;
+				transform: translate(0, 1px);
 				font-weight: 500;
-				font-size: 25px;
+				font-size: 29px;
 				line-height: 1;
 				color: #FD5E53;
 			}
@@ -1476,6 +1516,11 @@
 
 	&__hidden {
 		display: none;
+
+		&-wrapper {
+			z-index: 2;
+			position: relative;
+		}
 	}
 }
 
