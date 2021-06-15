@@ -2956,7 +2956,21 @@ picture {
   background-color: #FFFFFF;
 }
 
-/* line 1169, src/scss/_components/_step.scss */
+@media screen and (max-width: 1279px) {
+  /* line 1162, src/scss/_components/_step.scss */
+  .step__down-cover {
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 1162, src/scss/_components/_step.scss */
+  .step__down-cover {
+    padding: 20px 15px;
+  }
+}
+
+/* line 1175, src/scss/_components/_step.scss */
 .step__down-title {
   padding-bottom: 5px;
   font-size: 24px;
@@ -2964,12 +2978,12 @@ picture {
   color: #FD5E53;
 }
 
-/* line 1175, src/scss/_components/_step.scss */
+/* line 1181, src/scss/_components/_step.scss */
 .step__down-title span {
   font-weight: 600;
 }
 
-/* line 1180, src/scss/_components/_step.scss */
+/* line 1186, src/scss/_components/_step.scss */
 .step__down-subtitle {
   padding-bottom: 30px;
   font-size: 18px;
@@ -2977,7 +2991,7 @@ picture {
   color: #576472;
 }
 
-/* line 1187, src/scss/_components/_step.scss */
+/* line 1193, src/scss/_components/_step.scss */
 .step__down-row {
   padding: 40px;
   border: 1px solid rgba(87, 100, 114, 0.2);
@@ -2985,7 +2999,14 @@ picture {
           border-radius: 8px;
 }
 
-/* line 1193, src/scss/_components/_step.scss */
+@media screen and (max-width: 767px) {
+  /* line 1193, src/scss/_components/_step.scss */
+  .step__down-row {
+    padding: 15px;
+  }
+}
+
+/* line 1202, src/scss/_components/_step.scss */
 .step__down-box {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2997,23 +3018,32 @@ picture {
           align-items: center;
 }
 
-/* line 1200, src/scss/_components/_step.scss */
+@media screen and (max-width: 767px) {
+  /* line 1202, src/scss/_components/_step.scss */
+  .step__down-box {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+}
+
+/* line 1212, src/scss/_components/_step.scss */
 .step__down-box.is-disabled .step__down-box-image img {
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
 }
 
-/* line 1204, src/scss/_components/_step.scss */
+/* line 1216, src/scss/_components/_step.scss */
 .step__down-box.is-disabled .step__down-box-title {
   color: #576472;
 }
 
-/* line 1207, src/scss/_components/_step.scss */
+/* line 1219, src/scss/_components/_step.scss */
 .step__down-box.is-disabled .step__down-box-info {
   color: rgba(87, 100, 114, 0.5);
 }
 
-/* line 1223, src/scss/_components/_step.scss */
+/* line 1235, src/scss/_components/_step.scss */
 .step__down-box.is-send .step__down-box-info {
   color: #21BF73;
   -webkit-transition: color 0.3s ease-in-out;
@@ -3021,7 +3051,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 1228, src/scss/_components/_step.scss */
+/* line 1240, src/scss/_components/_step.scss */
 .step__down-box.is-send .step__down-box-status {
   background-color: #21bf73;
   -webkit-transition: background-color 0.3s ease-in-out;
@@ -3029,7 +3059,7 @@ picture {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 1232, src/scss/_components/_step.scss */
+/* line 1244, src/scss/_components/_step.scss */
 .step__down-box.is-send .step__down-box-status .icon-font {
   opacity: 1;
   -webkit-transition: opacity 0.3s ease-in-out;
@@ -3037,17 +3067,24 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 1240, src/scss/_components/_step.scss */
+/* line 1252, src/scss/_components/_step.scss */
 .step__down-box:not(:last-of-type) {
   margin-bottom: 25px;
 }
 
-/* line 1245, src/scss/_components/_step.scss */
+/* line 1257, src/scss/_components/_step.scss */
 .step__down-box > div:nth-of-type(1) {
   width: 50px;
 }
 
-/* line 1248, src/scss/_components/_step.scss */
+@media screen and (max-width: 767px) {
+  /* line 1260, src/scss/_components/_step.scss */
+  .step__down-box > div:nth-of-type(2) {
+    display: none;
+  }
+}
+
+/* line 1265, src/scss/_components/_step.scss */
 .step__down-box > div:nth-of-type(2), .step__down-box > div:nth-of-type(3) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -3058,7 +3095,7 @@ picture {
   padding-left: 20px;
 }
 
-/* line 1255, src/scss/_components/_step.scss */
+/* line 1272, src/scss/_components/_step.scss */
 .step__down-box > div:nth-of-type(4) {
   position: relative;
   width: 30px;
@@ -3076,7 +3113,7 @@ picture {
           justify-content: center;
 }
 
-/* line 1264, src/scss/_components/_step.scss */
+/* line 1281, src/scss/_components/_step.scss */
 .step__down-box-image {
   position: relative;
   display: -webkit-box;
@@ -3099,7 +3136,7 @@ picture {
   background-color: #F1F4F8;
 }
 
-/* line 1275, src/scss/_components/_step.scss */
+/* line 1292, src/scss/_components/_step.scss */
 .step__down-box-image img {
   display: block;
   max-width: 100%;
@@ -3108,14 +3145,14 @@ picture {
   margin-right: auto;
 }
 
-/* line 1284, src/scss/_components/_step.scss */
+/* line 1301, src/scss/_components/_step.scss */
 .step__down-box-title {
   font-weight: 500;
   font-size: 18px;
   color: #163A5F;
 }
 
-/* line 1290, src/scss/_components/_step.scss */
+/* line 1307, src/scss/_components/_step.scss */
 .step__down-box-info {
   font-size: 14px;
   color: #E7AA31;
@@ -3124,7 +3161,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 1297, src/scss/_components/_step.scss */
+/* line 1314, src/scss/_components/_step.scss */
 .step__down-box-loader img {
   display: block;
   max-width: 100%;
@@ -3134,7 +3171,7 @@ picture {
           transform: scale(1.2);
 }
 
-/* line 1305, src/scss/_components/_step.scss */
+/* line 1322, src/scss/_components/_step.scss */
 .step__down-box-status {
   position: absolute;
   display: -webkit-box;
@@ -3159,7 +3196,7 @@ picture {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 1316, src/scss/_components/_step.scss */
+/* line 1333, src/scss/_components/_step.scss */
 .step__down-box-status .icon-font {
   opacity: 0;
   color: #ffffff;
@@ -3168,7 +3205,7 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 1325, src/scss/_components/_step.scss */
+/* line 1342, src/scss/_components/_step.scss */
 .step__updating {
   z-index: 2;
   position: relative;
@@ -3183,7 +3220,7 @@ picture {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-/* line 1337, src/scss/_components/_step.scss */
+/* line 1354, src/scss/_components/_step.scss */
 .step__updating-cover {
   padding: 50px;
   -webkit-border-radius: 8px;
@@ -3193,7 +3230,21 @@ picture {
   background-color: #FFFFFF;
 }
 
-/* line 1344, src/scss/_components/_step.scss */
+@media screen and (max-width: 1279px) {
+  /* line 1354, src/scss/_components/_step.scss */
+  .step__updating-cover {
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 1354, src/scss/_components/_step.scss */
+  .step__updating-cover {
+    padding: 20px 15px;
+  }
+}
+
+/* line 1367, src/scss/_components/_step.scss */
 .step__updating-header {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3211,12 +3262,12 @@ picture {
   padding-bottom: 30px;
 }
 
-/* line 1351, src/scss/_components/_step.scss */
+/* line 1374, src/scss/_components/_step.scss */
 .step__updating-header--hidden {
   display: none;
 }
 
-/* line 1356, src/scss/_components/_step.scss */
+/* line 1379, src/scss/_components/_step.scss */
 .step__updating-title {
   padding-bottom: 10px;
   font-weight: 600;
@@ -3224,12 +3275,12 @@ picture {
   color: #163A5F;
 }
 
-/* line 1362, src/scss/_components/_step.scss */
+/* line 1385, src/scss/_components/_step.scss */
 .step__updating-title span {
   color: #FD5E53;
 }
 
-/* line 1367, src/scss/_components/_step.scss */
+/* line 1390, src/scss/_components/_step.scss */
 .step__updating-num {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3247,14 +3298,14 @@ picture {
   height: 100px;
 }
 
-/* line 1374, src/scss/_components/_step.scss */
+/* line 1397, src/scss/_components/_step.scss */
 .step__updating-num img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* line 1380, src/scss/_components/_step.scss */
+/* line 1403, src/scss/_components/_step.scss */
 .step__updating-num span {
   position: absolute;
   -webkit-transform: translate(0, 1px);
@@ -3266,18 +3317,18 @@ picture {
   color: #FD5E53;
 }
 
-/* line 1390, src/scss/_components/_step.scss */
+/* line 1413, src/scss/_components/_step.scss */
 .step__updating-desc {
   font-size: 14px;
   color: #576472;
 }
 
-/* line 1394, src/scss/_components/_step.scss */
+/* line 1417, src/scss/_components/_step.scss */
 .step__updating-desc strong {
   font-weight: 600;
 }
 
-/* line 1399, src/scss/_components/_step.scss */
+/* line 1422, src/scss/_components/_step.scss */
 .step__updating-row {
   padding: 40px;
   border: 1px solid rgba(87, 100, 114, 0.2);
@@ -3285,7 +3336,14 @@ picture {
           border-radius: 8px;
 }
 
-/* line 1405, src/scss/_components/_step.scss */
+@media screen and (max-width: 767px) {
+  /* line 1422, src/scss/_components/_step.scss */
+  .step__updating-row {
+    padding: 15px;
+  }
+}
+
+/* line 1431, src/scss/_components/_step.scss */
 .step__updating-list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3297,24 +3355,24 @@ picture {
           align-items: center;
 }
 
-/* line 1410, src/scss/_components/_step.scss */
+/* line 1436, src/scss/_components/_step.scss */
 .step__updating-list.is-down .step__updating-list-status {
   background-color: #fd5e53;
 }
 
-/* line 1414, src/scss/_components/_step.scss */
+/* line 1440, src/scss/_components/_step.scss */
 .step__updating-list.is-down .step__updating-list-status span::before {
   content: attr(data-down);
 }
 
-/* line 1421, src/scss/_components/_step.scss */
+/* line 1447, src/scss/_components/_step.scss */
 .step__updating-list:not(:last-of-type) {
   padding-bottom: 20px;
   margin-bottom: 20px;
   border-bottom: 1px solid rgba(87, 100, 114, 0.2);
 }
 
-/* line 1427, src/scss/_components/_step.scss */
+/* line 1453, src/scss/_components/_step.scss */
 .step__updating-list-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3327,12 +3385,12 @@ picture {
           flex-direction: column;
 }
 
-/* line 1433, src/scss/_components/_step.scss */
+/* line 1459, src/scss/_components/_step.scss */
 .step__updating-list > div:nth-of-type(1) {
   width: 20px;
 }
 
-/* line 1436, src/scss/_components/_step.scss */
+/* line 1462, src/scss/_components/_step.scss */
 .step__updating-list > div:nth-of-type(2) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -3344,12 +3402,12 @@ picture {
   padding-right: 10px;
 }
 
-/* line 1443, src/scss/_components/_step.scss */
+/* line 1469, src/scss/_components/_step.scss */
 .step__updating-list > div:nth-of-type(3) {
   width: 70px;
 }
 
-/* line 1448, src/scss/_components/_step.scss */
+/* line 1474, src/scss/_components/_step.scss */
 .step__updating-list-logo {
   display: block;
   max-width: 100%;
@@ -3357,14 +3415,14 @@ picture {
   max-height: 100%;
 }
 
-/* line 1455, src/scss/_components/_step.scss */
+/* line 1481, src/scss/_components/_step.scss */
 .step__updating-list-name {
   font-weight: 500;
   font-size: 16px;
   color: #576472;
 }
 
-/* line 1461, src/scss/_components/_step.scss */
+/* line 1487, src/scss/_components/_step.scss */
 .step__updating-list-status {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3385,7 +3443,7 @@ picture {
   background-color: #21BF73;
 }
 
-/* line 1471, src/scss/_components/_step.scss */
+/* line 1497, src/scss/_components/_step.scss */
 .step__updating-list-status span::before {
   content: attr(data-up);
   display: inline-block;
@@ -3395,7 +3453,7 @@ picture {
   color: #fff;
 }
 
-/* line 1485, src/scss/_components/_step.scss */
+/* line 1511, src/scss/_components/_step.scss */
 .step__success-title {
   width: 100%;
   max-width: 600px;
@@ -3409,14 +3467,14 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1485, src/scss/_components/_step.scss */
+  /* line 1511, src/scss/_components/_step.scss */
   .step__success-title {
     padding-bottom: 50px;
     font-size: 27px;
   }
 }
 
-/* line 1501, src/scss/_components/_step.scss */
+/* line 1527, src/scss/_components/_step.scss */
 .step__success-media {
   display: block;
   max-width: 100%;
@@ -3425,24 +3483,24 @@ picture {
   margin-right: auto;
 }
 
-/* line 1510, src/scss/_components/_step.scss */
+/* line 1536, src/scss/_components/_step.scss */
 .step__btn {
   padding-top: 75px;
 }
 
 @media screen and (max-width: 1535px) {
-  /* line 1510, src/scss/_components/_step.scss */
+  /* line 1536, src/scss/_components/_step.scss */
   .step__btn {
     padding-top: 55px;
   }
 }
 
-/* line 1517, src/scss/_components/_step.scss */
+/* line 1543, src/scss/_components/_step.scss */
 .step__hidden {
   display: none;
 }
 
-/* line 1520, src/scss/_components/_step.scss */
+/* line 1546, src/scss/_components/_step.scss */
 .step__hidden-wrapper {
   z-index: 2;
   position: relative;

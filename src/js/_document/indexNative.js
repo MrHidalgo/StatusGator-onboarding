@@ -78,17 +78,19 @@
 	
 	
 	const pushStepAnimation = () => {
-		const videoServiceDown = $('#videoServiceDown');
-		
 		$('[push-js]').on('click', (ev) => {
-			videoServiceDown[0].play();
+			let serviseDown = anim;
 			
 			$('.step__btn, .step__container-content, .step__push').hide();
 			
 			$('.step__hidden-1').fadeIn(500);
+			
+			serviseDown.goToAndPlay(0);
 		});
 		
-		videoServiceDown.on('ended', (event) => {
+		anim.addEventListener('complete', completeCB);
+		
+		function completeCB(){
 			setTimeout(() => {
 				$('.step__hidden-1, .step__push').hide();
 				$('.step__hidden-2').fadeIn(500);
@@ -119,7 +121,7 @@
 					
 				}, 10750);
 			}, 100);
-		});
+		}
 	};
 	/*
 	* CALLBACK :: end
@@ -138,6 +140,7 @@
 
 		// lib
 		initValidation();
+		serviceDown();
 		// ==========================================
 
 		// callback
