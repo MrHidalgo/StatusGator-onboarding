@@ -905,6 +905,18 @@
 					}
 				}
 			}
+
+			@keyframes pulseAnim {
+				from {
+					transform: translate(30px, 0) scaleY(1);
+				}
+				50% {
+					transform: translate(30px, 5px) scaleY(0.9);
+				}
+				to {
+					transform: translate(30px, 0) scaleY(1);
+				}
+			}
 		}
 
 		svg {
@@ -917,6 +929,11 @@
 
 			#button3d-top {
 				transform-origin: center;
+				animation-name: pulseAnim;
+				animation-fill-mode: both;
+				animation-duration: 2s;
+				animation-timing-function: ease-in-out;
+				animation-iteration-count: infinite;
 				@include transition(transform);
 			}
 		}
